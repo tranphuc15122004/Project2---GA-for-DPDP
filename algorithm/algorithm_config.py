@@ -6,6 +6,12 @@ SLACK_TIME_THRESHOLD = 10000
 debugPeriod = "0010-0020"
 addDelta = 300000.0
 
+"""GA configuration"""
+POPULATION_SIZE = 20
+NUMBER_OF_GENERATION = 20
+MUTATION_RATE = 1
+LS_MAX = 5
+
 
 """modle"""
 modle4 = [

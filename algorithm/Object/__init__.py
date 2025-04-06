@@ -4,3 +4,4 @@ from .Node import Node
 from .Orderitem import OrderItem
 from .Vehicle import Vehicle
 from .VehicleInfo import VehicleInfo
+from .Chromosome import Chromosome
