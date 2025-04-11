@@ -23,18 +23,21 @@ def GA(initial_vehicleid_to_plane : Dict[str , List[Node]] ,route_map: Dict[Tupl
     
     for gen in range(NUMBER_OF_GENERATION):
         new_population = []
-
-        while len(new_population) < POPULATION_SIZE:
+        
+        new_population , _ = generate_random_chromosome(initial_vehicleid_to_plane , route_map , id_to_vehicle , Unongoing_super_nodes , Base_vehicleid_to_plan , 2 *  POPULATION_SIZE)
+        
+        while len(new_population) < 2* POPULATION_SIZE:
             parent1, parent2 = select_parents(population)
             child = parent1.crossover(parent2, PDG_map)
             new_population.append(child)
+        
         # Sắp xếp lại quần thể và lấy 20 cá thể tốt nhất
         population.extend(new_population)
         population.sort(key=lambda x: x.fitness)
         population = population[:POPULATION_SIZE]
 
         for c in population:
-            c.mutate()
+            c.mutate(True)
 
         # Sắp xếp lại quần thể sau đột biến
         population.sort(key=lambda x: x.fitness)

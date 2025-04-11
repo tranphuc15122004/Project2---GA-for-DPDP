@@ -1375,3 +1375,158 @@ def deal_old_solution_file(id2VehicleMap):
         file_path = "./algorithm/data_interaction/solution.json"
         if os.path.exists(file_path):
             os.remove(file_path)
+            
+def single_vehicle_cost(route_node_list: List[Node] , vehicle:Vehicle , route_map: Dict[tuple[str , str] , tuple[str , str]] , mode = 'total'):
+    curr_factoryID = vehicle.cur_factory_id
+    utilTime :int = 0
+    driving_dis :float= 0.0
+    overtime_sum :float= 0.0
+    orderNum :int= 0
+    objF: float  = 0.0
+    capacity = vehicle.board_capacity
+    
+    if not route_node_list:
+        return 0
+    
+    carrying_items :List[OrderItem] = (vehicle.carrying_items) if vehicle.des else []
+    if not isFeasible(route_node_list , carrying_items , capacity):
+        return math.inf
+    
+    if curr_factoryID is not None and len(curr_factoryID) > 0:
+        utilTime = vehicle.leave_time_at_current_factory
+        for next_node in route_node_list:
+            next_factoryID = next_node.id
+            distance = 0
+            time= 0
+            if curr_factoryID != next_factoryID:
+                distance , time = route_map.get((curr_factoryID , next_factoryID))
+                distance = float(distance)
+                time = int(time)
+                utilTime += APPROACHING_DOCK_TIME
+            driving_dis += distance
+            utilTime += time
+            
+            if next_node.delivery_item_list:
+                before_orderID = ""
+                next_orderID = ""
+                for orderitem in next_node.delivery_item_list:
+                    next_orderID = orderitem.order_id
+                    if (before_orderID != next_orderID):
+                        overtime_sum += max(0 , utilTime - orderitem.committed_completion_time)
+                    before_orderID = next_orderID
+            utilTime += next_node.service_time
+            curr_factoryID = next_factoryID
+    else:
+        utilTime = vehicle.des.arrive_time
+        curr_factoryID = route_node_list[0].id
+        curr_node = route_node_list[0]
+        if curr_node.delivery_item_list:
+            before_orderID = ""
+            next_orderID = ""
+            for orderitem in curr_node.delivery_item_list:
+                next_orderID = orderitem.order_id
+                if (before_orderID != next_orderID):
+                    overtime_sum += max(0 , utilTime - orderitem.committed_completion_time)
+                before_orderID = next_orderID
+        for next_node in route_node_list[1:]:
+            next_factoryID = next_node.id
+            distance = 0
+            time = 0
+            if curr_factoryID != next_factoryID:
+                distance , time = route_map.get((curr_factoryID , next_factoryID))
+                distance = float(distance)
+                time = int(time)
+                utilTime += APPROACHING_DOCK_TIME
+            driving_dis += distance
+            utilTime += time
+            
+            if next_node.delivery_item_list:
+                before_orderID = ""
+                next_orderID = ""
+                for orderitem in next_node.delivery_item_list:
+                    next_orderID = orderitem.order_id
+                    if (before_orderID != next_orderID):
+                        overtime_sum += max(0 , utilTime - orderitem.committed_completion_time)
+                    before_orderID = next_orderID
+            utilTime += next_node.service_time
+            curr_factoryID = next_factoryID
+    
+    objF = Delta1 * overtime_sum + driving_dis
+    if mode == 'distance':
+        return driving_dis
+    elif mode == 'overtime':
+        return Delta1 * overtime_sum
+    return objF
+
+def get_couple_end_idx_map(route_node_list: List[Node]):
+    couple_end_idx_map = {}
+    for i, node in enumerate(route_node_list):
+        if node.pickup_item_list:
+            for j in range(i + 1, len(route_node_list)):
+                if (route_node_list[j].delivery_item_list):
+                    len_delivery = len(route_node_list[j].delivery_item_list)
+                    if (node.pickup_item_list[0].id ==route_node_list[j].delivery_item_list[len_delivery - 1].id):
+                        couple_end_idx_map[node.pickup_item_list[0].id] = j
+                        break
+    return couple_end_idx_map
+
+
+def dispatch_order_to_best(node_list: List[Node], cp_vehicle_id2_planned_route :Dict[str , List[Node]], id_to_vehicle: Dict[str , Vehicle] , route_map: Dict[Tuple[str , str] , Tuple[str , str]] , mode = 'total'):
+    best_insert_pos_i = -1
+    best_insert_pos_j = -1 
+    best_insert_vehicle_id = ''
+    
+    pickup_node_list = node_list[:len(node_list) // 2]
+    delivery_node_list = node_list[len(node_list) // 2:]
+    min_cost_delta = math.inf
+    block_len = len(pickup_node_list)
+    
+    index = 0
+    
+    for vehicle_id, vehicle in id_to_vehicle.items():
+        vehicle_id = f"V_{index + 1}"
+        index += 1
+        
+        route_node_list = cp_vehicle_id2_planned_route.get(vehicle_id, [])
+        cost_value0 = single_vehicle_cost(route_node_list, vehicle , route_map , mode)
+        node_list_size = len(route_node_list) if route_node_list else 0
+        couple_end_idx_map = get_couple_end_idx_map(route_node_list) if route_node_list else {}
+        
+        insert_pos = 1 if vehicle.des else 0
+        
+        for i in range(insert_pos, node_list_size + 1):
+            temp_route_node_list = list(route_node_list) if route_node_list else []
+            temp_route_node_list[i:i] = pickup_node_list
+            
+            for j in range(block_len + i, node_list_size + block_len + 1):
+                if j == block_len + i:
+                    temp_route_node_list[j:j] = delivery_node_list
+                else:
+                    # Neu vi tri truoc do la node nhan hang
+                    if (temp_route_node_list[j - 1].pickup_item_list and len(temp_route_node_list[j - 1].pickup_item_list) > 0):
+                        order_item_id = temp_route_node_list[j - 1].pickup_item_list[0].id
+                        j = block_len + couple_end_idx_map.get(order_item_id, j) + 1
+                        temp_route_node_list[j:j] = delivery_node_list
+                    # Neu truoc do la node giao hang
+                    elif (temp_route_node_list[j - 1].delivery_item_list):
+                        is_terminal = True
+                        for k in range(j - 2, -1, -1):
+                            if (temp_route_node_list[k].pickup_item_list and temp_route_node_list[k].pickup_item_list):
+                                last_delivery_item = temp_route_node_list[j - 1].delivery_item_list[-1].id
+                                first_pickup_item = temp_route_node_list[k].pickup_item_list[0].id
+                                if last_delivery_item == first_pickup_item:
+                                    is_terminal = (k < i)
+                                    break
+                        if is_terminal:
+                            break
+                        temp_route_node_list[j:j] = delivery_node_list
+                
+                cost_value = single_vehicle_cost(temp_route_node_list, vehicle , route_map , mode)
+                del temp_route_node_list[j:j + block_len]
+                
+                if (cost_value - cost_value0) < min_cost_delta:
+                    min_cost_delta = cost_value - cost_value0
+                    best_insert_pos_i = i
+                    best_insert_pos_j = j
+                    best_insert_vehicle_id = vehicle_id
+    return min_cost_delta, best_insert_pos_i, best_insert_pos_j, best_insert_vehicle_id

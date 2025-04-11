@@ -39,6 +39,7 @@ def main():
     print()
     print(get_route_after(vehicleid_to_plan , {}))
     print(get_route_after(best_chromosome.solution , {}))
+    print (f'The fitness score before EA {total_cost(id_to_vehicle , route_map , vehicleid_to_plan)} , after EA {best_chromosome.fitness}')
     
     #Ket thuc thuat toan
     

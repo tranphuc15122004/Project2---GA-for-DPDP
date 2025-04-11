@@ -19,8 +19,8 @@ class Chromosome:
         self.fitness = total_cost(self.id_to_vehicle , self.route_map , self.solution)
         return self.fitness
 
-    def mutate(self ):
-        mutate_solution(self )
+    def mutate(self  ,is_limited = False):
+        mutate_solution(self , is_limited )
         self.fitness = self.evaluate_fitness()        
 
     def crossover(self, other: 'Chromosome' , PDG_map : Dict[str , List[Node]]) -> 'Chromosome':
@@ -31,12 +31,26 @@ class Chromosome:
         return f'Chromosome(Fitness: {self.fitness}, Solution: {self.solution})'
 
 def mutate_solution(individual : Chromosome , is_limited = False):
-    n1 = 0
+    n1  , n2 , n3 , n4 , n5 = 0 , 0 , 0 , 0 , 0
     begin_time = time.time()
     i  = 1
     while i < LS_MAX:
+        is_improved = False
         if inter_couple_exchange(individual.solution , individual.id_to_vehicle , individual.route_map , is_limited):
             n1 +=1
+            is_improved = True
+        if block_exchange(individual.solution , individual.id_to_vehicle , individual.route_map , is_limited):
+            n2 +=1
+            is_improved = True
+        if block_relocate(individual.solution , individual.id_to_vehicle , individual.route_map , is_limited):
+            is_improved = True
+            n3 +=1
+            
+        if multi_pd_group_relocate(individual.solution , individual.id_to_vehicle , individual.route_map , is_limited):
+            is_improved = True
+            n4 += 1
+        if is_improved:
+            i += 1
         else: break
     print(f"PDPairExchange:{n1} cost:{total_cost(individual.id_to_vehicle , individual.route_map , individual.solution ):.2f}" , file= sys.stderr  )
 
