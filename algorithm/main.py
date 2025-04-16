@@ -32,7 +32,7 @@ def main():
     
     Unongoing_super_nodes , Base_vehicleid_to_plan= get_UnongoingSuperNode(vehicleid_to_plan , id_to_vehicle )
     
-    best_chromosome : Chromosome=  GA( vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
+    best_chromosome : Chromosome =  GA( vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
     if best_chromosome is None:
         best_chromosome = Chromosome(vehicleid_to_plan , route_map , id_to_vehicle)
     
