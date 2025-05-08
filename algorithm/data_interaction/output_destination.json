@@ -16,17 +16,16 @@
     },
     "V_4": null,
     "V_5": {
-        "factory_id": "b6dd694ae05541dba369a2a759d2c2b9",
-        "lng": 116.6264,
-        "lat": 40.2253,
-        "delivery_item_list": [
-            "0033520004-3",
-            "0033520004-2",
+        "factory_id": "2445d4bd004c457d95957d6ecf77f759",
+        "lng": 116.5841,
+        "lat": 40.2869,
+        "delivery_item_list": [],
+        "pickup_item_list": [
             "0033520004-1",
-            "0003480001-1"
+            "0033520004-2",
+            "0033520004-3"
         ],
-        "pickup_item_list": [],
-        "arrive_time": 1746647724,
+        "arrive_time": 1746644700,
         "leave_time": 0
     }
 }
