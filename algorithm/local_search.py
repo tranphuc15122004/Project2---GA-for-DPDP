@@ -585,3 +585,112 @@ def multi_pd_group_relocate(vehicleid_to_plan: Dict[str , List[Node]], id_to_veh
                         break
     
     return is_improved
+
+
+def improve_ci_path_by_2_opt(vehicleid_to_plan: Dict[str , List[Node]], id_to_vehicle: Dict[str , Vehicle] , route_map: Dict[tuple , tuple] , begintime , is_limited : bool = False):
+    is_improved = False
+    cost0 = total_cost(id_to_vehicle , route_map , vehicleid_to_plan)
+    
+    for vehicleID , route_node_list in vehicleid_to_plan.items():
+        vehicle = id_to_vehicle.get(vehicleID)
+        route_node_len = len(route_node_list) if route_node_list else 0
+        if route_node_len == 0:
+            continue
+        
+        begin_pos = 1 if vehicle.des else 0
+        is_route_improved = False
+        
+        REV : List[List[bool]] = CHECK(route_node_list , begin_pos)
+        min_cost_delta = math.inf
+        for i in range(begin_pos, route_node_len - 3):
+            for j in range(i + 2, route_node_len):
+                # bản sao nông
+                temp_route_node_list = route_node_list[:]
+                node_i = temp_route_node_list[i]
+                node_i_plus = temp_route_node_list[i + 1]
+
+                # nếu hai node lien tiep la 2 node nhan va giao hàng của một đơn
+                if (node_i.pickup_item_list and node_i_plus.delivery_item_list and 
+                    node_i.pickup_item_list[0].id == node_i_plus.delivery_item_list[- 1].id):
+                    
+                    pos_k = is_overlapped(temp_route_node_list, i)
+                    if pos_k == 0 or pos_k >= j + 1:
+                        if (not REV[i + 2][j]):
+                            continue
+                        else:
+                            temp = temp_route_node_list[i + 2: j + 1]
+                            reserve_len = len(temp)
+                            del temp_route_node_list[i + 2: j + 1]
+                            temp_route_node_list[i + 1:i + 1] = temp
+                            
+                            temp_route_node_list = reverse_route(temp_route_node_list, i + 1, i + reserve_len, vehicle)
+                            if not temp_route_node_list :
+                                continue
+                            
+                            cost = cost_of_a_route(temp_route_node_list, vehicle , id_to_vehicle ,route_map , vehicleid_to_plan)
+                            if cost < min_cost_delta:
+                                print("tried case 1 improved", file= sys.stderr  )
+                                min_cost_delta = cost
+                                best_node_list = temp_route_node_list[:]
+                    elif pos_k <= j:
+                        break
+                
+                k = get_block_right_bound(temp_route_node_list, i)
+                if k == route_node_len - 1:
+                    break
+                
+                if i + 1 < k and k < j:
+                    if not REV[k + 1][j]:
+                        continue
+                    else:
+                        temp = temp_route_node_list[k + 1: j + 1]
+                        del temp_route_node_list[k + 1: j + 1]
+                        temp_route_node_list[i + 1:i + 1] = temp
+                        
+                        temp_route_node_list = reverse_route(temp_route_node_list, i + 1, i + j - k, vehicle)
+                        if not temp_route_node_list:
+                            continue
+                        
+                        cost = cost_of_a_route(temp_route_node_list, vehicle , id_to_vehicle , route_map , vehicleid_to_plan)
+                        
+                        if cost < min_cost_delta:
+                            print("tried case 2 improved" , file= sys.stderr )
+                            min_cost_delta = cost
+                            best_node_list = temp_route_node_list[:]
+                
+                if k >= j:
+                    continue
+                
+                if temp_route_node_list[i].delivery_item_list:
+                    if not REV[i + 2][j]:
+                        continue
+                    
+                    temp = temp_route_node_list[i + 2: j + 1]
+                    reserve_len = len(temp)
+                    del temp_route_node_list[i + 2: j + 1]
+                    temp_route_node_list[i + 1:i + 1] = temp
+                    
+                    temp_route_node_list = reverse_route(temp_route_node_list, i + 1, i + reserve_len, vehicle)
+                    if not temp_route_node_list :
+                        continue
+                    
+                    cost = cost_of_a_route(temp_route_node_list, vehicle , id_to_vehicle , route_map , vehicleid_to_plan)
+                    
+                    if cost < min_cost_delta:
+                        print("tried case 4 improved", file= sys.stderr  )
+                        min_cost_delta = cost
+                        best_node_list = temp_route_node_list[:]
+        
+        if min_cost_delta < cost0 :
+            is_improved = True
+            is_route_improved = True
+        if is_route_improved:
+            vehicleid_to_plan[vehicleID] = best_node_list
+        if is_improved and is_route_improved and is_limited:
+            break
+        endtime = time.time()
+        usedtime = (endtime - begintime)
+        if usedtime > 9 * 60:
+            print("TimeOut !!!!!!!!!!!!!!" )
+            return is_improved
+    return is_improved

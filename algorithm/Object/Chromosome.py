@@ -23,36 +23,82 @@ class Chromosome:
         mutate_solution(self , is_limited )
         self.fitness = self.evaluate_fitness()        
 
+    def mutate_for_ACO(self  ,is_limited = False):
+        mutation_for_ACO(self , is_limited )
+        self.fitness = self.evaluate_fitness() 
+
     def crossover(self, other: 'Chromosome' , PDG_map : Dict[str , List[Node]]) -> 'Chromosome':
         child_solution = crossover_solutions(self, other  , PDG_map)
         return child_solution
 
     def __repr__(self):
-        return f'Chromosome(Fitness: {self.fitness}, Solution: {self.solution})'
+        return f'Chromosome(Fitness: {self.fitness}, Solution: {get_route_after(self.solution , {})})'
 
-def mutate_solution(individual : Chromosome , is_limited = False):
-    n1  , n2 , n3 , n4 , n5 = 0 , 0 , 0 , 0 , 0
+def mutate_solution(indivisual : Chromosome , is_limited = False):
+    n1 , n2 , n3 , n4, n5 = 0 ,0 ,0 ,0 ,0
     begin_time = time.time()
     i  = 1
     while i < LS_MAX:
         is_improved = False
-        if inter_couple_exchange(individual.solution , individual.id_to_vehicle , individual.route_map , is_limited):
+        if inter_couple_exchange(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
             n1 +=1
             is_improved = True
-        if block_exchange(individual.solution , individual.id_to_vehicle , individual.route_map , is_limited):
+        if block_exchange(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
             n2 +=1
             is_improved = True
-        if block_relocate(individual.solution , individual.id_to_vehicle , individual.route_map , is_limited):
+            
+        if block_relocate(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
             is_improved = True
             n3 +=1
-            
-        if multi_pd_group_relocate(individual.solution , individual.id_to_vehicle , individual.route_map , is_limited):
+        if multi_pd_group_relocate(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
+            n4 +=1
             is_improved = True
-            n4 += 1
+        
+        if improve_ci_path_by_2_opt(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , begin_time , is_limited):
+            n5 +=1
+            is_improved = True
+        
         if is_improved:
             i += 1
-        else: break
-    print(f"PDPairExchange:{n1} cost:{total_cost(individual.id_to_vehicle , individual.route_map , individual.solution ):.2f}" , file= sys.stderr  )
+        else:
+            break
+    print(f"PDPairExchange:{n1}; BlockExchange:{n2}; BlockRelocate:{n3}; mPDG:{n4}; 2opt:{n5}; cost:{total_cost(indivisual.id_to_vehicle , indivisual.route_map , indivisual.solution ):.2f}" , file= sys.stderr  )
+
+def mutation_for_ACO(indivisual : Chromosome , is_limited = False):
+    n1 , n2 , n3 , n4, n5 = 0 ,0 ,0 ,0 ,0
+    begin_time = time.time()
+    i  = 1
+    while True:
+        is_improved = False
+        if inter_couple_exchange(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
+            n1 +=1
+            is_improved = True
+            continue
+        if block_exchange(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
+            n2 +=1
+            is_improved = True
+            continue
+            
+        if block_relocate(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
+            is_improved = True
+            n3 +=1
+            continue
+            
+        if multi_pd_group_relocate(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
+            n4 +=1
+            is_improved = True
+            continue
+            
+        if improve_ci_path_by_2_opt(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , begin_time , is_limited):
+            n5 +=1
+            is_improved = True
+            continue
+        
+        if is_improved:
+            i += 1
+        else:
+            break
+    print(f"PDPairExchange:{n1}; BlockExchange:{n2}; BlockRelocate:{n3}; mPDG:{n4}; 2opt:{n5}; cost:{total_cost(indivisual.id_to_vehicle , indivisual.route_map , indivisual.solution ):.2f}" , file= sys.stderr  )
 
 
 def crossover_solutions(parent1: Chromosome , parent2: Chromosome , PDG_map : Dict[str , List[Node]]):

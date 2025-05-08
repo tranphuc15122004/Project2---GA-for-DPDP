@@ -5,14 +5,19 @@ from algorithm.algorithm_config import *
 import random
 from algorithm.engine import *
 
-def GA(initial_vehicleid_to_plane : Dict[str , List[Node]] ,route_map: Dict[Tuple, Tuple], id_to_vehicle: Dict[str, Vehicle] ,Unongoing_super_nodes : Dict[int , Dict[str, Node]] , Base_vehicleid_to_plan : Dict[str , List[Node]]) -> Chromosome:
+def GA(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tuple, Tuple], id_to_vehicle: Dict[str, Vehicle] ,Unongoing_super_nodes : Dict[int , Dict[str, Node]] , Base_vehicleid_to_plan : Dict[str , List[Node]]) -> Chromosome:
     population : List[Chromosome] = []
     PDG_map : Dict[str , List[Node]] = {}
-    population , PDG_map = generate_random_chromosome(initial_vehicleid_to_plane , route_map , id_to_vehicle , Unongoing_super_nodes , Base_vehicleid_to_plan , POPULATION_SIZE)
+    population ,  PDG_map = generate_random_chromosome(initial_vehicleid_to_plan , route_map , id_to_vehicle , Unongoing_super_nodes , Base_vehicleid_to_plan  , POPULATION_SIZE)
+
 
     if population is None:
         print('Cant initialize the population')
         return None
+    
+    print()
+    print(len(PDG_map))
+    print(get_route_after(Base_vehicleid_to_plan , {}))
 
     best_solution : Chromosome = None
     stagnant_generations = 0  # Biến đếm số thế hệ không cải thiện
@@ -23,21 +28,19 @@ def GA(initial_vehicleid_to_plane : Dict[str , List[Node]] ,route_map: Dict[Tupl
     
     for gen in range(NUMBER_OF_GENERATION):
         new_population = []
-        
-        new_population , _ = generate_random_chromosome(initial_vehicleid_to_plane , route_map , id_to_vehicle , Unongoing_super_nodes , Base_vehicleid_to_plan , 2 *  POPULATION_SIZE)
-        
-        while len(new_population) < 2* POPULATION_SIZE:
+
+        while len(new_population) < POPULATION_SIZE:
             parent1, parent2 = select_parents(population)
             child = parent1.crossover(parent2, PDG_map)
             new_population.append(child)
-        
         # Sắp xếp lại quần thể và lấy 20 cá thể tốt nhất
         population.extend(new_population)
         population.sort(key=lambda x: x.fitness)
         population = population[:POPULATION_SIZE]
 
         for c in population:
-            c.mutate(True)
+            if random.uniform(0 , 1) <= MUTATION_RATE:
+                c.mutate(True)
 
         # Sắp xếp lại quần thể sau đột biến
         population.sort(key=lambda x: x.fitness)
@@ -54,7 +57,6 @@ def GA(initial_vehicleid_to_plane : Dict[str , List[Node]] ,route_map: Dict[Tupl
             print("Stopping early due to lack of improvement.")
             break
 
-        # Xu ly truong hop timeout
         endtime = time.time()
         if time_of_1_gen == 0:
             time_of_1_gen = endtime - begintime
@@ -63,8 +65,10 @@ def GA(initial_vehicleid_to_plane : Dict[str , List[Node]] ,route_map: Dict[Tupl
             print("TimeOut!!")
             break
         
+        for c in population:
+            print(get_route_after(c.solution , {})  , file= sys.stderr)
         print(f'Generation {gen+1}: Best Fitness = {best_solution.fitness}')
-    return best_solution    
+    return best_solution      
 
 # Chọn lọc cha mẹ bằng phương pháp tournament selection
 def select_parents(population: List[Chromosome]) -> Tuple[Chromosome, Chromosome]:

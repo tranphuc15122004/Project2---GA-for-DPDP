@@ -1376,12 +1376,11 @@ def deal_old_solution_file(id2VehicleMap):
         if os.path.exists(file_path):
             os.remove(file_path)
             
-def single_vehicle_cost(route_node_list: List[Node] , vehicle:Vehicle , route_map: Dict[tuple[str , str] , tuple[str , str]] , mode = 'total'):
+def single_vehicle_cost(route_node_list: List[Node] , vehicle:Vehicle , route_map: Dict[tuple[str , str] , tuple[str , str]]):
     curr_factoryID = vehicle.cur_factory_id
     utilTime :int = 0
     driving_dis :float= 0.0
     overtime_sum :float= 0.0
-    orderNum :int= 0
     objF: float  = 0.0
     capacity = vehicle.board_capacity
     
@@ -1452,10 +1451,6 @@ def single_vehicle_cost(route_node_list: List[Node] , vehicle:Vehicle , route_ma
             curr_factoryID = next_factoryID
     
     objF = Delta1 * overtime_sum + driving_dis
-    if mode == 'distance':
-        return driving_dis
-    elif mode == 'overtime':
-        return Delta1 * overtime_sum
     return objF
 
 def get_couple_end_idx_map(route_node_list: List[Node]):
@@ -1530,3 +1525,280 @@ def dispatch_order_to_best(node_list: List[Node], cp_vehicle_id2_planned_route :
                     best_insert_pos_j = j
                     best_insert_vehicle_id = vehicle_id
     return min_cost_delta, best_insert_pos_i, best_insert_pos_j, best_insert_vehicle_id
+
+
+
+def get_couple_end_idx_map(route_node_list: List[Node]):
+    couple_end_idx_map = {}
+    for i, node in enumerate(route_node_list):
+        if node.pickup_item_list:
+            for j in range(i + 1, len(route_node_list)):
+                if (route_node_list[j].delivery_item_list):
+                    len_delivery = len(route_node_list[j].delivery_item_list)
+                    if (node.pickup_item_list[0].id ==route_node_list[j].delivery_item_list[len_delivery - 1].id):
+                        couple_end_idx_map[node.pickup_item_list[0].id] = j
+                        break
+    return couple_end_idx_map
+
+
+def dispatch_order_to_best(node_list: List[Node], cp_vehicle_id2_planned_route :Dict[str , List[Node]], id_to_vehicle: Dict[str , Vehicle] , route_map: Dict[Tuple[str , str] , Tuple[str , str]]):
+    best_insert_pos_i = -1
+    best_insert_pos_j = -1 
+    best_insert_vehicle_id = ''
+    
+    pickup_node_list = node_list[:len(node_list) // 2]
+    delivery_node_list = node_list[len(node_list) // 2:]
+    min_cost_delta = math.inf
+    block_len = len(pickup_node_list)
+    
+    index = 0
+    
+    for vehicle_id, vehicle in id_to_vehicle.items():
+        vehicle_id = f"V_{index + 1}"
+        index += 1
+        
+        route_node_list = cp_vehicle_id2_planned_route.get(vehicle_id, [])
+        cost_value0 = single_vehicle_cost(route_node_list, vehicle , route_map )
+        node_list_size = len(route_node_list) if route_node_list else 0
+        couple_end_idx_map = get_couple_end_idx_map(route_node_list) if route_node_list else {}
+        
+        insert_pos = 1 if vehicle.des else 0
+        
+        for i in range(insert_pos, node_list_size + 1):
+            temp_route_node_list = list(route_node_list) if route_node_list else []
+            temp_route_node_list[i:i] = pickup_node_list
+            
+            for j in range(block_len + i, node_list_size + block_len + 1):
+                if j == block_len + i:
+                    temp_route_node_list[j:j] = delivery_node_list
+                else:
+                    # Neu vi tri truoc do la node nhan hang
+                    if (temp_route_node_list[j - 1].pickup_item_list and len(temp_route_node_list[j - 1].pickup_item_list) > 0):
+                        order_item_id = temp_route_node_list[j - 1].pickup_item_list[0].id
+                        j = block_len + couple_end_idx_map.get(order_item_id, j) + 1
+                        temp_route_node_list[j:j] = delivery_node_list
+                    # Neu truoc do la node giao hang
+                    elif (temp_route_node_list[j - 1].delivery_item_list):
+                        is_terminal = True
+                        for k in range(j - 2, -1, -1):
+                            if (temp_route_node_list[k].pickup_item_list and temp_route_node_list[k].pickup_item_list):
+                                last_delivery_item = temp_route_node_list[j - 1].delivery_item_list[-1].id
+                                first_pickup_item = temp_route_node_list[k].pickup_item_list[0].id
+                                if last_delivery_item == first_pickup_item:
+                                    is_terminal = (k < i)
+                                    break
+                        if is_terminal:
+                            break
+                        temp_route_node_list[j:j] = delivery_node_list
+                
+                cost_value = single_vehicle_cost(temp_route_node_list, vehicle , route_map )
+                del temp_route_node_list[j:j + block_len]
+                
+                if (cost_value - cost_value0) < min_cost_delta:
+                    min_cost_delta = cost_value - cost_value0
+                    best_insert_pos_i = i
+                    best_insert_pos_j = j
+                    best_insert_vehicle_id = vehicle_id
+    return min_cost_delta, best_insert_pos_i, best_insert_pos_j, best_insert_vehicle_id
+
+
+def CHECK(temp_route_node_list: List[Node], begin_pos: int):
+    route_len = len(temp_route_node_list)
+    is_feasible = [[False] * route_len for _ in range(route_len)]
+    
+    for i in range(begin_pos, route_len - 1):
+        first_node = temp_route_node_list[i]
+        if first_node.delivery_item_list:
+            continue
+        
+        for j in range(i + 1, route_len):
+            last_node = temp_route_node_list[j]
+            if last_node.pickup_item_list:
+                continue
+            
+            node_list : List[Node] = []
+            is_d_node_redundant = False
+            
+            for k in range(i, j + 1):
+                node = temp_route_node_list[k]
+                if node.pickup_item_list:
+                    node_list.insert(0, node)
+                else:
+                    if (node_list) and (node_list[0].pickup_item_list) and (node_list[0].pickup_item_list[0].id == node.delivery_item_list[- 1].id):
+                        node_list.pop(0)
+                    else:
+                        is_d_node_redundant = True
+                        break
+            
+            if (not node_list) and (not is_d_node_redundant):
+                is_feasible[i][j] = True
+    
+    return is_feasible
+
+def is_overlapped(temp_route_node_list: List[Node], i: int) -> int:
+    heap : List[Node] = []
+    
+    for k in range(i):
+        if temp_route_node_list[k].pickup_item_list :
+            heap.insert(0, temp_route_node_list[k])
+        else:
+            if heap and temp_route_node_list[k].delivery_item_list[-1].id == heap[0].pickup_item_list[0].id:
+                heap.pop(0)
+
+    idx = 0
+    k = i + 2
+
+    if heap:
+        # sau hàm này thì k sẽ trả về vị trí mà chỉ đã xử lý tất cả các cặp PD đầy đủ 
+        # Phần còn lại phía sau k (nếu có) chỉ là các node D và không có P (tức là đã nhận hàng)
+        while k < len(temp_route_node_list):
+            if temp_route_node_list[k].delivery_item_list:
+                if heap[0].pickup_item_list[0].id == temp_route_node_list[k].delivery_item_list[-1].id:
+                    idx = k
+                    heap.pop(0)
+                    if not heap or len(heap) == 0:
+                        k += 1
+                        break
+            k += 1
+
+    # duyệt từ vị trí đó đến hết (tất cả các node D cô độc còn lại)
+    while k < len(temp_route_node_list):
+        if temp_route_node_list[k].delivery_item_list:
+            idx += 1
+        else:
+            break
+        k += 1
+    # trả về vị trí node D cô độc cuối cùng
+    return idx
+
+def get_block_right_bound(temp_route_node_list: List[Node], i: int) -> int:
+    idx = -1
+
+    if temp_route_node_list[i].delivery_item_list:
+        return idx
+    else:
+        order_item0_id = temp_route_node_list[i].pickup_item_list[0].id
+        for k in range(i + 1, len(temp_route_node_list)):
+            if temp_route_node_list[k].delivery_item_list:
+                if order_item0_id == temp_route_node_list[k].delivery_item_list[-1].id:
+                    idx = k
+                    break
+    return idx
+
+def get_first_p_node_idx(p_and_d_node_map: Dict[str, Node]) -> int:
+    first_key = next(iter(p_and_d_node_map)) 
+    p_len = len(p_and_d_node_map) // 2
+    first_p_node_idx = int(first_key.split(",")[1]) - p_len + 1
+    return first_p_node_idx
+
+def reverse_route(temp_node_list: List[Node], begin_pos: int, end_pos: int, vehicle: Vehicle) -> Optional[List[Node]]:
+    unongoing_super_node: Dict[int, Dict[str, Node]] = {}
+    vehicle_id = vehicle.id
+
+    if temp_node_list and len(temp_node_list) > 0:
+        pickup_node_heap: List[Node] = []
+        p_node_idx_heap: List[int] = []
+        p_and_d_node_map: Dict[str, Node] = {}
+        before_p_factory_id = None
+        before_d_factory_id = None
+        before_p_node_idx = 0
+        before_d_node_idx = 0
+
+        for i in range(begin_pos, end_pos + 1):
+            node = temp_node_list[i]
+            if (node.delivery_item_list and node.pickup_item_list):
+                print("Exist combine Node exception when LS", file=sys.stderr)
+                return None
+
+            heap_top_order_item_id = pickup_node_heap[0].pickup_item_list[0].id if pickup_node_heap else ""
+            if node.delivery_item_list:
+                len_delivery = len(node.delivery_item_list)
+                if len_delivery > 0 and node.delivery_item_list[-1].id == heap_top_order_item_id:
+                    pickup_node_key = f"{vehicle_id},{p_node_idx_heap[0]}"
+                    delivery_node_key = f"{vehicle_id},{i}"
+                    if len(p_and_d_node_map) >= 2:
+                        if (pickup_node_heap[0].id != before_p_factory_id or
+                            p_node_idx_heap[0] + 1 != before_p_node_idx or
+                            node.id != before_d_factory_id or
+                            i - 1 != before_d_node_idx):
+                            first_p_node_idx = get_first_p_node_idx(p_and_d_node_map)
+                            unongoing_super_node[first_p_node_idx] = copy.deepcopy(p_and_d_node_map)
+                            p_and_d_node_map.clear()
+                    p_and_d_node_map[pickup_node_key] = pickup_node_heap.pop(0)
+                    p_and_d_node_map[delivery_node_key] = node
+                    before_p_factory_id = p_and_d_node_map[pickup_node_key].id
+                    before_p_node_idx = p_node_idx_heap.pop(0)
+                    before_d_factory_id = node.id
+                    before_d_node_idx = i
+
+            if node.pickup_item_list:
+                pickup_node_heap.insert(0, node)
+                p_node_idx_heap.insert(0, i)
+                if p_and_d_node_map:
+                    first_p_node_idx = get_first_p_node_idx(p_and_d_node_map)
+                    unongoing_super_node[first_p_node_idx] = copy.deepcopy(p_and_d_node_map)
+                    p_and_d_node_map.clear()
+
+        if len(p_and_d_node_map) >= 2:
+            first_p_node_idx = get_first_p_node_idx(p_and_d_node_map)
+            unongoing_super_node[first_p_node_idx] =copy.deepcopy(p_and_d_node_map)
+
+    if len(unongoing_super_node) < 2:
+        return None
+
+    # Sắp xếp unongoing_super_node theo key
+    sorted_map = sorted(unongoing_super_node.items(), key=lambda x: x[0])
+    unongoing_super_node.clear()
+    for key, value in sorted_map:
+        unongoing_super_node[key] = value
+
+    # Xây dựng block_map
+    before_block_i = -1
+    before_block_j = -1
+    block_map: Dict[str, List[Node]] = {}
+
+    for idx, pdg in unongoing_super_node.items():
+        node_list: List[Node] = []
+        pos_i = 0
+        pos_j = 0
+        d_num = len(pdg) // 2
+        index = 0
+
+        if pdg:
+            for v_and_pos_str, node in pdg.items():
+                vehicle_id_from_key, pos_str = v_and_pos_str.split(",")
+                pos = int(pos_str)
+                if index % 2 == 0:  # Pickup node
+                    pos_i = pos
+                    node_list.insert(0, node)
+                    index += 1
+                else:  # Delivery node
+                    pos_j = pos
+                    node_list.append(node)
+                    index += 1
+                    pos_j = pos_j - d_num + 1
+
+            if pos_i > before_block_j:
+                for i in range(pos_i + d_num, pos_j):
+                    node_list.insert(i - pos_i, temp_node_list[i])
+                key = f"{vehicle_id},{pos_i}+{pos_j + d_num - 1}"
+                block_map[key] = node_list
+                before_block_i = pos_i
+                before_block_j = pos_j + d_num - 1
+
+    if len(block_map) < 2:
+        return None
+
+    # Đảo ngược các block và xây dựng result_node_list
+    result_node_list: List[Node] = []
+    reverse_block_node_list: List[Node] = []
+
+    for block in block_map.values():
+        reverse_block_node_list = block + reverse_block_node_list
+
+    # Thêm các phần tử từ temp_node_list
+    result_node_list.extend(temp_node_list[:begin_pos])
+    result_node_list.extend(reverse_block_node_list)
+    result_node_list.extend(temp_node_list[end_pos + 1:])
+
+    return result_node_list

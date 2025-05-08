@@ -7,10 +7,18 @@ debugPeriod = "0010-0020"
 addDelta = 300000.0
 
 """GA configuration"""
-POPULATION_SIZE = 20
-NUMBER_OF_GENERATION = 20
+POPULATION_SIZE = 30
+NUMBER_OF_GENERATION = 50
 MUTATION_RATE = 1
 LS_MAX = 5
+
+""" ACO configuration """
+ALPHA = 1.0          # Mức độ ảnh hưởng của pheromone
+BETA = 2.0           # Mức độ ảnh hưởng của heuristic
+RHO = 0.1            # Tốc độ bốc hơi pheromone
+Q = 100              # Hằng số dùng trong cập nhật pheromone
+BASE_PHEROMONE = 0.1         # Giá trị pheromone cơ bản\
+EVAPORATION_RATE = 0.2  # Hệ số bay hơi (0.0 - 1.0)
 
 
 """modle"""

@@ -5,6 +5,8 @@ from algorithm.In_and_Out import *
 from algorithm.Object import *
 from algorithm.engine import *
 from algorithm.GA import GA
+from algorithm.ACO import ACO
+
 
 
 input_directory = r'algorithm\data_interaction'
@@ -30,11 +32,16 @@ def main():
     else:
         dispatch_new_orders(vehicleid_to_plan , id_to_factory , route_map , id_to_vehicle , id_to_unlocated_items , new_order_itemIDs)
     
-    Unongoing_super_nodes , Base_vehicleid_to_plan= get_UnongoingSuperNode(vehicleid_to_plan , id_to_vehicle )
+    Unongoing_super_nodes , Base_vehicleid_to_plan= get_UnongoingSuperNode(vehicleid_to_plan , id_to_vehicle)
     
-    best_chromosome : Chromosome =  GA( vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
+    """ best_chromosome : Chromosome =  GA( vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
     if best_chromosome is None:
+        best_chromosome = Chromosome(vehicleid_to_plan , route_map , id_to_vehicle) """
+    
+    best_chromosome : Chromosome =  ACO(vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
+    if best_chromosome is None or best_chromosome.fitness > total_cost(id_to_vehicle , route_map , vehicleid_to_plan):
         best_chromosome = Chromosome(vehicleid_to_plan , route_map , id_to_vehicle)
+    best_chromosome.mutate_for_ACO()
     
     print()
     print(get_route_after(vehicleid_to_plan , {}))

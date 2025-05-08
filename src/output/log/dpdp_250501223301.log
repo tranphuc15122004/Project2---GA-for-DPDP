@@ -1,0 +1,2394 @@
+2025-05-01 22:33:01,565 [main.py         | 28] INFO: Start to run instance_2
+2025-05-01 22:33:01,566 [simulate_api.py | 60] INFO: Start time of the simulator: 2025-05-01 00:00:00, time interval:  600.00
+2025-05-01 22:33:01,574 [input_utils.py  | 28] INFO: Get 154 factories
+2025-05-01 22:33:02,508 [input_utils.py  | 32] INFO: Get 23562 routes
+2025-05-01 22:33:02,521 [input_utils.py  | 37] INFO: Get 5 vehicles
+2025-05-01 22:33:02,547 [input_utils.py  | 41] INFO: Get 50 orders
+2025-05-01 22:33:02,548 [simulate_api.py | 87] INFO: Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+2025-05-01 22:33:02,548 [simulate_api.py | 87] INFO: Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+2025-05-01 22:33:02,549 [simulate_api.py | 87] INFO: Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+2025-05-01 22:33:02,549 [simulate_api.py | 87] INFO: Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+2025-05-01 22:33:02,549 [simulate_api.py | 87] INFO: Initial position of V_5 is becb4f85393540b287e7329758b8d832
+2025-05-01 22:33:02,549 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:02,549 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 00:10:00, pre time: 2025-05-01 00:00:00
+2025-05-01 22:33:02,550 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 00:10:00
+2025-05-01 22:33:02,550 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 0 ongoing order items, 0 completed order items
+2025-05-01 22:33:03,828 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:33:03,831 [simulate_environment.py | 254] INFO: 2025-05-01 00:10:00, Item 0015000001-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:03,831 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:03,832 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 00:20:00, pre time: 2025-05-01 00:10:00
+2025-05-01 22:33:03,832 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 00:20:00
+2025-05-01 22:33:03,833 [simulate_environment.py | 167] INFO: Get 4 unallocated order items, 0 ongoing order items, 0 completed order items
+2025-05-01 22:33:05,127 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 6.6
+Iteration 2: Best Fitness = 6.6
+Iteration 3: Best Fitness = 6.6
+Iteration 4: Best Fitness = 6.6
+Iteration 5: Best Fitness = 6.6
+Iteration 6: Best Fitness = 6.6
+Iteration 7: Best Fitness = 6.6
+Iteration 8: Best Fitness = 6.6
+Iteration 9: Best Fitness = 6.6
+Iteration 10: Best Fitness = 6.6
+Iteration 11: Best Fitness = 6.6
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[p1_0017490002-1 d1_0017490002-1] V_4:[] V_5:[p3_0015000001-1 d3_0015000001-3]
+V_1:[] V_2:[] V_3:[p1_0017490002-1 p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 6.6 , after EA 6.6
+SUCCESS
+
+2025-05-01 22:33:05,143 [simulate_environment.py | 254] INFO: 2025-05-01 00:20:00, Item 0015000001-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:05,144 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:05,144 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 00:30:00, pre time: 2025-05-01 00:20:00
+2025-05-01 22:33:05,144 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 00:30:00
+2025-05-01 22:33:05,153 [simulate_environment.py | 167] INFO: Get 3 unallocated order items, 1 ongoing order items, 0 completed order items
+2025-05-01 22:33:06,720 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 6.540000000000001 , after EA 6.540000000000001
+SUCCESS
+
+2025-05-01 22:33:06,734 [simulate_environment.py | 254] INFO: 2025-05-01 00:30:00, Item 0015000001-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:06,734 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:06,735 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 00:40:00, pre time: 2025-05-01 00:30:00
+2025-05-01 22:33:06,735 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 00:40:00
+2025-05-01 22:33:06,747 [simulate_environment.py | 167] INFO: Get 3 unallocated order items, 1 ongoing order items, 0 completed order items
+2025-05-01 22:33:08,101 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 6.540000000000001 , after EA 6.540000000000001
+SUCCESS
+
+2025-05-01 22:33:08,103 [simulate_environment.py | 254] INFO: 2025-05-01 00:40:00, Item 0015000001-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:08,104 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:08,104 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 00:50:00, pre time: 2025-05-01 00:40:00
+2025-05-01 22:33:08,105 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 00:50:00
+2025-05-01 22:33:08,107 [simulate_environment.py | 167] INFO: Get 6 unallocated order items, 1 ongoing order items, 0 completed order items
+2025-05-01 22:33:09,339 [simulate_environment.py | 232] INFO: 
+
+V_1:[p3_0040070003-1 d3_0040070003-3] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[p3_0040070003-1 d3_0040070003-3] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 15.959999999999999 , after EA 15.959999999999999
+SUCCESS
+
+2025-05-01 22:33:09,351 [simulate_environment.py | 254] INFO: 2025-05-01 00:50:00, Item 0015000001-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:09,352 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:09,352 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 01:00:00, pre time: 2025-05-01 00:50:00
+2025-05-01 22:33:09,352 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 01:00:00
+2025-05-01 22:33:09,356 [simulate_environment.py | 167] INFO: Get 6 unallocated order items, 1 ongoing order items, 0 completed order items
+2025-05-01 22:33:10,656 [simulate_environment.py | 232] INFO: 
+
+V_1:[p3_0040070003-1 d3_0040070003-3] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[p3_0040070003-1 d3_0040070003-3] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 9.940000000000001 , after EA 9.940000000000001
+SUCCESS
+
+2025-05-01 22:33:10,672 [simulate_environment.py | 254] INFO: 2025-05-01 01:00:00, Item 0015000001-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:10,673 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:10,673 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 01:10:00, pre time: 2025-05-01 01:00:00
+2025-05-01 22:33:10,674 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 01:10:00
+2025-05-01 22:33:10,684 [simulate_environment.py | 167] INFO: Get 6 unallocated order items, 1 ongoing order items, 0 completed order items
+2025-05-01 22:33:11,959 [simulate_environment.py | 232] INFO: 
+
+V_1:[p3_0040070003-1 d3_0040070003-3] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[p3_0040070003-1 d3_0040070003-3] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 9.940000000000001 , after EA 9.940000000000001
+SUCCESS
+
+2025-05-01 22:33:11,963 [simulate_environment.py | 254] INFO: 2025-05-01 01:10:00, Item 0015000001-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:11,964 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:11,964 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 01:20:00, pre time: 2025-05-01 01:10:00
+2025-05-01 22:33:11,965 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 01:20:00
+2025-05-01 22:33:11,967 [simulate_environment.py | 167] INFO: Get 3 unallocated order items, 4 ongoing order items, 0 completed order items
+2025-05-01 22:33:13,264 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[p3_0015000001-1 d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 9.940000000000001 , after EA 9.940000000000001
+SUCCESS
+
+2025-05-01 22:33:13,275 [simulate_environment.py | 254] INFO: 2025-05-01 01:20:00, Item 0015000001-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:13,275 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:13,275 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 01:30:00, pre time: 2025-05-01 01:20:00
+2025-05-01 22:33:13,275 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 01:30:00
+2025-05-01 22:33:13,278 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 7 ongoing order items, 0 completed order items
+2025-05-01 22:33:14,619 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 9.940000000000001 , after EA 9.940000000000001
+SUCCESS
+
+2025-05-01 22:33:14,627 [simulate_environment.py | 254] INFO: 2025-05-01 01:30:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:14,627 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:14,628 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 01:40:00, pre time: 2025-05-01 01:30:00
+2025-05-01 22:33:14,628 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 01:40:00
+2025-05-01 22:33:14,638 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 7 ongoing order items, 0 completed order items
+2025-05-01 22:33:15,990 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 9.940000000000001 , after EA 9.940000000000001
+SUCCESS
+
+2025-05-01 22:33:15,992 [simulate_environment.py | 254] INFO: 2025-05-01 01:40:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:15,992 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:15,992 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 01:50:00, pre time: 2025-05-01 01:40:00
+2025-05-01 22:33:15,993 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 01:50:00
+2025-05-01 22:33:15,997 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 7 ongoing order items, 0 completed order items
+2025-05-01 22:33:17,257 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 9.940000000000001 , after EA 9.940000000000001
+SUCCESS
+
+2025-05-01 22:33:17,260 [simulate_environment.py | 254] INFO: 2025-05-01 01:50:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:17,260 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:17,260 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 02:00:00, pre time: 2025-05-01 01:50:00
+2025-05-01 22:33:17,260 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 02:00:00
+2025-05-01 22:33:17,263 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 7 ongoing order items, 0 completed order items
+2025-05-01 22:33:18,534 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 3.04 , after EA 3.04
+SUCCESS
+
+2025-05-01 22:33:18,538 [simulate_environment.py | 254] INFO: 2025-05-01 02:00:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:18,538 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:18,539 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 02:10:00, pre time: 2025-05-01 02:00:00
+2025-05-01 22:33:18,539 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 02:10:00
+2025-05-01 22:33:18,544 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 7 ongoing order items, 0 completed order items
+2025-05-01 22:33:19,866 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:33:19,869 [simulate_environment.py | 254] INFO: 2025-05-01 02:10:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:19,869 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:19,869 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 02:20:00, pre time: 2025-05-01 02:10:00
+2025-05-01 22:33:19,869 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 02:20:00
+2025-05-01 22:33:19,872 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 7 ongoing order items, 0 completed order items
+2025-05-01 22:33:21,208 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:33:21,210 [simulate_environment.py | 254] INFO: 2025-05-01 02:20:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:21,211 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:21,211 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 02:30:00, pre time: 2025-05-01 02:20:00
+2025-05-01 22:33:21,211 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 02:30:00
+2025-05-01 22:33:21,216 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 7 ongoing order items, 0 completed order items
+2025-05-01 22:33:22,423 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[d3_0015000001-3 d1_0017490002-1] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:33:22,426 [simulate_environment.py | 254] INFO: 2025-05-01 02:30:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:22,426 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:22,428 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 02:40:00, pre time: 2025-05-01 02:30:00
+2025-05-01 22:33:22,428 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 02:40:00
+2025-05-01 22:33:22,434 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 3 ongoing order items, 4 completed order items
+2025-05-01 22:33:23,743 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:33:23,752 [simulate_environment.py | 254] INFO: 2025-05-01 02:40:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:23,753 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:23,753 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 02:50:00, pre time: 2025-05-01 02:40:00
+2025-05-01 22:33:23,753 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 02:50:00
+2025-05-01 22:33:23,762 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 3 ongoing order items, 4 completed order items
+2025-05-01 22:33:25,092 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:33:25,095 [simulate_environment.py | 254] INFO: 2025-05-01 02:50:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:25,096 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:25,096 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 03:00:00, pre time: 2025-05-01 02:50:00
+2025-05-01 22:33:25,096 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 03:00:00
+2025-05-01 22:33:25,106 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 3 ongoing order items, 4 completed order items
+2025-05-01 22:33:26,412 [simulate_environment.py | 232] INFO: 
+
+V_1:[d3_0040070003-3] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d3_0040070003-3] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:33:26,415 [simulate_environment.py | 254] INFO: 2025-05-01 03:00:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:26,415 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:26,416 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 03:10:00, pre time: 2025-05-01 03:00:00
+2025-05-01 22:33:26,416 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 03:10:00
+2025-05-01 22:33:26,419 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 0 ongoing order items, 7 completed order items
+2025-05-01 22:33:27,781 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:33:27,783 [simulate_environment.py | 254] INFO: 2025-05-01 03:10:00, Item 0313400004-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:27,784 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:27,784 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 03:20:00, pre time: 2025-05-01 03:10:00
+2025-05-01 22:33:27,784 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 03:20:00
+2025-05-01 22:33:27,794 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 7 completed order items
+2025-05-01 22:33:29,124 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_0313400004-1 d1_0313400004-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_0313400004-1 d1_0313400004-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.28 , after EA 0.28
+SUCCESS
+
+2025-05-01 22:33:29,137 [simulate_environment.py | 254] INFO: 2025-05-01 03:20:00, Item 0313400004-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:29,137 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:29,137 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 03:30:00, pre time: 2025-05-01 03:20:00
+2025-05-01 22:33:29,138 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 03:30:00
+2025-05-01 22:33:29,153 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 7 completed order items
+2025-05-01 22:33:30,405 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_0313400004-1 d1_0313400004-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_0313400004-1 d1_0313400004-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.28 , after EA 0.28
+SUCCESS
+
+2025-05-01 22:33:30,418 [simulate_environment.py | 254] INFO: 2025-05-01 03:30:00, Item 0313400004-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:30,419 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:30,419 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 03:40:00, pre time: 2025-05-01 03:30:00
+2025-05-01 22:33:30,419 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 03:40:00
+2025-05-01 22:33:30,434 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 7 completed order items
+2025-05-01 22:33:31,714 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_0313400004-1 d1_0313400004-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_0313400004-1 d1_0313400004-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.28 , after EA 0.28
+SUCCESS
+
+2025-05-01 22:33:31,717 [simulate_environment.py | 254] INFO: 2025-05-01 03:40:00, Item 0313400004-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:31,718 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:31,718 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 03:50:00, pre time: 2025-05-01 03:40:00
+2025-05-01 22:33:31,718 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 03:50:00
+2025-05-01 22:33:31,731 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 1 ongoing order items, 7 completed order items
+2025-05-01 22:33:33,011 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0313400004-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d1_0313400004-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.06 , after EA 0.06
+SUCCESS
+
+2025-05-01 22:33:33,019 [simulate_environment.py | 254] INFO: 2025-05-01 03:50:00, Item 0357340005-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:33,019 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:33,020 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 04:00:00, pre time: 2025-05-01 03:50:00
+2025-05-01 22:33:33,020 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 04:00:00
+2025-05-01 22:33:33,028 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 1 ongoing order items, 7 completed order items
+2025-05-01 22:33:34,268 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0313400004-1] V_2:[] V_3:[p1_0357340005-1 d1_0357340005-1] V_4:[] V_5:[]
+V_1:[d1_0313400004-1] V_2:[] V_3:[p1_0357340005-1 d1_0357340005-1] V_4:[] V_5:[]
+The fitness score before EA 3.12 , after EA 3.12
+SUCCESS
+
+2025-05-01 22:33:34,280 [simulate_environment.py | 254] INFO: 2025-05-01 04:00:00, Item 0357340005-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:34,280 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:34,280 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 04:10:00, pre time: 2025-05-01 04:00:00
+2025-05-01 22:33:34,280 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 04:10:00
+2025-05-01 22:33:34,294 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 1 ongoing order items, 7 completed order items
+2025-05-01 22:33:35,514 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0313400004-1] V_2:[] V_3:[p1_0357340005-1 d1_0357340005-1] V_4:[] V_5:[]
+V_1:[d1_0313400004-1] V_2:[] V_3:[p1_0357340005-1 d1_0357340005-1] V_4:[] V_5:[]
+The fitness score before EA 1.6 , after EA 1.6
+SUCCESS
+
+2025-05-01 22:33:35,530 [simulate_environment.py | 254] INFO: 2025-05-01 04:10:00, Item 0357340005-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:35,530 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:35,531 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 04:20:00, pre time: 2025-05-01 04:10:00
+2025-05-01 22:33:35,531 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 04:20:00
+2025-05-01 22:33:35,544 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 1 ongoing order items, 8 completed order items
+2025-05-01 22:33:36,812 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[d1_0357340005-1] V_4:[] V_5:[p1_0412520006-1 d1_0412520006-1]
+V_1:[] V_2:[] V_3:[d1_0357340005-1] V_4:[] V_5:[p1_0412520006-1 d1_0412520006-1]
+The fitness score before EA 1.72 , after EA 1.72
+SUCCESS
+
+2025-05-01 22:33:36,826 [simulate_environment.py | 254] INFO: 2025-05-01 04:20:00, Item 0412520006-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:36,827 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:36,828 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 04:30:00, pre time: 2025-05-01 04:20:00
+2025-05-01 22:33:36,828 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 04:30:00
+2025-05-01 22:33:36,840 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 2 ongoing order items, 8 completed order items
+2025-05-01 22:33:38,224 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[d1_0357340005-1] V_4:[] V_5:[d1_0412520006-1]
+V_1:[] V_2:[] V_3:[d1_0357340005-1] V_4:[] V_5:[d1_0412520006-1]
+The fitness score before EA 1.72 , after EA 1.72
+SUCCESS
+
+2025-05-01 22:33:38,234 [simulate_environment.py | 254] INFO: 2025-05-01 04:30:00, Item 0510420007-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:38,234 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:38,234 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 04:40:00, pre time: 2025-05-01 04:30:00
+2025-05-01 22:33:38,234 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 04:40:00
+2025-05-01 22:33:38,247 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 2 ongoing order items, 8 completed order items
+2025-05-01 22:33:39,596 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[d1_0357340005-1] V_4:[] V_5:[d1_0412520006-1]
+V_1:[] V_2:[] V_3:[d1_0357340005-1] V_4:[] V_5:[d1_0412520006-1]
+The fitness score before EA 1.72 , after EA 1.72
+SUCCESS
+
+2025-05-01 22:33:39,598 [simulate_environment.py | 254] INFO: 2025-05-01 04:40:00, Item 0510420007-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:39,599 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:39,599 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 04:50:00, pre time: 2025-05-01 04:40:00
+2025-05-01 22:33:39,599 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 04:50:00
+2025-05-01 22:33:39,606 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 2 ongoing order items, 8 completed order items
+2025-05-01 22:33:40,811 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[d1_0357340005-1] V_4:[] V_5:[d1_0412520006-1]
+V_1:[] V_2:[] V_3:[d1_0357340005-1] V_4:[] V_5:[d1_0412520006-1]
+The fitness score before EA 0.18 , after EA 0.18
+SUCCESS
+
+2025-05-01 22:33:40,814 [simulate_environment.py | 254] INFO: 2025-05-01 04:50:00, Item 0510420007-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:40,814 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:40,814 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 05:00:00, pre time: 2025-05-01 04:50:00
+2025-05-01 22:33:40,814 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 05:00:00
+2025-05-01 22:33:40,825 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 1 ongoing order items, 9 completed order items
+2025-05-01 22:33:42,124 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[d1_0357340005-1] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[d1_0357340005-1] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:33:42,133 [simulate_environment.py | 254] INFO: 2025-05-01 05:00:00, Item 0510420007-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:42,133 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:42,133 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 05:10:00, pre time: 2025-05-01 05:00:00
+2025-05-01 22:33:42,133 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 05:10:00
+2025-05-01 22:33:42,138 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 0 ongoing order items, 10 completed order items
+2025-05-01 22:33:43,365 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:33:43,369 [simulate_environment.py | 254] INFO: 2025-05-01 05:10:00, Item 0510420007-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:43,370 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:43,370 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 05:20:00, pre time: 2025-05-01 05:10:00
+2025-05-01 22:33:43,371 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 05:20:00
+2025-05-01 22:33:43,374 [simulate_environment.py | 167] INFO: Get 3 unallocated order items, 0 ongoing order items, 10 completed order items
+2025-05-01 22:33:44,672 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 0.72
+Iteration 2: Best Fitness = 0.72
+Iteration 3: Best Fitness = 0.72
+Iteration 4: Best Fitness = 0.72
+Iteration 5: Best Fitness = 0.72
+Iteration 6: Best Fitness = 0.72
+Iteration 7: Best Fitness = 0.72
+Iteration 8: Best Fitness = 0.72
+Iteration 9: Best Fitness = 0.72
+Iteration 10: Best Fitness = 0.72
+Iteration 11: Best Fitness = 0.72
+Stopping early due to stagnation.
+
+V_1:[p1_0510420007-1 d1_0510420007-1 p2_0518250008-1 d2_0518250008-2] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_0510420007-1 d1_0510420007-1 p2_0518250008-1 d2_0518250008-2] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.72 , after EA 0.72
+SUCCESS
+
+2025-05-01 22:33:44,687 [simulate_environment.py | 254] INFO: 2025-05-01 05:20:00, Item 0510420007-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:44,688 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:44,688 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 05:30:00, pre time: 2025-05-01 05:20:00
+2025-05-01 22:33:44,688 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 05:30:00
+2025-05-01 22:33:44,700 [simulate_environment.py | 167] INFO: Get 3 unallocated order items, 1 ongoing order items, 10 completed order items
+2025-05-01 22:33:46,000 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 1.08
+Iteration 2: Best Fitness = 1.08
+Iteration 3: Best Fitness = 1.08
+Iteration 4: Best Fitness = 1.08
+Iteration 5: Best Fitness = 1.08
+Iteration 6: Best Fitness = 1.08
+Iteration 7: Best Fitness = 1.08
+Iteration 8: Best Fitness = 1.08
+Iteration 9: Best Fitness = 1.08
+Iteration 10: Best Fitness = 1.08
+Iteration 11: Best Fitness = 1.08
+Stopping early due to stagnation.
+
+V_1:[d1_0510420007-1 p2_0518250008-1 d2_0518250008-2] V_2:[p1_0522240009-1 d1_0522240009-1] V_3:[] V_4:[] V_5:[]
+V_1:[d1_0510420007-1] V_2:[p1_0522240009-1 d1_0522240009-1 p2_0518250008-1 d2_0518250008-2] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 1.2200000000000002 , after EA 1.08
+SUCCESS
+
+2025-05-01 22:33:46,016 [simulate_environment.py | 254] INFO: 2025-05-01 05:30:00, Item 0518250008-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:46,016 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:46,017 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 05:40:00, pre time: 2025-05-01 05:30:00
+2025-05-01 22:33:46,017 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 05:40:00
+2025-05-01 22:33:46,028 [simulate_environment.py | 167] INFO: Get 3 unallocated order items, 2 ongoing order items, 10 completed order items
+2025-05-01 22:33:47,380 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 1.2
+Iteration 2: Best Fitness = 1.2
+Iteration 3: Best Fitness = 1.2
+Iteration 4: Best Fitness = 1.2
+Iteration 5: Best Fitness = 1.2
+Iteration 6: Best Fitness = 1.2
+Iteration 7: Best Fitness = 1.2
+Iteration 8: Best Fitness = 1.2
+Iteration 9: Best Fitness = 1.2
+Iteration 10: Best Fitness = 1.2
+Iteration 11: Best Fitness = 1.2
+Stopping early due to stagnation.
+
+V_1:[d1_0510420007-1] V_2:[d1_0522240009-1 p2_0518250008-1 p1_0533190010-1 d1_0533190010-1 d2_0518250008-2] V_3:[] V_4:[] V_5:[]
+V_1:[d1_0510420007-1] V_2:[d1_0522240009-1 p1_0533190010-1 p2_0518250008-1 d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 1.48 , after EA 1.2
+SUCCESS
+
+2025-05-01 22:33:47,395 [simulate_environment.py | 254] INFO: 2025-05-01 05:40:00, Item 0518250008-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:47,396 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:47,396 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 05:50:00, pre time: 2025-05-01 05:40:00
+2025-05-01 22:33:47,396 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 05:50:00
+2025-05-01 22:33:47,403 [simulate_environment.py | 167] INFO: Get 3 unallocated order items, 2 ongoing order items, 10 completed order items
+2025-05-01 22:33:48,678 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 1.2
+Iteration 2: Best Fitness = 1.2
+Iteration 3: Best Fitness = 1.2
+Iteration 4: Best Fitness = 1.2
+Iteration 5: Best Fitness = 1.2
+Iteration 6: Best Fitness = 1.2
+Iteration 7: Best Fitness = 1.2
+Iteration 8: Best Fitness = 1.2
+Iteration 9: Best Fitness = 1.2
+Iteration 10: Best Fitness = 1.2
+Iteration 11: Best Fitness = 1.2
+Stopping early due to stagnation.
+
+V_1:[d1_0510420007-1] V_2:[d1_0522240009-1 p1_0533190010-1 p2_0518250008-1 d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+V_1:[d1_0510420007-1] V_2:[d1_0522240009-1 p1_0533190010-1 p2_0518250008-1 d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 1.2 , after EA 1.2
+SUCCESS
+
+2025-05-01 22:33:48,687 [simulate_environment.py | 254] INFO: 2025-05-01 05:50:00, Item 0518250008-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:48,687 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:48,687 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 06:00:00, pre time: 2025-05-01 05:50:00
+2025-05-01 22:33:48,688 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 06:00:00
+2025-05-01 22:33:48,701 [simulate_environment.py | 167] INFO: Get 3 unallocated order items, 1 ongoing order items, 11 completed order items
+2025-05-01 22:33:50,088 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 0.9399999999999998
+Iteration 2: Best Fitness = 0.9399999999999998
+Iteration 3: Best Fitness = 0.9399999999999998
+Iteration 4: Best Fitness = 0.9399999999999998
+Iteration 5: Best Fitness = 0.9399999999999998
+Iteration 6: Best Fitness = 0.9399999999999998
+Iteration 7: Best Fitness = 0.9399999999999998
+Iteration 8: Best Fitness = 0.9399999999999998
+Iteration 9: Best Fitness = 0.9399999999999998
+Iteration 10: Best Fitness = 0.9399999999999998
+Iteration 11: Best Fitness = 0.9399999999999998
+Stopping early due to stagnation.
+
+V_1:[] V_2:[d1_0522240009-1 p1_0533190010-1 p2_0518250008-1 d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[d1_0522240009-1 p1_0533190010-1 p2_0518250008-1 d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.9399999999999998 , after EA 0.9399999999999998
+SUCCESS
+
+2025-05-01 22:33:50,097 [simulate_environment.py | 254] INFO: 2025-05-01 06:00:00, Item 0518250008-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:50,098 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:50,098 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 06:10:00, pre time: 2025-05-01 06:00:00
+2025-05-01 22:33:50,098 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 06:10:00
+2025-05-01 22:33:50,106 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 3 ongoing order items, 12 completed order items
+2025-05-01 22:33:51,405 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_0600190011-1 d1_0600190011-1] V_2:[d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+V_1:[p1_0600190011-1 d1_0600190011-1] V_2:[d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.8 , after EA 0.8
+SUCCESS
+
+2025-05-01 22:33:51,419 [simulate_environment.py | 254] INFO: 2025-05-01 06:10:00, Item 0600190011-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:51,420 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:51,420 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 06:20:00, pre time: 2025-05-01 06:10:00
+2025-05-01 22:33:51,421 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 06:20:00
+2025-05-01 22:33:51,434 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 3 ongoing order items, 12 completed order items
+2025-05-01 22:33:52,714 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_0600190011-1 d1_0600190011-1] V_2:[d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+V_1:[p1_0600190011-1 d1_0600190011-1] V_2:[d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.8 , after EA 0.8
+SUCCESS
+
+2025-05-01 22:33:52,731 [simulate_environment.py | 254] INFO: 2025-05-01 06:20:00, Item 0600190011-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:33:52,731 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:52,732 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 06:30:00, pre time: 2025-05-01 06:20:00
+2025-05-01 22:33:52,732 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 06:30:00
+2025-05-01 22:33:52,747 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 4 ongoing order items, 12 completed order items
+2025-05-01 22:33:54,020 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0600190011-1] V_2:[d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+V_1:[d1_0600190011-1] V_2:[d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.6599999999999999 , after EA 0.6599999999999999
+SUCCESS
+
+2025-05-01 22:33:54,034 [simulate_environment.py | 254] INFO: 2025-05-01 06:30:00, Item 0758180012-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:54,035 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:54,035 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 06:40:00, pre time: 2025-05-01 06:30:00
+2025-05-01 22:33:54,035 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 06:40:00
+2025-05-01 22:33:54,044 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 4 ongoing order items, 12 completed order items
+2025-05-01 22:33:55,253 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0600190011-1] V_2:[d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+V_1:[d1_0600190011-1] V_2:[d2_0518250008-2 d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.6599999999999999 , after EA 0.6599999999999999
+SUCCESS
+
+2025-05-01 22:33:55,256 [simulate_environment.py | 254] INFO: 2025-05-01 06:40:00, Item 0758180012-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:55,256 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:55,256 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 06:50:00, pre time: 2025-05-01 06:40:00
+2025-05-01 22:33:55,256 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 06:50:00
+2025-05-01 22:33:55,263 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 2 ongoing order items, 14 completed order items
+2025-05-01 22:33:56,534 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0600190011-1] V_2:[d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+V_1:[d1_0600190011-1] V_2:[d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.48 , after EA 0.48
+SUCCESS
+
+2025-05-01 22:33:56,543 [simulate_environment.py | 254] INFO: 2025-05-01 06:50:00, Item 0758180012-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:56,544 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:56,544 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 07:00:00, pre time: 2025-05-01 06:50:00
+2025-05-01 22:33:56,544 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 07:00:00
+2025-05-01 22:33:56,559 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 2 ongoing order items, 14 completed order items
+2025-05-01 22:33:57,783 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0600190011-1] V_2:[d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+V_1:[d1_0600190011-1] V_2:[d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.3 , after EA 0.3
+SUCCESS
+
+2025-05-01 22:33:57,785 [simulate_environment.py | 254] INFO: 2025-05-01 07:00:00, Item 0758180012-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:57,786 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:57,788 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 07:10:00, pre time: 2025-05-01 07:00:00
+2025-05-01 22:33:57,788 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 07:10:00
+2025-05-01 22:33:57,794 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 1 ongoing order items, 15 completed order items
+2025-05-01 22:33:59,076 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.3 , after EA 0.3
+SUCCESS
+
+2025-05-01 22:33:59,087 [simulate_environment.py | 254] INFO: 2025-05-01 07:10:00, Item 0758180012-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:33:59,087 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:33:59,088 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 07:20:00, pre time: 2025-05-01 07:10:00
+2025-05-01 22:33:59,088 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 07:20:00
+2025-05-01 22:33:59,091 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 1 ongoing order items, 15 completed order items
+2025-05-01 22:34:00,455 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[d1_0533190010-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:34:00,458 [simulate_environment.py | 254] INFO: 2025-05-01 07:20:00, Item 0758180012-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:00,458 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:00,458 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 07:30:00, pre time: 2025-05-01 07:20:00
+2025-05-01 22:34:00,458 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 07:30:00
+2025-05-01 22:34:00,466 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 0 ongoing order items, 16 completed order items
+2025-05-01 22:34:01,695 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:34:01,698 [simulate_environment.py | 254] INFO: 2025-05-01 07:30:00, Item 0758180012-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:01,698 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:01,698 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 07:40:00, pre time: 2025-05-01 07:30:00
+2025-05-01 22:34:01,699 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 07:40:00
+2025-05-01 22:34:01,700 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 0 ongoing order items, 16 completed order items
+2025-05-01 22:34:02,950 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:34:02,953 [simulate_environment.py | 254] INFO: 2025-05-01 07:40:00, Item 0758180012-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:02,953 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:02,953 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 07:50:00, pre time: 2025-05-01 07:40:00
+2025-05-01 22:34:02,954 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 07:50:00
+2025-05-01 22:34:02,965 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 0 ongoing order items, 16 completed order items
+2025-05-01 22:34:04,224 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-01 22:34:04,226 [simulate_environment.py | 254] INFO: 2025-05-01 07:50:00, Item 0758180012-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:04,227 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:04,227 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 08:00:00, pre time: 2025-05-01 07:50:00
+2025-05-01 22:34:04,227 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 08:00:00
+2025-05-01 22:34:04,231 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 16 completed order items
+2025-05-01 22:34:05,554 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_0758180012-1 d1_0758180012-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_0758180012-1 d1_0758180012-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 3.28 , after EA 3.28
+SUCCESS
+
+2025-05-01 22:34:05,567 [simulate_environment.py | 254] INFO: 2025-05-01 08:00:00, Item 0758180012-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:05,567 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:05,567 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 08:10:00, pre time: 2025-05-01 08:00:00
+2025-05-01 22:34:05,568 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 08:10:00
+2025-05-01 22:34:05,575 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 16 completed order items
+2025-05-01 22:34:06,851 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_0758180012-1 d1_0758180012-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_0758180012-1 d1_0758180012-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 1.7399999999999998 , after EA 1.7399999999999998
+SUCCESS
+
+2025-05-01 22:34:06,864 [simulate_environment.py | 254] INFO: 2025-05-01 08:10:00, Item 0758180012-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:06,865 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:06,865 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 08:20:00, pre time: 2025-05-01 08:10:00
+2025-05-01 22:34:06,865 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 08:20:00
+2025-05-01 22:34:06,872 [simulate_environment.py | 167] INFO: Get 18 unallocated order items, 1 ongoing order items, 16 completed order items
+2025-05-01 22:34:08,267 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 20.22
+Iteration 2: Best Fitness = 20.22
+Iteration 3: Best Fitness = 19.979999999999997
+Iteration 4: Best Fitness = 19.979999999999997
+Iteration 5: Best Fitness = 19.979999999999997
+Iteration 6: Best Fitness = 19.979999999999997
+Iteration 7: Best Fitness = 19.979999999999997
+Iteration 8: Best Fitness = 19.979999999999997
+Iteration 9: Best Fitness = 19.979999999999997
+Iteration 10: Best Fitness = 19.979999999999997
+Iteration 11: Best Fitness = 19.979999999999997
+Iteration 12: Best Fitness = 19.979999999999997
+Iteration 13: Best Fitness = 19.979999999999997
+Stopping early due to stagnation.
+
+V_1:[d1_0758180012-1] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+V_1:[d1_0758180012-1] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+The fitness score before EA 19.979999999999997 , after EA 19.979999999999997
+SUCCESS
+
+2025-05-01 22:34:08,285 [simulate_environment.py | 254] INFO: 2025-05-01 08:20:00, Item 0810030013-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:08,286 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:08,286 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 08:30:00, pre time: 2025-05-01 08:20:00
+2025-05-01 22:34:08,286 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 08:30:00
+2025-05-01 22:34:08,294 [simulate_environment.py | 167] INFO: Get 18 unallocated order items, 1 ongoing order items, 16 completed order items
+2025-05-01 22:34:09,634 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0758180012-1] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+V_1:[d1_0758180012-1] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+The fitness score before EA 9.86 , after EA 9.86
+SUCCESS
+
+2025-05-01 22:34:09,651 [simulate_environment.py | 254] INFO: 2025-05-01 08:30:00, Item 0810030013-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:09,652 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:09,652 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 08:40:00, pre time: 2025-05-01 08:30:00
+2025-05-01 22:34:09,652 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 08:40:00
+2025-05-01 22:34:09,654 [simulate_environment.py | 167] INFO: Get 18 unallocated order items, 1 ongoing order items, 16 completed order items
+2025-05-01 22:34:10,942 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0758180012-1] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+V_1:[d1_0758180012-1] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+The fitness score before EA 9.86 , after EA 9.86
+SUCCESS
+
+2025-05-01 22:34:10,945 [simulate_environment.py | 254] INFO: 2025-05-01 08:40:00, Item 0810030013-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:10,946 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:10,946 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 08:50:00, pre time: 2025-05-01 08:40:00
+2025-05-01 22:34:10,946 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 08:50:00
+2025-05-01 22:34:10,950 [simulate_environment.py | 167] INFO: Get 18 unallocated order items, 1 ongoing order items, 16 completed order items
+2025-05-01 22:34:12,269 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0758180012-1] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+V_1:[d1_0758180012-1] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+The fitness score before EA 8.120000000000001 , after EA 8.120000000000001
+SUCCESS
+
+2025-05-01 22:34:12,272 [simulate_environment.py | 254] INFO: 2025-05-01 08:50:00, Item 0810030013-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:12,272 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:12,273 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 09:00:00, pre time: 2025-05-01 08:50:00
+2025-05-01 22:34:12,273 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 09:00:00
+2025-05-01 22:34:12,278 [simulate_environment.py | 167] INFO: Get 18 unallocated order items, 1 ongoing order items, 16 completed order items
+2025-05-01 22:34:13,493 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_0758180012-1] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+V_1:[d1_0758180012-1] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+The fitness score before EA 8.120000000000001 , after EA 8.120000000000001
+SUCCESS
+
+2025-05-01 22:34:13,496 [simulate_environment.py | 254] INFO: 2025-05-01 09:00:00, Item 0810030013-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:13,497 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:13,497 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 09:10:00, pre time: 2025-05-01 09:00:00
+2025-05-01 22:34:13,497 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 09:10:00
+2025-05-01 22:34:13,513 [simulate_environment.py | 167] INFO: Get 18 unallocated order items, 0 ongoing order items, 17 completed order items
+2025-05-01 22:34:14,802 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+V_1:[] V_2:[] V_3:[p15_0810030013-1 d15_0810030013-15] V_4:[] V_5:[p3_0810030013-16 d3_0810030013-18]
+The fitness score before EA 8.120000000000001 , after EA 8.120000000000001
+SUCCESS
+
+2025-05-01 22:34:14,812 [simulate_environment.py | 254] INFO: 2025-05-01 09:10:00, Item 0810030013-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:14,813 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:14,813 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 09:20:00, pre time: 2025-05-01 09:10:00
+2025-05-01 22:34:14,813 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 09:20:00
+2025-05-01 22:34:14,825 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 18 ongoing order items, 17 completed order items
+2025-05-01 22:34:16,128 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18]
+The fitness score before EA 8.120000000000001 , after EA 8.120000000000001
+SUCCESS
+
+2025-05-01 22:34:16,140 [simulate_environment.py | 254] INFO: 2025-05-01 09:20:00, Item 0950360014-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:16,142 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:16,142 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 09:30:00, pre time: 2025-05-01 09:20:00
+2025-05-01 22:34:16,143 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 09:30:00
+2025-05-01 22:34:16,153 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 18 ongoing order items, 17 completed order items
+2025-05-01 22:34:17,944 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18]
+The fitness score before EA 8.120000000000001 , after EA 8.120000000000001
+SUCCESS
+
+2025-05-01 22:34:17,949 [simulate_environment.py | 254] INFO: 2025-05-01 09:30:00, Item 0950360014-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:17,949 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:17,949 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 09:40:00, pre time: 2025-05-01 09:30:00
+2025-05-01 22:34:17,949 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 09:40:00
+2025-05-01 22:34:17,950 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 18 ongoing order items, 17 completed order items
+2025-05-01 22:34:19,520 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18]
+The fitness score before EA 8.120000000000001 , after EA 8.120000000000001
+SUCCESS
+
+2025-05-01 22:34:19,524 [simulate_environment.py | 254] INFO: 2025-05-01 09:40:00, Item 0950360014-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:19,524 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:19,524 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 09:50:00, pre time: 2025-05-01 09:40:00
+2025-05-01 22:34:19,524 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 09:50:00
+2025-05-01 22:34:19,528 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 18 ongoing order items, 17 completed order items
+2025-05-01 22:34:21,040 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18]
+The fitness score before EA 8.120000000000001 , after EA 8.120000000000001
+SUCCESS
+
+2025-05-01 22:34:21,043 [simulate_environment.py | 254] INFO: 2025-05-01 09:50:00, Item 0950360014-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:21,043 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:21,044 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 10:00:00, pre time: 2025-05-01 09:50:00
+2025-05-01 22:34:21,044 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 10:00:00
+2025-05-01 22:34:21,060 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 18 ongoing order items, 17 completed order items
+2025-05-01 22:34:22,427 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18 p1_0950360014-1 d1_0950360014-1]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18 p1_0950360014-1 d1_0950360014-1]
+The fitness score before EA 5.58 , after EA 5.58
+SUCCESS
+
+2025-05-01 22:34:22,442 [simulate_environment.py | 254] INFO: 2025-05-01 10:00:00, Item 0950360014-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:22,443 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:22,443 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 10:10:00, pre time: 2025-05-01 10:00:00
+2025-05-01 22:34:22,443 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 10:10:00
+2025-05-01 22:34:22,450 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 18 ongoing order items, 17 completed order items
+2025-05-01 22:34:23,792 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 5.6000000000000005
+Iteration 2: Best Fitness = 5.6000000000000005
+Iteration 3: Best Fitness = 5.6000000000000005
+Iteration 4: Best Fitness = 5.6000000000000005
+Iteration 5: Best Fitness = 5.6000000000000005
+Iteration 6: Best Fitness = 5.6000000000000005
+Iteration 7: Best Fitness = 5.6000000000000005
+Iteration 8: Best Fitness = 5.6000000000000005
+Iteration 9: Best Fitness = 5.6000000000000005
+Iteration 10: Best Fitness = 5.6000000000000005
+Iteration 11: Best Fitness = 5.6000000000000005
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18 p1_0950360014-1 p1_1003340015-1 d1_1003340015-1 d1_0950360014-1]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18 p1_0950360014-1 p1_1003340015-1 d1_1003340015-1 d1_0950360014-1]
+The fitness score before EA 5.6000000000000005 , after EA 5.6000000000000005
+SUCCESS
+
+2025-05-01 22:34:23,809 [simulate_environment.py | 254] INFO: 2025-05-01 10:10:00, Item 0950360014-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:23,809 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:23,810 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 10:20:00, pre time: 2025-05-01 10:10:00
+2025-05-01 22:34:23,810 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 10:20:00
+2025-05-01 22:34:23,825 [simulate_environment.py | 167] INFO: Get 5 unallocated order items, 18 ongoing order items, 17 completed order items
+2025-05-01 22:34:25,242 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 2641.713333333333
+Iteration 2: Best Fitness = 8.219999999999999
+Iteration 3: Best Fitness = 6.879999999999998
+Iteration 4: Best Fitness = 6.879999999999998
+Iteration 5: Best Fitness = 6.879999999999998
+Iteration 6: Best Fitness = 6.879999999999998
+Iteration 7: Best Fitness = 6.879999999999998
+Iteration 8: Best Fitness = 6.879999999999998
+Iteration 9: Best Fitness = 6.879999999999998
+Iteration 10: Best Fitness = 6.879999999999998
+Iteration 11: Best Fitness = 6.879999999999998
+Iteration 12: Best Fitness = 6.879999999999998
+Iteration 13: Best Fitness = 6.879999999999998
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18 p1_1017290017-1 p1_0950360014-1 p1_1003340015-1 d1_1003340015-1 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18 p1_1017290017-1 p1_0950360014-1 p1_1003340015-1 d1_1003340015-1 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 6.140000000000001 , after EA 6.140000000000001
+SUCCESS
+
+2025-05-01 22:34:25,262 [simulate_environment.py | 254] INFO: 2025-05-01 10:20:00, Item 0950360014-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:25,263 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:25,263 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 10:30:00, pre time: 2025-05-01 10:20:00
+2025-05-01 22:34:25,263 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 10:30:00
+2025-05-01 22:34:25,278 [simulate_environment.py | 167] INFO: Get 7 unallocated order items, 18 ongoing order items, 17 completed order items
+2025-05-01 22:34:26,709 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 417.17555555555555
+Iteration 2: Best Fitness = 10.419999999999998
+Iteration 3: Best Fitness = 10.419999999999998
+Iteration 4: Best Fitness = 10.419999999999998
+Iteration 5: Best Fitness = 9.62
+Iteration 6: Best Fitness = 9.62
+Iteration 7: Best Fitness = 9.62
+Iteration 8: Best Fitness = 7.58
+Iteration 9: Best Fitness = 7.58
+Iteration 10: Best Fitness = 7.58
+Iteration 11: Best Fitness = 7.179999999999998
+Iteration 12: Best Fitness = 7.179999999999998
+Iteration 13: Best Fitness = 7.179999999999998
+Iteration 14: Best Fitness = 7.179999999999998
+Iteration 15: Best Fitness = 7.179999999999998
+Iteration 16: Best Fitness = 7.179999999999998
+Iteration 17: Best Fitness = 7.179999999999998
+Iteration 18: Best Fitness = 7.179999999999998
+Iteration 19: Best Fitness = 7.179999999999998
+Iteration 20: Best Fitness = 7.179999999999998
+Iteration 21: Best Fitness = 7.179999999999998
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18 p1_1017290017-1 p1_0950360014-1 p1_1003340015-1 d1_1003340015-1 p2_1021010018-1 d2_1021010018-2 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d3_0810030013-18 p1_1017290017-1 p1_0950360014-1 p1_1003340015-1 d1_1003340015-1 p2_1021010018-1 d2_1021010018-2 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 6.340000000000001 , after EA 6.340000000000001
+SUCCESS
+
+2025-05-01 22:34:26,720 [simulate_environment.py | 254] INFO: 2025-05-01 10:30:00, Item 0950360014-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:26,721 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:26,721 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 10:40:00, pre time: 2025-05-01 10:30:00
+2025-05-01 22:34:26,721 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 10:40:00
+2025-05-01 22:34:26,731 [simulate_environment.py | 167] INFO: Get 4 unallocated order items, 18 ongoing order items, 20 completed order items
+2025-05-01 22:34:28,131 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 7.12
+Iteration 2: Best Fitness = 7.12
+Iteration 3: Best Fitness = 7.12
+Iteration 4: Best Fitness = 6.9399999999999995
+Iteration 5: Best Fitness = 6.9399999999999995
+Iteration 6: Best Fitness = 6.9399999999999995
+Iteration 7: Best Fitness = 6.340000000000001
+Iteration 8: Best Fitness = 6.340000000000001
+Iteration 9: Best Fitness = 6.340000000000001
+Iteration 10: Best Fitness = 6.340000000000001
+Iteration 11: Best Fitness = 6.340000000000001
+Iteration 12: Best Fitness = 6.340000000000001
+Iteration 13: Best Fitness = 6.340000000000001
+Iteration 14: Best Fitness = 6.340000000000001
+Iteration 15: Best Fitness = 6.340000000000001
+Iteration 16: Best Fitness = 6.340000000000001
+Iteration 17: Best Fitness = 6.340000000000001
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d1_1003340015-1 p2_1021010018-1 d2_1021010018-2 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d1_1003340015-1 p2_1021010018-1 d2_1021010018-2 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 6.340000000000001 , after EA 6.340000000000001
+SUCCESS
+
+2025-05-01 22:34:28,149 [simulate_environment.py | 254] INFO: 2025-05-01 10:40:00, Item 1010390016-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:28,150 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:28,150 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 10:50:00, pre time: 2025-05-01 10:40:00
+2025-05-01 22:34:28,151 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 10:50:00
+2025-05-01 22:34:28,153 [simulate_environment.py | 167] INFO: Get 4 unallocated order items, 18 ongoing order items, 20 completed order items
+2025-05-01 22:34:29,489 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 2.48
+Iteration 2: Best Fitness = 2.48
+Iteration 3: Best Fitness = 2.48
+Iteration 4: Best Fitness = 2.48
+Iteration 5: Best Fitness = 2.48
+Iteration 6: Best Fitness = 2.48
+Iteration 7: Best Fitness = 2.48
+Iteration 8: Best Fitness = 2.48
+Iteration 9: Best Fitness = 2.48
+Iteration 10: Best Fitness = 2.48
+Iteration 11: Best Fitness = 2.48
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d1_1003340015-1 p2_1021010018-1 d2_1021010018-2 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d1_1003340015-1 p2_1021010018-1 d2_1021010018-2 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 2.2800000000000002 , after EA 2.2800000000000002
+SUCCESS
+
+2025-05-01 22:34:29,492 [simulate_environment.py | 254] INFO: 2025-05-01 10:50:00, Item 1010390016-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:29,493 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:29,493 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 11:00:00, pre time: 2025-05-01 10:50:00
+2025-05-01 22:34:29,493 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 11:00:00
+2025-05-01 22:34:29,497 [simulate_environment.py | 167] INFO: Get 4 unallocated order items, 18 ongoing order items, 20 completed order items
+2025-05-01 22:34:30,818 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 3.2600000000000002
+Iteration 2: Best Fitness = 3.1399999999999997
+Iteration 3: Best Fitness = 2.48
+Iteration 4: Best Fitness = 2.48
+Iteration 5: Best Fitness = 2.2800000000000002
+Iteration 6: Best Fitness = 2.2800000000000002
+Iteration 7: Best Fitness = 2.2800000000000002
+Iteration 8: Best Fitness = 2.2800000000000002
+Iteration 9: Best Fitness = 2.2800000000000002
+Iteration 10: Best Fitness = 2.2800000000000002
+Iteration 11: Best Fitness = 2.2800000000000002
+Iteration 12: Best Fitness = 2.2800000000000002
+Iteration 13: Best Fitness = 2.2800000000000002
+Iteration 14: Best Fitness = 2.2800000000000002
+Iteration 15: Best Fitness = 2.2800000000000002
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d1_1003340015-1 p2_1021010018-1 d2_1021010018-2 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d1_1003340015-1 p2_1021010018-1 d2_1021010018-2 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 2.2800000000000002 , after EA 2.2800000000000002
+SUCCESS
+
+2025-05-01 22:34:30,821 [simulate_environment.py | 254] INFO: 2025-05-01 11:00:00, Item 1010390016-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:30,821 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:30,822 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 11:10:00, pre time: 2025-05-01 11:00:00
+2025-05-01 22:34:30,822 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 11:10:00
+2025-05-01 22:34:30,825 [simulate_environment.py | 167] INFO: Get 5 unallocated order items, 18 ongoing order items, 20 completed order items
+2025-05-01 22:34:32,389 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 6.14
+Iteration 2: Best Fitness = 4.82
+Iteration 3: Best Fitness = 4.779999999999999
+Iteration 4: Best Fitness = 4.779999999999999
+Iteration 5: Best Fitness = 4.779999999999999
+Iteration 6: Best Fitness = 4.779999999999999
+Iteration 7: Best Fitness = 4.779999999999999
+Iteration 8: Best Fitness = 4.779999999999999
+Iteration 9: Best Fitness = 4.039999999999999
+Iteration 10: Best Fitness = 4.039999999999999
+Iteration 11: Best Fitness = 4.039999999999999
+Iteration 12: Best Fitness = 4.039999999999999
+Iteration 13: Best Fitness = 4.039999999999999
+Iteration 14: Best Fitness = 4.039999999999999
+Iteration 15: Best Fitness = 4.039999999999999
+Iteration 16: Best Fitness = 4.039999999999999
+Iteration 17: Best Fitness = 4.039999999999999
+Iteration 18: Best Fitness = 4.039999999999999
+Iteration 19: Best Fitness = 4.039999999999999
+Stopping early due to stagnation.
+
+V_1:[p1_1109480019-1 d1_1109480019-1] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d1_1003340015-1 p2_1021010018-1 d2_1021010018-2 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[p1_1109480019-1 p2_1021010018-1 d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d1_1003340015-1 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 4.0600000000000005 , after EA 4.039999999999999
+SUCCESS
+
+2025-05-01 22:34:32,410 [simulate_environment.py | 254] INFO: 2025-05-01 11:10:00, Item 1010390016-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:32,411 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:32,411 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 11:20:00, pre time: 2025-05-01 11:10:00
+2025-05-01 22:34:32,411 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 11:20:00
+2025-05-01 22:34:32,419 [simulate_environment.py | 167] INFO: Get 4 unallocated order items, 19 ongoing order items, 20 completed order items
+2025-05-01 22:34:33,812 [simulate_environment.py | 232] INFO: 
+
+V_1:[p2_1021010018-1 d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d1_1003340015-1 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[p2_1021010018-1 d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[d15_0810030013-15] V_4:[] V_5:[d1_1003340015-1 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 3.8 , after EA 3.8
+SUCCESS
+
+2025-05-01 22:34:33,838 [simulate_environment.py | 254] INFO: 2025-05-01 11:20:00, Item 1010390016-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:33,838 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:33,840 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 11:30:00, pre time: 2025-05-01 11:20:00
+2025-05-01 22:34:33,840 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 11:30:00
+2025-05-01 22:34:33,841 [simulate_environment.py | 167] INFO: Get 4 unallocated order items, 4 ongoing order items, 35 completed order items
+2025-05-01 22:34:35,292 [simulate_environment.py | 232] INFO: 
+
+V_1:[p2_1021010018-1 d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_1003340015-1 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[p2_1021010018-1 d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_1003340015-1 d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 2.32 , after EA 2.32
+SUCCESS
+
+2025-05-01 22:34:35,301 [simulate_environment.py | 254] INFO: 2025-05-01 11:30:00, Item 1010390016-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:35,301 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:35,302 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 11:40:00, pre time: 2025-05-01 11:30:00
+2025-05-01 22:34:35,302 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 11:40:00
+2025-05-01 22:34:35,310 [simulate_environment.py | 167] INFO: Get 4 unallocated order items, 3 ongoing order items, 36 completed order items
+2025-05-01 22:34:36,612 [simulate_environment.py | 232] INFO: 
+
+V_1:[p2_1021010018-1 d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[p2_1021010018-1 d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 2.32 , after EA 2.32
+SUCCESS
+
+2025-05-01 22:34:36,624 [simulate_environment.py | 254] INFO: 2025-05-01 11:40:00, Item 1010390016-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:36,626 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:36,626 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 11:50:00, pre time: 2025-05-01 11:40:00
+2025-05-01 22:34:36,626 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 11:50:00
+2025-05-01 22:34:36,638 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 5 ongoing order items, 36 completed order items
+2025-05-01 22:34:37,947 [simulate_environment.py | 232] INFO: 
+
+V_1:[d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 2.26 , after EA 2.26
+SUCCESS
+
+2025-05-01 22:34:37,964 [simulate_environment.py | 254] INFO: 2025-05-01 11:50:00, Item 1010390016-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:37,966 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:37,966 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 12:00:00, pre time: 2025-05-01 11:50:00
+2025-05-01 22:34:37,966 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 12:00:00
+2025-05-01 22:34:37,981 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 5 ongoing order items, 36 completed order items
+2025-05-01 22:34:39,280 [simulate_environment.py | 232] INFO: 
+
+V_1:[d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+V_1:[d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_0950360014-1 p2_1010390016-1 d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 2.26 , after EA 2.26
+SUCCESS
+
+2025-05-01 22:34:39,283 [simulate_environment.py | 254] INFO: 2025-05-01 12:00:00, Item 1010390016-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:39,284 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:39,284 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 12:10:00, pre time: 2025-05-01 12:00:00
+2025-05-01 22:34:39,284 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 12:10:00
+2025-05-01 22:34:39,294 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 6 ongoing order items, 37 completed order items
+2025-05-01 22:34:40,543 [simulate_environment.py | 232] INFO: 
+
+V_1:[d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d2_1010390016-2 d1_1017290017-1]
+V_1:[d2_1021010018-2 d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 2.2 , after EA 2.2
+SUCCESS
+
+2025-05-01 22:34:40,560 [simulate_environment.py | 254] INFO: 2025-05-01 12:10:00, Item 1310290020-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:40,560 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:40,561 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 12:20:00, pre time: 2025-05-01 12:10:00
+2025-05-01 22:34:40,561 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 12:20:00
+2025-05-01 22:34:40,575 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 4 ongoing order items, 39 completed order items
+2025-05-01 22:34:41,858 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d2_1010390016-2 d1_1017290017-1]
+V_1:[d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 2.0599999999999996 , after EA 2.0599999999999996
+SUCCESS
+
+2025-05-01 22:34:41,871 [simulate_environment.py | 254] INFO: 2025-05-01 12:20:00, Item 1310290020-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:41,872 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:41,872 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 12:30:00, pre time: 2025-05-01 12:20:00
+2025-05-01 22:34:41,872 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 12:30:00
+2025-05-01 22:34:41,873 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 4 ongoing order items, 39 completed order items
+2025-05-01 22:34:43,145 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d2_1010390016-2 d1_1017290017-1]
+V_1:[d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 2.0599999999999996 , after EA 2.0599999999999996
+SUCCESS
+
+2025-05-01 22:34:43,148 [simulate_environment.py | 254] INFO: 2025-05-01 12:30:00, Item 1310290020-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:43,148 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:43,148 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 12:40:00, pre time: 2025-05-01 12:30:00
+2025-05-01 22:34:43,149 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 12:40:00
+2025-05-01 22:34:43,153 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 4 ongoing order items, 39 completed order items
+2025-05-01 22:34:44,418 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d2_1010390016-2 d1_1017290017-1]
+V_1:[d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d2_1010390016-2 d1_1017290017-1]
+The fitness score before EA 2.0599999999999996 , after EA 2.0599999999999996
+SUCCESS
+
+2025-05-01 22:34:44,423 [simulate_environment.py | 254] INFO: 2025-05-01 12:40:00, Item 1310290020-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:44,424 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:44,424 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 12:50:00, pre time: 2025-05-01 12:40:00
+2025-05-01 22:34:44,425 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 12:50:00
+2025-05-01 22:34:44,434 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 2 ongoing order items, 41 completed order items
+2025-05-01 22:34:45,775 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_1017290017-1]
+V_1:[d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_1017290017-1]
+The fitness score before EA 0.08 , after EA 0.08
+SUCCESS
+
+2025-05-01 22:34:45,785 [simulate_environment.py | 254] INFO: 2025-05-01 12:50:00, Item 1310290020-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:45,786 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:45,786 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 13:00:00, pre time: 2025-05-01 12:50:00
+2025-05-01 22:34:45,786 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 13:00:00
+2025-05-01 22:34:45,794 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 2 ongoing order items, 41 completed order items
+2025-05-01 22:34:47,002 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_1017290017-1]
+V_1:[d1_1109480019-1] V_2:[] V_3:[] V_4:[] V_5:[d1_1017290017-1]
+The fitness score before EA 0.08 , after EA 0.08
+SUCCESS
+
+2025-05-01 22:34:47,005 [simulate_environment.py | 254] INFO: 2025-05-01 13:00:00, Item 1310290020-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:47,005 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:47,005 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 13:10:00, pre time: 2025-05-01 13:00:00
+2025-05-01 22:34:47,005 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 13:10:00
+2025-05-01 22:34:47,013 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 1 ongoing order items, 42 completed order items
+2025-05-01 22:34:48,248 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_1017290017-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_1017290017-1]
+The fitness score before EA 0.08 , after EA 0.08
+SUCCESS
+
+2025-05-01 22:34:48,257 [simulate_environment.py | 254] INFO: 2025-05-01 13:10:00, Item 1310290020-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:48,257 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:48,257 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 13:20:00, pre time: 2025-05-01 13:10:00
+2025-05-01 22:34:48,258 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 13:20:00
+2025-05-01 22:34:48,263 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 43 completed order items
+2025-05-01 22:34:49,584 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 9.120000000000001 , after EA 9.120000000000001
+SUCCESS
+
+2025-05-01 22:34:49,597 [simulate_environment.py | 254] INFO: 2025-05-01 13:20:00, Item 1310290020-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:49,598 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:49,598 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 13:30:00, pre time: 2025-05-01 13:20:00
+2025-05-01 22:34:49,598 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 13:30:00
+2025-05-01 22:34:49,606 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 43 completed order items
+2025-05-01 22:34:50,887 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 9.120000000000001 , after EA 9.120000000000001
+SUCCESS
+
+2025-05-01 22:34:50,901 [simulate_environment.py | 254] INFO: 2025-05-01 13:30:00, Item 1310290020-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:50,902 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:50,902 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 13:40:00, pre time: 2025-05-01 13:30:00
+2025-05-01 22:34:50,902 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 13:40:00
+2025-05-01 22:34:50,903 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 43 completed order items
+2025-05-01 22:34:52,141 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 5.0600000000000005 , after EA 5.0600000000000005
+SUCCESS
+
+2025-05-01 22:34:52,143 [simulate_environment.py | 254] INFO: 2025-05-01 13:40:00, Item 1310290020-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:52,143 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:52,143 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 13:50:00, pre time: 2025-05-01 13:40:00
+2025-05-01 22:34:52,144 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 13:50:00
+2025-05-01 22:34:52,153 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 43 completed order items
+2025-05-01 22:34:53,361 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 5.0600000000000005 , after EA 5.0600000000000005
+SUCCESS
+
+2025-05-01 22:34:53,363 [simulate_environment.py | 254] INFO: 2025-05-01 13:50:00, Item 1310290020-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:53,364 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:53,364 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 14:00:00, pre time: 2025-05-01 13:50:00
+2025-05-01 22:34:53,364 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 14:00:00
+2025-05-01 22:34:53,372 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 43 completed order items
+2025-05-01 22:34:54,658 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 5.0600000000000005 , after EA 5.0600000000000005
+SUCCESS
+
+2025-05-01 22:34:54,661 [simulate_environment.py | 254] INFO: 2025-05-01 14:00:00, Item 1310290020-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:54,661 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:54,661 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 14:10:00, pre time: 2025-05-01 14:00:00
+2025-05-01 22:34:54,661 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 14:10:00
+2025-05-01 22:34:54,669 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 0 ongoing order items, 43 completed order items
+2025-05-01 22:34:56,027 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_1310290020-1 d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 5.0600000000000005 , after EA 5.0600000000000005
+SUCCESS
+
+2025-05-01 22:34:56,029 [simulate_environment.py | 254] INFO: 2025-05-01 14:10:00, Item 1310290020-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:34:56,029 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:56,029 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 14:20:00, pre time: 2025-05-01 14:10:00
+2025-05-01 22:34:56,030 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 14:20:00
+2025-05-01 22:34:56,044 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 1 ongoing order items, 43 completed order items
+2025-05-01 22:34:57,307 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 5.0600000000000005 , after EA 5.0600000000000005
+SUCCESS
+
+2025-05-01 22:34:57,316 [simulate_environment.py | 254] INFO: 2025-05-01 14:20:00, Item 1433340021-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:57,316 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:57,316 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 14:30:00, pre time: 2025-05-01 14:20:00
+2025-05-01 22:34:57,316 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 14:30:00
+2025-05-01 22:34:57,325 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 1 ongoing order items, 43 completed order items
+2025-05-01 22:34:58,707 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d1_1310290020-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 5.0600000000000005 , after EA 5.0600000000000005
+SUCCESS
+
+2025-05-01 22:34:58,711 [simulate_environment.py | 254] INFO: 2025-05-01 14:30:00, Item 1433340021-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:34:58,712 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:34:58,712 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 14:40:00, pre time: 2025-05-01 14:30:00
+2025-05-01 22:34:58,712 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 14:40:00
+2025-05-01 22:34:58,716 [simulate_environment.py | 167] INFO: Get 4 unallocated order items, 1 ongoing order items, 43 completed order items
+2025-05-01 22:35:00,079 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 8.580000000000002
+Iteration 2: Best Fitness = 8.580000000000002
+Iteration 3: Best Fitness = 7.739999999999999
+Iteration 4: Best Fitness = 7.159999999999999
+Iteration 5: Best Fitness = 7.159999999999999
+Iteration 6: Best Fitness = 7.159999999999999
+Iteration 7: Best Fitness = 7.159999999999999
+Iteration 8: Best Fitness = 7.159999999999999
+Iteration 9: Best Fitness = 7.159999999999999
+Iteration 10: Best Fitness = 7.159999999999999
+Iteration 11: Best Fitness = 7.159999999999999
+Iteration 12: Best Fitness = 7.159999999999999
+Iteration 13: Best Fitness = 7.159999999999999
+Iteration 14: Best Fitness = 7.159999999999999
+Stopping early due to stagnation.
+
+V_1:[d1_1310290020-1] V_2:[p1_1438240023-1 p2_1437450022-1 d2_1437450022-2 d1_1438240023-1] V_3:[p1_1433340021-1 d1_1433340021-1] V_4:[] V_5:[]
+V_1:[d1_1310290020-1] V_2:[p1_1438240023-1 p2_1437450022-1 d2_1437450022-2 d1_1438240023-1] V_3:[p1_1433340021-1 d1_1433340021-1] V_4:[] V_5:[]
+The fitness score before EA 7.08 , after EA 7.08
+SUCCESS
+
+2025-05-01 22:35:00,093 [simulate_environment.py | 254] INFO: 2025-05-01 14:40:00, Item 1433340021-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:00,093 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:00,094 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 14:50:00, pre time: 2025-05-01 14:40:00
+2025-05-01 22:35:00,094 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 14:50:00
+2025-05-01 22:35:00,107 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 5 ongoing order items, 43 completed order items
+2025-05-01 22:35:01,453 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d2_1437450022-2 d1_1438240023-1] V_3:[d1_1433340021-1] V_4:[] V_5:[]
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d2_1437450022-2 d1_1438240023-1] V_3:[d1_1433340021-1] V_4:[] V_5:[]
+The fitness score before EA 7.159999999999999 , after EA 7.159999999999999
+SUCCESS
+
+2025-05-01 22:35:01,467 [simulate_environment.py | 254] INFO: 2025-05-01 14:50:00, Item 1441090024-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:01,468 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:01,468 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 15:00:00, pre time: 2025-05-01 14:50:00
+2025-05-01 22:35:01,468 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 15:00:00
+2025-05-01 22:35:01,481 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 5 ongoing order items, 43 completed order items
+2025-05-01 22:35:02,761 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d2_1437450022-2 d1_1438240023-1] V_3:[d1_1433340021-1] V_4:[] V_5:[]
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d2_1437450022-2 d1_1438240023-1] V_3:[d1_1433340021-1] V_4:[] V_5:[]
+The fitness score before EA 2.1 , after EA 2.1
+SUCCESS
+
+2025-05-01 22:35:02,770 [simulate_environment.py | 254] INFO: 2025-05-01 15:00:00, Item 1441090024-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:02,770 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:02,770 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 15:10:00, pre time: 2025-05-01 15:00:00
+2025-05-01 22:35:02,770 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 15:10:00
+2025-05-01 22:35:02,778 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 5 ongoing order items, 43 completed order items
+2025-05-01 22:35:04,056 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d2_1437450022-2 d1_1438240023-1] V_3:[d1_1433340021-1] V_4:[] V_5:[]
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d2_1437450022-2 d1_1438240023-1] V_3:[d1_1433340021-1] V_4:[] V_5:[]
+The fitness score before EA 2.1 , after EA 2.1
+SUCCESS
+
+2025-05-01 22:35:04,060 [simulate_environment.py | 254] INFO: 2025-05-01 15:10:00, Item 1441090024-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:04,060 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:04,060 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 15:20:00, pre time: 2025-05-01 15:10:00
+2025-05-01 22:35:04,060 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 15:20:00
+2025-05-01 22:35:04,075 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 3 ongoing order items, 45 completed order items
+2025-05-01 22:35:05,370 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d1_1438240023-1] V_3:[d1_1433340021-1] V_4:[] V_5:[]
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d1_1438240023-1] V_3:[d1_1433340021-1] V_4:[] V_5:[]
+The fitness score before EA 0.26 , after EA 0.26
+SUCCESS
+
+2025-05-01 22:35:05,389 [simulate_environment.py | 254] INFO: 2025-05-01 15:20:00, Item 1441090024-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:05,389 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:05,390 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 15:30:00, pre time: 2025-05-01 15:20:00
+2025-05-01 22:35:05,390 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 15:30:00
+2025-05-01 22:35:05,403 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 2 ongoing order items, 46 completed order items
+2025-05-01 22:35:06,695 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d1_1438240023-1] V_3:[] V_4:[] V_5:[]
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d1_1438240023-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.26 , after EA 0.26
+SUCCESS
+
+2025-05-01 22:35:06,704 [simulate_environment.py | 254] INFO: 2025-05-01 15:30:00, Item 1441090024-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:06,705 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:06,705 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 15:40:00, pre time: 2025-05-01 15:30:00
+2025-05-01 22:35:06,705 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 15:40:00
+2025-05-01 22:35:06,716 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 2 ongoing order items, 46 completed order items
+2025-05-01 22:35:07,990 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d1_1438240023-1] V_3:[] V_4:[] V_5:[]
+V_1:[d1_1310290020-1 p1_1441090024-1 d1_1441090024-1] V_2:[d1_1438240023-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.26 , after EA 0.26
+SUCCESS
+
+2025-05-01 22:35:07,993 [simulate_environment.py | 254] INFO: 2025-05-01 15:40:00, Item 1441090024-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:07,994 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:07,994 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 15:50:00, pre time: 2025-05-01 15:40:00
+2025-05-01 22:35:07,994 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 15:50:00
+2025-05-01 22:35:07,997 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 1 ongoing order items, 47 completed order items
+2025-05-01 22:35:09,287 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_1441090024-1 d1_1441090024-1] V_2:[d1_1438240023-1] V_3:[] V_4:[] V_5:[]
+V_1:[p1_1441090024-1 d1_1441090024-1] V_2:[d1_1438240023-1] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.26 , after EA 0.26
+SUCCESS
+
+2025-05-01 22:35:09,301 [simulate_environment.py | 254] INFO: 2025-05-01 15:50:00, Item 1441090024-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:09,301 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:09,301 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 16:00:00, pre time: 2025-05-01 15:50:00
+2025-05-01 22:35:09,302 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 16:00:00
+2025-05-01 22:35:09,310 [simulate_environment.py | 167] INFO: Get 4 unallocated order items, 0 ongoing order items, 48 completed order items
+2025-05-01 22:35:10,623 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_1441090024-1 d1_1441090024-1] V_2:[p3_1554450025-1 d3_1554450025-3] V_3:[] V_4:[] V_5:[]
+V_1:[p1_1441090024-1 d1_1441090024-1] V_2:[p3_1554450025-1 d3_1554450025-3] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 6.540000000000001 , after EA 6.540000000000001
+SUCCESS
+
+2025-05-01 22:35:10,641 [simulate_environment.py | 254] INFO: 2025-05-01 16:00:00, Item 1441090024-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:10,641 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:10,641 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 16:10:00, pre time: 2025-05-01 16:00:00
+2025-05-01 22:35:10,641 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 16:10:00
+2025-05-01 22:35:10,653 [simulate_environment.py | 167] INFO: Get 6 unallocated order items, 0 ongoing order items, 48 completed order items
+2025-05-01 22:35:12,001 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_1441090024-1 d1_1441090024-1] V_2:[p3_1554450025-1 p2_1602230026-1 d2_1602230026-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[]
+V_1:[p1_1441090024-1 d1_1441090024-1] V_2:[p3_1554450025-1 p2_1602230026-1 d2_1602230026-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 7.4799999999999995 , after EA 7.4799999999999995
+SUCCESS
+
+2025-05-01 22:35:12,020 [simulate_environment.py | 254] INFO: 2025-05-01 16:10:00, Item 1441090024-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:12,020 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:12,021 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 16:20:00, pre time: 2025-05-01 16:10:00
+2025-05-01 22:35:12,021 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 16:20:00
+2025-05-01 22:35:12,028 [simulate_environment.py | 167] INFO: Get 5 unallocated order items, 1 ongoing order items, 48 completed order items
+2025-05-01 22:35:13,365 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1441090024-1] V_2:[p3_1554450025-1 p2_1602230026-1 d2_1602230026-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[]
+V_1:[d1_1441090024-1] V_2:[p3_1554450025-1 p2_1602230026-1 d2_1602230026-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 7.4799999999999995 , after EA 7.4799999999999995
+SUCCESS
+
+2025-05-01 22:35:13,380 [simulate_environment.py | 254] INFO: 2025-05-01 16:20:00, Item 1554450025-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:13,381 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:13,381 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 16:30:00, pre time: 2025-05-01 16:20:00
+2025-05-01 22:35:13,381 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 16:30:00
+2025-05-01 22:35:13,387 [simulate_environment.py | 167] INFO: Get 6 unallocated order items, 1 ongoing order items, 48 completed order items
+2025-05-01 22:35:14,713 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 7.739999999999999
+Iteration 2: Best Fitness = 7.739999999999999
+Iteration 3: Best Fitness = 7.739999999999999
+Iteration 4: Best Fitness = 7.739999999999999
+Iteration 5: Best Fitness = 7.68
+Iteration 6: Best Fitness = 7.68
+Iteration 7: Best Fitness = 7.68
+Iteration 8: Best Fitness = 7.68
+Iteration 9: Best Fitness = 7.68
+Iteration 10: Best Fitness = 7.68
+Iteration 11: Best Fitness = 7.68
+Iteration 12: Best Fitness = 7.68
+Iteration 13: Best Fitness = 7.68
+Iteration 14: Best Fitness = 7.68
+Iteration 15: Best Fitness = 7.68
+Stopping early due to stagnation.
+
+V_1:[d1_1441090024-1] V_2:[p3_1554450025-1 p2_1602230026-1 d2_1602230026-2 d3_1554450025-3] V_3:[p1_1621080027-1 d1_1621080027-1] V_4:[] V_5:[]
+V_1:[d1_1441090024-1] V_2:[p3_1554450025-1 p2_1602230026-1 d2_1602230026-2 d3_1554450025-3] V_3:[p1_1621080027-1 d1_1621080027-1] V_4:[] V_5:[]
+The fitness score before EA 7.68 , after EA 7.68
+SUCCESS
+
+2025-05-01 22:35:14,728 [simulate_environment.py | 254] INFO: 2025-05-01 16:30:00, Item 1554450025-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:14,729 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:14,729 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 16:40:00, pre time: 2025-05-01 16:30:00
+2025-05-01 22:35:14,730 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 16:40:00
+2025-05-01 22:35:14,731 [simulate_environment.py | 167] INFO: Get 7 unallocated order items, 2 ongoing order items, 48 completed order items
+2025-05-01 22:35:16,111 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 10.06
+Iteration 2: Best Fitness = 10.06
+Iteration 3: Best Fitness = 10.06
+Iteration 4: Best Fitness = 10.06
+Iteration 5: Best Fitness = 10.06
+Iteration 6: Best Fitness = 10.06
+Iteration 7: Best Fitness = 10.06
+Iteration 8: Best Fitness = 10.06
+Iteration 9: Best Fitness = 10.06
+Iteration 10: Best Fitness = 10.06
+Iteration 11: Best Fitness = 10.06
+Stopping early due to stagnation.
+
+V_1:[d1_1441090024-1 p2_1637240028-1 d2_1637240028-2] V_2:[p3_1554450025-1 p2_1602230026-1 d2_1602230026-2 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[]
+V_1:[d1_1441090024-1 p2_1602230026-1 p2_1637240028-1 d2_1637240028-2 d2_1602230026-2] V_2:[p3_1554450025-1 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[]
+The fitness score before EA 10.599999999999998 , after EA 10.06
+SUCCESS
+
+2025-05-01 22:35:16,124 [simulate_environment.py | 254] INFO: 2025-05-01 16:40:00, Item 1554450025-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:16,125 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:16,125 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 16:50:00, pre time: 2025-05-01 16:40:00
+2025-05-01 22:35:16,125 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 16:50:00
+2025-05-01 22:35:16,138 [simulate_environment.py | 167] INFO: Get 16 unallocated order items, 1 ongoing order items, 49 completed order items
+2025-05-01 22:35:17,582 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 16.78
+Iteration 2: Best Fitness = 16.78
+Iteration 3: Best Fitness = 14.419999999999998
+Iteration 4: Best Fitness = 14.419999999999998
+Iteration 5: Best Fitness = 14.419999999999998
+Iteration 6: Best Fitness = 13.48
+Iteration 7: Best Fitness = 13.48
+Iteration 8: Best Fitness = 13.48
+Iteration 9: Best Fitness = 11.3
+Iteration 10: Best Fitness = 10.499999999999998
+Iteration 11: Best Fitness = 10.499999999999998
+Iteration 12: Best Fitness = 10.499999999999998
+Iteration 13: Best Fitness = 10.499999999999998
+Iteration 14: Best Fitness = 10.499999999999998
+Iteration 15: Best Fitness = 10.499999999999998
+Iteration 16: Best Fitness = 10.499999999999998
+Iteration 17: Best Fitness = 10.499999999999998
+Iteration 18: Best Fitness = 10.499999999999998
+Iteration 19: Best Fitness = 10.499999999999998
+Iteration 20: Best Fitness = 10.499999999999998
+Stopping early due to stagnation.
+
+V_1:[p2_1602230026-1 p2_1637240028-1 p1_1642180030-1 d1_1642180030-1 d2_1637240028-2 d2_1602230026-2] V_2:[p3_1554450025-1 p2_1640020029-1 d2_1640020029-2 p2_1647440032-1 d2_1647440032-2 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[p4_1644080031-1 d4_1644080031-4]
+V_1:[p2_1602230026-1 p1_1642180030-1 p2_1637240028-1 d2_1637240028-2 d1_1642180030-1 d2_1602230026-2] V_2:[p3_1554450025-1 p2_1647440032-1 p2_1640020029-1 d2_1640020029-2 d2_1647440032-2 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[p4_1644080031-1 d4_1644080031-4]
+The fitness score before EA 10.5 , after EA 10.499999999999998
+SUCCESS
+
+2025-05-01 22:35:17,598 [simulate_environment.py | 254] INFO: 2025-05-01 16:50:00, Item 1554450025-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:17,599 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:17,599 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 17:00:00, pre time: 2025-05-01 16:50:00
+2025-05-01 22:35:17,600 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 17:00:00
+2025-05-01 22:35:17,606 [simulate_environment.py | 167] INFO: Get 7 unallocated order items, 12 ongoing order items, 49 completed order items
+2025-05-01 22:35:19,033 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 14.9
+Iteration 2: Best Fitness = 13.419999999999998
+Iteration 3: Best Fitness = 13.419999999999998
+Iteration 4: Best Fitness = 13.319999999999997
+Iteration 5: Best Fitness = 13.319999999999997
+Iteration 6: Best Fitness = 13.319999999999997
+Iteration 7: Best Fitness = 13.319999999999997
+Iteration 8: Best Fitness = 13.319999999999997
+Iteration 9: Best Fitness = 13.319999999999997
+Iteration 10: Best Fitness = 13.319999999999997
+Iteration 11: Best Fitness = 13.319999999999997
+Iteration 12: Best Fitness = 13.319999999999997
+Iteration 13: Best Fitness = 13.319999999999997
+Iteration 14: Best Fitness = 13.319999999999997
+Stopping early due to stagnation.
+
+V_1:[p2_1602230026-1 p1_1642180030-1 p2_1637240028-1 d2_1637240028-2 d1_1642180030-1 d2_1602230026-2] V_2:[d2_1640020029-2 d2_1647440032-2 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[d4_1644080031-4 p1_1650140033-1 d1_1650140033-1 p1_1651420034-1 d1_1651420034-1]
+V_1:[p2_1602230026-1 p1_1651420034-1 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 d2_1647440032-2 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[d4_1644080031-4 p2_1637240028-1 p1_1642180030-1 p1_1650140033-1 d1_1650140033-1 d1_1642180030-1 d2_1637240028-2]
+The fitness score before EA 13.739999999999998 , after EA 13.319999999999997
+SUCCESS
+
+2025-05-01 22:35:19,050 [simulate_environment.py | 254] INFO: 2025-05-01 17:00:00, Item 1602230026-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:19,050 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:19,050 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 17:10:00, pre time: 2025-05-01 17:00:00
+2025-05-01 22:35:19,051 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 17:10:00
+2025-05-01 22:35:19,059 [simulate_environment.py | 167] INFO: Get 10 unallocated order items, 12 ongoing order items, 49 completed order items
+2025-05-01 22:35:20,685 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 2057.231111111111
+Iteration 2: Best Fitness = 2057.231111111111
+Iteration 3: Best Fitness = 2057.231111111111
+Iteration 4: Best Fitness = 1866.16
+Iteration 5: Best Fitness = 1866.16
+Iteration 6: Best Fitness = 13.2
+Iteration 7: Best Fitness = 13.2
+Iteration 8: Best Fitness = 13.2
+Iteration 9: Best Fitness = 13.2
+Iteration 10: Best Fitness = 13.2
+Iteration 11: Best Fitness = 13.2
+Iteration 12: Best Fitness = 13.2
+Iteration 13: Best Fitness = 13.2
+Iteration 14: Best Fitness = 13.2
+Iteration 15: Best Fitness = 13.2
+Iteration 16: Best Fitness = 13.2
+Stopping early due to stagnation.
+
+V_1:[p2_1602230026-1 p1_1651420034-1 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 p1_1701470035-1 d1_1701470035-1 d2_1647440032-2 d3_1554450025-3] V_3:[d1_1621080027-1 p1_1702320036-1 p1_1707460037-1 d1_1707460037-1 d1_1702320036-1] V_4:[] V_5:[d4_1644080031-4 p2_1637240028-1 p1_1642180030-1 p1_1650140033-1 d1_1650140033-1 d1_1642180030-1 d2_1637240028-2]
+V_1:[p2_1602230026-1 p1_1651420034-1 p1_1642180030-1 p2_1637240028-1 d2_1637240028-2 d1_1642180030-1 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 p1_1702320036-1 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[d4_1644080031-4 p1_1707460037-1 p1_1650140033-1 d1_1650140033-1 p1_1701470035-1 d1_1701470035-1 d1_1707460037-1]
+The fitness score before EA 13.799999999999997 , after EA 7.960000000000001
+SUCCESS
+
+2025-05-01 22:35:20,702 [simulate_environment.py | 254] INFO: 2025-05-01 17:10:00, Item 1602230026-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:20,702 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:20,702 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 17:20:00, pre time: 2025-05-01 17:10:00
+2025-05-01 22:35:20,703 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 17:20:00
+2025-05-01 22:35:20,716 [simulate_environment.py | 167] INFO: Get 11 unallocated order items, 12 ongoing order items, 49 completed order items
+2025-05-01 22:35:22,376 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 18541.897777777776
+Iteration 2: Best Fitness = 17.08
+Iteration 3: Best Fitness = 17.08
+Iteration 4: Best Fitness = 17.08
+Iteration 5: Best Fitness = 17.08
+Iteration 6: Best Fitness = 17.08
+Iteration 7: Best Fitness = 17.08
+Iteration 8: Best Fitness = 17.08
+Iteration 9: Best Fitness = 17.08
+Iteration 10: Best Fitness = 17.08
+Iteration 11: Best Fitness = 17.08
+Iteration 12: Best Fitness = 17.08
+Stopping early due to stagnation.
+
+V_1:[p2_1602230026-1 p1_1651420034-1 p2_1637240028-1 p1_1713590038-1 p1_1642180030-1 d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 p1_1702320036-1 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[d4_1644080031-4 p1_1707460037-1 p1_1650140033-1 d1_1650140033-1 p1_1701470035-1 d1_1701470035-1 d1_1707460037-1]
+V_1:[p2_1602230026-1 p1_1651420034-1 p2_1637240028-1 p1_1713590038-1 p1_1642180030-1 d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 p1_1702320036-1 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[d4_1644080031-4 p1_1707460037-1 p1_1650140033-1 d1_1650140033-1 p1_1701470035-1 d1_1701470035-1 d1_1707460037-1]
+The fitness score before EA 6.36 , after EA 6.36
+SUCCESS
+
+2025-05-01 22:35:22,391 [simulate_environment.py | 254] INFO: 2025-05-01 17:20:00, Item 1602230026-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:22,392 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:22,392 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 17:30:00, pre time: 2025-05-01 17:20:00
+2025-05-01 22:35:22,392 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 17:30:00
+2025-05-01 22:35:22,403 [simulate_environment.py | 167] INFO: Get 12 unallocated order items, 9 ongoing order items, 53 completed order items
+2025-05-01 22:35:24,113 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 13882.913333333332
+Iteration 2: Best Fitness = 10187.324444444443
+Iteration 3: Best Fitness = 10187.324444444443
+Iteration 4: Best Fitness = 10187.324444444443
+Iteration 5: Best Fitness = 5121.873333333333
+Iteration 6: Best Fitness = 5121.873333333333
+Iteration 7: Best Fitness = 5121.873333333333
+Iteration 8: Best Fitness = 5121.873333333333
+Iteration 9: Best Fitness = 5121.873333333333
+Iteration 10: Best Fitness = 5121.873333333333
+Iteration 11: Best Fitness = 12.62
+Iteration 12: Best Fitness = 12.62
+Iteration 13: Best Fitness = 12.62
+Iteration 14: Best Fitness = 12.62
+Iteration 15: Best Fitness = 12.62
+Iteration 16: Best Fitness = 12.62
+Iteration 17: Best Fitness = 12.62
+Iteration 18: Best Fitness = 12.62
+Iteration 19: Best Fitness = 12.62
+Iteration 20: Best Fitness = 12.62
+Iteration 21: Best Fitness = 12.62
+Stopping early due to stagnation.
+
+V_1:[p2_1602230026-1 p1_1651420034-1 p2_1637240028-1 p1_1713590038-1 p1_1642180030-1 d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[p1_1650140033-1 d1_1650140033-1 p1_1701470035-1 d1_1701470035-1 d1_1707460037-1]
+V_1:[p2_1602230026-1 p1_1651420034-1 p2_1637240028-1 p1_1713590038-1 p1_1642180030-1 d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[d1_1621080027-1] V_4:[] V_5:[p1_1650140033-1 d1_1650140033-1 p1_1701470035-1 d1_1701470035-1 d1_1707460037-1]
+The fitness score before EA 6.180000000000001 , after EA 6.180000000000001
+SUCCESS
+
+2025-05-01 22:35:24,130 [simulate_environment.py | 254] INFO: 2025-05-01 17:30:00, Item 1602230026-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:24,131 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:24,131 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 17:40:00, pre time: 2025-05-01 17:30:00
+2025-05-01 22:35:24,131 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 17:40:00
+2025-05-01 22:35:24,137 [simulate_environment.py | 167] INFO: Get 5 unallocated order items, 15 ongoing order items, 54 completed order items
+2025-05-01 22:35:25,636 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 10.360000000000001
+Iteration 2: Best Fitness = 9.66
+Iteration 3: Best Fitness = 9.66
+Iteration 4: Best Fitness = 9.66
+Iteration 5: Best Fitness = 9.64
+Iteration 6: Best Fitness = 9.64
+Iteration 7: Best Fitness = 9.64
+Iteration 8: Best Fitness = 9.64
+Iteration 9: Best Fitness = 9.64
+Iteration 10: Best Fitness = 9.64
+Iteration 11: Best Fitness = 9.64
+Iteration 12: Best Fitness = 9.64
+Iteration 13: Best Fitness = 9.64
+Iteration 14: Best Fitness = 9.64
+Iteration 15: Best Fitness = 9.64
+Stopping early due to stagnation.
+
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1650140033-1 d1_1650140033-1 p1_1701470035-1 d1_1701470035-1 d1_1707460037-1]
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1650140033-1 d1_1650140033-1 p1_1701470035-1 d1_1701470035-1 d1_1707460037-1]
+The fitness score before EA 6.18 , after EA 6.18
+SUCCESS
+
+2025-05-01 22:35:25,652 [simulate_environment.py | 254] INFO: 2025-05-01 17:40:00, Item 1650140033-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:25,652 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:25,652 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 17:50:00, pre time: 2025-05-01 17:40:00
+2025-05-01 22:35:25,653 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 17:50:00
+2025-05-01 22:35:25,669 [simulate_environment.py | 167] INFO: Get 6 unallocated order items, 15 ongoing order items, 54 completed order items
+2025-05-01 22:35:27,154 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 10.559999999999999
+Iteration 2: Best Fitness = 10.34
+Iteration 3: Best Fitness = 10.34
+Iteration 4: Best Fitness = 9.739999999999998
+Iteration 5: Best Fitness = 9.739999999999998
+Iteration 6: Best Fitness = 9.7
+Iteration 7: Best Fitness = 9.64
+Iteration 8: Best Fitness = 9.64
+Iteration 9: Best Fitness = 9.64
+Iteration 10: Best Fitness = 9.64
+Iteration 11: Best Fitness = 9.64
+Iteration 12: Best Fitness = 9.64
+Iteration 13: Best Fitness = 9.64
+Iteration 14: Best Fitness = 9.64
+Iteration 15: Best Fitness = 9.64
+Iteration 16: Best Fitness = 9.64
+Iteration 17: Best Fitness = 9.64
+Stopping early due to stagnation.
+
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1650140033-1 d1_1650140033-1 p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1640020029-2 p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1650140033-1 d1_1650140033-1 p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 6.279999999999999 , after EA 6.279999999999999
+SUCCESS
+
+2025-05-01 22:35:27,164 [simulate_environment.py | 254] INFO: 2025-05-01 17:50:00, Item 1650140033-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:27,165 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:27,165 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 18:00:00, pre time: 2025-05-01 17:50:00
+2025-05-01 22:35:27,165 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 18:00:00
+2025-05-01 22:35:27,169 [simulate_environment.py | 167] INFO: Get 6 unallocated order items, 13 ongoing order items, 56 completed order items
+2025-05-01 22:35:28,583 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 7.080000000000001
+Iteration 2: Best Fitness = 7.080000000000001
+Iteration 3: Best Fitness = 7.080000000000001
+Iteration 4: Best Fitness = 7.080000000000001
+Iteration 5: Best Fitness = 7.080000000000001
+Iteration 6: Best Fitness = 7.080000000000001
+Iteration 7: Best Fitness = 7.080000000000001
+Iteration 8: Best Fitness = 7.080000000000001
+Iteration 9: Best Fitness = 7.080000000000001
+Iteration 10: Best Fitness = 7.080000000000001
+Iteration 11: Best Fitness = 7.080000000000001
+Stopping early due to stagnation.
+
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1650140033-1 d1_1650140033-1 p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1650140033-1 d1_1650140033-1 p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 6.24 , after EA 6.24
+SUCCESS
+
+2025-05-01 22:35:28,599 [simulate_environment.py | 254] INFO: 2025-05-01 18:00:00, Item 1650140033-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:28,600 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:28,600 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 18:10:00, pre time: 2025-05-01 18:00:00
+2025-05-01 22:35:28,600 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 18:10:00
+2025-05-01 22:35:28,607 [simulate_environment.py | 167] INFO: Get 5 unallocated order items, 14 ongoing order items, 56 completed order items
+2025-05-01 22:35:29,972 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 9.559999999999999
+Iteration 2: Best Fitness = 9.559999999999999
+Iteration 3: Best Fitness = 6.1
+Iteration 4: Best Fitness = 6.1
+Iteration 5: Best Fitness = 6.1
+Iteration 6: Best Fitness = 6.1
+Iteration 7: Best Fitness = 6.1
+Iteration 8: Best Fitness = 6.1
+Iteration 9: Best Fitness = 6.1
+Iteration 10: Best Fitness = 6.1
+Iteration 11: Best Fitness = 6.1
+Iteration 12: Best Fitness = 6.1
+Iteration 13: Best Fitness = 6.1
+Stopping early due to stagnation.
+
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[d1_1650140033-1 p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[d1_1650140033-1 p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 6.1 , after EA 6.1
+SUCCESS
+
+2025-05-01 22:35:29,987 [simulate_environment.py | 254] INFO: 2025-05-01 18:10:00, Item 1701470035-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:29,987 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:29,987 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 18:20:00, pre time: 2025-05-01 18:10:00
+2025-05-01 22:35:29,987 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 18:20:00
+2025-05-01 22:35:29,997 [simulate_environment.py | 167] INFO: Get 5 unallocated order items, 14 ongoing order items, 56 completed order items
+2025-05-01 22:35:31,377 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 6.34
+Iteration 2: Best Fitness = 6.34
+Iteration 3: Best Fitness = 6.34
+Iteration 4: Best Fitness = 6.34
+Iteration 5: Best Fitness = 6.34
+Iteration 6: Best Fitness = 6.34
+Iteration 7: Best Fitness = 6.34
+Iteration 8: Best Fitness = 6.1
+Iteration 9: Best Fitness = 6.1
+Iteration 10: Best Fitness = 6.1
+Iteration 11: Best Fitness = 6.1
+Iteration 12: Best Fitness = 6.1
+Iteration 13: Best Fitness = 6.1
+Iteration 14: Best Fitness = 6.1
+Iteration 15: Best Fitness = 6.1
+Iteration 16: Best Fitness = 6.1
+Iteration 17: Best Fitness = 6.1
+Iteration 18: Best Fitness = 6.1
+Stopping early due to stagnation.
+
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[d1_1650140033-1 p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[p1_1702320036-1 p2_1723160039-1 d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[d1_1650140033-1 p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 6.1 , after EA 6.1
+SUCCESS
+
+2025-05-01 22:35:31,381 [simulate_environment.py | 254] INFO: 2025-05-01 18:20:00, Item 1701470035-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:31,381 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:31,381 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 18:30:00, pre time: 2025-05-01 18:20:00
+2025-05-01 22:35:31,382 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 18:30:00
+2025-05-01 22:35:31,388 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 17 ongoing order items, 56 completed order items
+2025-05-01 22:35:32,837 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 4.82
+Iteration 2: Best Fitness = 4.58
+Iteration 3: Best Fitness = 4.58
+Iteration 4: Best Fitness = 4.58
+Iteration 5: Best Fitness = 4.58
+Iteration 6: Best Fitness = 4.58
+Iteration 7: Best Fitness = 4.58
+Iteration 8: Best Fitness = 4.58
+Iteration 9: Best Fitness = 4.58
+Iteration 10: Best Fitness = 4.58
+Iteration 11: Best Fitness = 4.58
+Iteration 12: Best Fitness = 4.58
+Stopping early due to stagnation.
+
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[d1_1650140033-1 p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d1_1642180030-1 d1_1713590038-1 d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[d1_1650140033-1 p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 4.58 , after EA 4.58
+SUCCESS
+
+2025-05-01 22:35:32,853 [simulate_environment.py | 254] INFO: 2025-05-01 18:30:00, Item 1701470035-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:32,854 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:32,854 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 18:40:00, pre time: 2025-05-01 18:30:00
+2025-05-01 22:35:32,854 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 18:40:00
+2025-05-01 22:35:32,856 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 14 ongoing order items, 59 completed order items
+2025-05-01 22:35:34,167 [simulate_environment.py | 232] INFO: 
+
+V_1:[d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 4.46 , after EA 4.46
+SUCCESS
+
+2025-05-01 22:35:34,184 [simulate_environment.py | 254] INFO: 2025-05-01 18:40:00, Item 1701470035-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:34,185 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:34,185 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 18:50:00, pre time: 2025-05-01 18:40:00
+2025-05-01 22:35:34,185 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 18:50:00
+2025-05-01 22:35:34,200 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 14 ongoing order items, 59 completed order items
+2025-05-01 22:35:35,508 [simulate_environment.py | 232] INFO: 
+
+V_1:[d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 4.46 , after EA 4.46
+SUCCESS
+
+2025-05-01 22:35:35,512 [simulate_environment.py | 254] INFO: 2025-05-01 18:50:00, Item 1701470035-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:35,512 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:35,513 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 19:00:00, pre time: 2025-05-01 18:50:00
+2025-05-01 22:35:35,513 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 19:00:00
+2025-05-01 22:35:35,528 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 14 ongoing order items, 59 completed order items
+2025-05-01 22:35:36,808 [simulate_environment.py | 232] INFO: 
+
+V_1:[d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d2_1637240028-2 d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1741470040-1 p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 4.46 , after EA 4.46
+SUCCESS
+
+2025-05-01 22:35:36,813 [simulate_environment.py | 254] INFO: 2025-05-01 19:00:00, Item 1701470035-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:36,814 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:36,814 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 19:10:00, pre time: 2025-05-01 19:00:00
+2025-05-01 22:35:36,814 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 19:10:00
+2025-05-01 22:35:36,825 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 13 ongoing order items, 61 completed order items
+2025-05-01 22:35:38,076 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 0.8800000000000001 , after EA 0.8800000000000001
+SUCCESS
+
+2025-05-01 22:35:38,094 [simulate_environment.py | 254] INFO: 2025-05-01 19:10:00, Item 1701470035-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:38,095 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:38,095 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 19:20:00, pre time: 2025-05-01 19:10:00
+2025-05-01 22:35:38,095 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 19:20:00
+2025-05-01 22:35:38,106 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 13 ongoing order items, 61 completed order items
+2025-05-01 22:35:39,450 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 0.8800000000000001 , after EA 0.8800000000000001
+SUCCESS
+
+2025-05-01 22:35:39,452 [simulate_environment.py | 254] INFO: 2025-05-01 19:20:00, Item 1701470035-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:39,453 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:39,453 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 19:30:00, pre time: 2025-05-01 19:20:00
+2025-05-01 22:35:39,453 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 19:30:00
+2025-05-01 22:35:39,465 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 13 ongoing order items, 61 completed order items
+2025-05-01 22:35:40,754 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 0.8800000000000001 , after EA 0.8800000000000001
+SUCCESS
+
+2025-05-01 22:35:40,759 [simulate_environment.py | 254] INFO: 2025-05-01 19:30:00, Item 1701470035-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:40,759 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:40,760 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 19:40:00, pre time: 2025-05-01 19:30:00
+2025-05-01 22:35:40,760 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 19:40:00
+2025-05-01 22:35:40,763 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 13 ongoing order items, 61 completed order items
+2025-05-01 22:35:42,117 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[d1_1651420034-1 d2_1602230026-2] V_2:[d2_1723160039-2 d1_1702320036-1 d2_1647440032-2 d3_1554450025-3] V_3:[] V_4:[] V_5:[p1_1701470035-1 d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 0.7 , after EA 0.7
+SUCCESS
+
+2025-05-01 22:35:42,120 [simulate_environment.py | 254] INFO: 2025-05-01 19:40:00, Item 1701470035-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:42,120 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:42,121 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 19:50:00, pre time: 2025-05-01 19:40:00
+2025-05-01 22:35:42,121 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 19:50:00
+2025-05-01 22:35:42,122 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 3 ongoing order items, 72 completed order items
+2025-05-01 22:35:43,455 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 0.3 , after EA 0.3
+SUCCESS
+
+2025-05-01 22:35:43,464 [simulate_environment.py | 254] INFO: 2025-05-01 19:50:00, Item 2000530041-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:35:43,464 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:43,464 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 20:00:00, pre time: 2025-05-01 19:50:00
+2025-05-01 22:35:43,464 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 20:00:00
+2025-05-01 22:35:43,466 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 3 ongoing order items, 72 completed order items
+2025-05-01 22:35:44,793 [simulate_environment.py | 232] INFO: 
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 0.3 , after EA 0.3
+SUCCESS
+
+2025-05-01 22:35:44,795 [simulate_environment.py | 254] INFO: 2025-05-01 20:00:00, Item 2000530041-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:35:44,796 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:44,796 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 20:10:00, pre time: 2025-05-01 20:00:00
+2025-05-01 22:35:44,796 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 20:10:00
+2025-05-01 22:35:44,809 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 3 ongoing order items, 72 completed order items
+2025-05-01 22:35:46,126 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2000530041-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+V_1:[p1_2000530041-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d1_1701470035-1 d1_1741470040-1 d1_1707460037-1]
+The fitness score before EA 3.5200000000000005 , after EA 3.5200000000000005
+SUCCESS
+
+2025-05-01 22:35:46,141 [simulate_environment.py | 254] INFO: 2025-05-01 20:10:00, Item 2000530041-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:46,141 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:46,141 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 20:20:00, pre time: 2025-05-01 20:10:00
+2025-05-01 22:35:46,141 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 20:20:00
+2025-05-01 22:35:46,153 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 0 ongoing order items, 75 completed order items
+2025-05-01 22:35:47,459 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2000530041-1 d1_2000530041-1 p1_2012590042-1 d1_2012590042-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_2000530041-1 d1_2000530041-1 p1_2012590042-1 d1_2012590042-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 3.66 , after EA 3.66
+SUCCESS
+
+2025-05-01 22:35:47,473 [simulate_environment.py | 254] INFO: 2025-05-01 20:20:00, Item 2000530041-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:47,474 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:47,474 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 20:30:00, pre time: 2025-05-01 20:20:00
+2025-05-01 22:35:47,474 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 20:30:00
+2025-05-01 22:35:47,481 [simulate_environment.py | 167] INFO: Get 7 unallocated order items, 0 ongoing order items, 75 completed order items
+2025-05-01 22:35:48,830 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 2.64
+Iteration 2: Best Fitness = 2.64
+Iteration 3: Best Fitness = 2.64
+Iteration 4: Best Fitness = 2.64
+Iteration 5: Best Fitness = 2.64
+Iteration 6: Best Fitness = 2.64
+Iteration 7: Best Fitness = 2.64
+Iteration 8: Best Fitness = 2.64
+Iteration 9: Best Fitness = 2.64
+Iteration 10: Best Fitness = 2.64
+Iteration 11: Best Fitness = 2.64
+Stopping early due to stagnation.
+
+V_1:[p1_2000530041-1 p1_2027340043-1 p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[p4_2028330044-1 d4_2028330044-4] V_3:[] V_4:[] V_5:[]
+V_1:[p1_2000530041-1 p1_2027340043-1 p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[p4_2028330044-1 d4_2028330044-4]
+The fitness score before EA 2.64 , after EA 2.64
+SUCCESS
+
+2025-05-01 22:35:48,849 [simulate_environment.py | 254] INFO: 2025-05-01 20:30:00, Item 2000530041-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:48,849 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:48,849 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 20:40:00, pre time: 2025-05-01 20:30:00
+2025-05-01 22:35:48,849 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 20:40:00
+2025-05-01 22:35:48,857 [simulate_environment.py | 167] INFO: Get 7 unallocated order items, 0 ongoing order items, 75 completed order items
+2025-05-01 22:35:50,192 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 2.64
+Iteration 2: Best Fitness = 2.64
+Iteration 3: Best Fitness = 2.64
+Iteration 4: Best Fitness = 2.64
+Iteration 5: Best Fitness = 2.64
+Iteration 6: Best Fitness = 2.64
+Iteration 7: Best Fitness = 2.64
+Iteration 8: Best Fitness = 2.64
+Iteration 9: Best Fitness = 2.64
+Iteration 10: Best Fitness = 2.64
+Iteration 11: Best Fitness = 2.64
+Stopping early due to stagnation.
+
+V_1:[p1_2000530041-1 p1_2027340043-1 p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[p4_2028330044-1 d4_2028330044-4]
+V_1:[p1_2000530041-1 p1_2027340043-1 p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[p4_2028330044-1 d4_2028330044-4]
+The fitness score before EA 2.64 , after EA 2.64
+SUCCESS
+
+2025-05-01 22:35:50,205 [simulate_environment.py | 254] INFO: 2025-05-01 20:40:00, Item 2000530041-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:50,207 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:50,207 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 20:50:00, pre time: 2025-05-01 20:40:00
+2025-05-01 22:35:50,207 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 20:50:00
+2025-05-01 22:35:50,216 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 6 ongoing order items, 75 completed order items
+2025-05-01 22:35:51,492 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d4_2028330044-4]
+V_1:[p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d4_2028330044-4]
+The fitness score before EA 2.58 , after EA 2.58
+SUCCESS
+
+2025-05-01 22:35:51,511 [simulate_environment.py | 254] INFO: 2025-05-01 20:50:00, Item 2012590042-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:51,512 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:51,512 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 21:00:00, pre time: 2025-05-01 20:50:00
+2025-05-01 22:35:51,512 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 21:00:00
+2025-05-01 22:35:51,513 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 6 ongoing order items, 75 completed order items
+2025-05-01 22:35:52,742 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d4_2028330044-4]
+V_1:[p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d4_2028330044-4]
+The fitness score before EA 2.58 , after EA 2.58
+SUCCESS
+
+2025-05-01 22:35:52,745 [simulate_environment.py | 254] INFO: 2025-05-01 21:00:00, Item 2012590042-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:52,745 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:52,745 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 21:10:00, pre time: 2025-05-01 21:00:00
+2025-05-01 22:35:52,745 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 21:10:00
+2025-05-01 22:35:52,747 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 6 ongoing order items, 75 completed order items
+2025-05-01 22:35:53,966 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d4_2028330044-4]
+V_1:[p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d4_2028330044-4]
+The fitness score before EA 2.58 , after EA 2.58
+SUCCESS
+
+2025-05-01 22:35:53,969 [simulate_environment.py | 254] INFO: 2025-05-01 21:10:00, Item 2012590042-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:53,969 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:53,969 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 21:20:00, pre time: 2025-05-01 21:10:00
+2025-05-01 22:35:53,969 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 21:20:00
+2025-05-01 22:35:53,981 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 6 ongoing order items, 75 completed order items
+2025-05-01 22:35:55,243 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d4_2028330044-4]
+V_1:[p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d4_2028330044-4]
+The fitness score before EA 1.0399999999999998 , after EA 1.0399999999999998
+SUCCESS
+
+2025-05-01 22:35:55,248 [simulate_environment.py | 254] INFO: 2025-05-01 21:20:00, Item 2012590042-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:55,249 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:55,250 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 21:30:00, pre time: 2025-05-01 21:20:00
+2025-05-01 22:35:55,250 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 21:30:00
+2025-05-01 22:35:55,263 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 6 ongoing order items, 75 completed order items
+2025-05-01 22:35:56,529 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d4_2028330044-4]
+V_1:[p1_2012590042-1 d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[d4_2028330044-4]
+The fitness score before EA 0.74 , after EA 0.74
+SUCCESS
+
+2025-05-01 22:35:56,531 [simulate_environment.py | 254] INFO: 2025-05-01 21:30:00, Item 2012590042-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:35:56,532 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:56,532 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 21:40:00, pre time: 2025-05-01 21:30:00
+2025-05-01 22:35:56,532 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 21:40:00
+2025-05-01 22:35:56,544 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 3 ongoing order items, 79 completed order items
+2025-05-01 22:35:57,815 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.74 , after EA 0.74
+SUCCESS
+
+2025-05-01 22:35:57,831 [simulate_environment.py | 254] INFO: 2025-05-01 21:40:00, Item 2211300045-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:35:57,832 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:57,832 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 21:50:00, pre time: 2025-05-01 21:40:00
+2025-05-01 22:35:57,832 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 21:50:00
+2025-05-01 22:35:57,841 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 3 ongoing order items, 79 completed order items
+2025-05-01 22:35:59,120 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.74 , after EA 0.74
+SUCCESS
+
+2025-05-01 22:35:59,123 [simulate_environment.py | 254] INFO: 2025-05-01 21:50:00, Item 2211300045-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:35:59,123 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:35:59,123 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 22:00:00, pre time: 2025-05-01 21:50:00
+2025-05-01 22:35:59,123 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 22:00:00
+2025-05-01 22:35:59,138 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 3 ongoing order items, 79 completed order items
+2025-05-01 22:36:00,443 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d1_2012590042-1 d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.74 , after EA 0.74
+SUCCESS
+
+2025-05-01 22:36:00,446 [simulate_environment.py | 254] INFO: 2025-05-01 22:00:00, Item 2211300045-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:36:00,446 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:00,447 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 22:10:00, pre time: 2025-05-01 22:00:00
+2025-05-01 22:36:00,447 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 22:10:00
+2025-05-01 22:36:00,450 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 2 ongoing order items, 80 completed order items
+2025-05-01 22:36:01,713 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d1_2027340043-1 d1_2000530041-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.43999999999999995 , after EA 0.43999999999999995
+SUCCESS
+
+2025-05-01 22:36:01,727 [simulate_environment.py | 254] INFO: 2025-05-01 22:10:00, Item 2211300045-1: state = 0 < 2, we can not finish the simulation
+2025-05-01 22:36:01,727 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:01,727 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 22:20:00, pre time: 2025-05-01 22:10:00
+2025-05-01 22:36:01,728 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 22:20:00
+2025-05-01 22:36:01,732 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 2 ongoing order items, 80 completed order items
+2025-05-01 22:36:03,043 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_2027340043-1 d1_2000530041-1 p1_2211300045-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d1_2027340043-1 d1_2000530041-1 p1_2211300045-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 3.6799999999999997 , after EA 3.6799999999999997
+SUCCESS
+
+2025-05-01 22:36:03,052 [simulate_environment.py | 254] INFO: 2025-05-01 22:20:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:03,053 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:03,053 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 22:30:00, pre time: 2025-05-01 22:20:00
+2025-05-01 22:36:03,053 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 22:30:00
+2025-05-01 22:36:03,059 [simulate_environment.py | 167] INFO: Get 4 unallocated order items, 2 ongoing order items, 80 completed order items
+2025-05-01 22:36:04,475 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 6.840000000000001
+Iteration 2: Best Fitness = 4.14
+Iteration 3: Best Fitness = 4.14
+Iteration 4: Best Fitness = 4.1
+Iteration 5: Best Fitness = 4.1
+Iteration 6: Best Fitness = 4.1
+Iteration 7: Best Fitness = 4.1
+Iteration 8: Best Fitness = 4.1
+Iteration 9: Best Fitness = 4.1
+Iteration 10: Best Fitness = 4.1
+Iteration 11: Best Fitness = 4.1
+Iteration 12: Best Fitness = 4.1
+Iteration 13: Best Fitness = 4.1
+Iteration 14: Best Fitness = 4.1
+Stopping early due to stagnation.
+
+V_1:[d1_2027340043-1 d1_2000530041-1 p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[p2_2220330046-1 d2_2220330046-2]
+V_1:[d1_2027340043-1 d1_2000530041-1 p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[p2_2220330046-1 d2_2220330046-2]
+The fitness score before EA 4.1 , after EA 4.1
+SUCCESS
+
+2025-05-01 22:36:04,490 [simulate_environment.py | 254] INFO: 2025-05-01 22:30:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:04,490 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:04,490 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 22:40:00, pre time: 2025-05-01 22:30:00
+2025-05-01 22:36:04,490 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 22:40:00
+2025-05-01 22:36:04,497 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 3 ongoing order items, 81 completed order items
+2025-05-01 22:36:05,929 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 4.02
+Iteration 2: Best Fitness = 3.9800000000000004
+Iteration 3: Best Fitness = 3.9800000000000004
+Iteration 4: Best Fitness = 3.9800000000000004
+Iteration 5: Best Fitness = 3.9800000000000004
+Iteration 6: Best Fitness = 3.9800000000000004
+Iteration 7: Best Fitness = 3.9800000000000004
+Iteration 8: Best Fitness = 3.9800000000000004
+Iteration 9: Best Fitness = 3.9800000000000004
+Iteration 10: Best Fitness = 3.9800000000000004
+Iteration 11: Best Fitness = 3.9800000000000004
+Iteration 12: Best Fitness = 3.9800000000000004
+Stopping early due to stagnation.
+
+V_1:[d1_2000530041-1 p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[d2_2220330046-2]
+V_1:[d1_2000530041-1 p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[d2_2220330046-2]
+The fitness score before EA 3.9800000000000004 , after EA 3.9800000000000004
+SUCCESS
+
+2025-05-01 22:36:05,944 [simulate_environment.py | 254] INFO: 2025-05-01 22:40:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:05,944 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:05,945 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 22:50:00, pre time: 2025-05-01 22:40:00
+2025-05-01 22:36:05,945 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 22:50:00
+2025-05-01 22:36:05,950 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 3 ongoing order items, 81 completed order items
+2025-05-01 22:36:07,317 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 3.9800000000000004
+Iteration 2: Best Fitness = 3.9800000000000004
+Iteration 3: Best Fitness = 3.9800000000000004
+Iteration 4: Best Fitness = 3.9800000000000004
+Iteration 5: Best Fitness = 3.9800000000000004
+Iteration 6: Best Fitness = 3.9800000000000004
+Iteration 7: Best Fitness = 3.9800000000000004
+Iteration 8: Best Fitness = 3.9800000000000004
+Iteration 9: Best Fitness = 3.9800000000000004
+Iteration 10: Best Fitness = 3.9800000000000004
+Iteration 11: Best Fitness = 3.9800000000000004
+Stopping early due to stagnation.
+
+V_1:[d1_2000530041-1 p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[d2_2220330046-2]
+V_1:[d1_2000530041-1 p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[d2_2220330046-2]
+The fitness score before EA 3.9800000000000004 , after EA 3.9800000000000004
+SUCCESS
+
+2025-05-01 22:36:07,320 [simulate_environment.py | 254] INFO: 2025-05-01 22:50:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:07,320 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:07,321 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 23:00:00, pre time: 2025-05-01 22:50:00
+2025-05-01 22:36:07,321 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 23:00:00
+2025-05-01 22:36:07,325 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 3 ongoing order items, 81 completed order items
+2025-05-01 22:36:08,820 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 3.9800000000000004
+Iteration 2: Best Fitness = 3.9800000000000004
+Iteration 3: Best Fitness = 3.9800000000000004
+Iteration 4: Best Fitness = 3.9800000000000004
+Iteration 5: Best Fitness = 3.9800000000000004
+Iteration 6: Best Fitness = 3.9800000000000004
+Iteration 7: Best Fitness = 3.9800000000000004
+Iteration 8: Best Fitness = 3.9800000000000004
+Iteration 9: Best Fitness = 3.9800000000000004
+Iteration 10: Best Fitness = 3.9800000000000004
+Iteration 11: Best Fitness = 3.9800000000000004
+Stopping early due to stagnation.
+
+V_1:[d1_2000530041-1 p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[d2_2220330046-2]
+V_1:[d1_2000530041-1 p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[d2_2220330046-2]
+The fitness score before EA 3.9800000000000004 , after EA 3.9800000000000004
+SUCCESS
+
+2025-05-01 22:36:08,823 [simulate_environment.py | 254] INFO: 2025-05-01 23:00:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:08,823 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:08,824 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 23:10:00, pre time: 2025-05-01 23:00:00
+2025-05-01 22:36:08,824 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 23:10:00
+2025-05-01 22:36:08,825 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 1 ongoing order items, 83 completed order items
+2025-05-01 22:36:10,151 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 3.84
+Iteration 2: Best Fitness = 3.84
+Iteration 3: Best Fitness = 3.84
+Iteration 4: Best Fitness = 3.84
+Iteration 5: Best Fitness = 3.84
+Iteration 6: Best Fitness = 3.84
+Iteration 7: Best Fitness = 3.84
+Iteration 8: Best Fitness = 3.84
+Iteration 9: Best Fitness = 3.84
+Iteration 10: Best Fitness = 3.84
+Iteration 11: Best Fitness = 3.84
+Stopping early due to stagnation.
+
+V_1:[d1_2000530041-1 p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[d1_2000530041-1 p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 3.84 , after EA 3.84
+SUCCESS
+
+2025-05-01 22:36:10,165 [simulate_environment.py | 254] INFO: 2025-05-01 23:10:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:10,165 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:10,166 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 23:20:00, pre time: 2025-05-01 23:10:00
+2025-05-01 22:36:10,166 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 23:20:00
+2025-05-01 22:36:10,169 [simulate_environment.py | 167] INFO: Get 2 unallocated order items, 0 ongoing order items, 84 completed order items
+2025-05-01 22:36:11,610 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_2211300045-1 p1_2223290047-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 3.46 , after EA 3.46
+SUCCESS
+
+2025-05-01 22:36:11,625 [simulate_environment.py | 254] INFO: 2025-05-01 23:20:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:11,626 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:11,626 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 23:30:00, pre time: 2025-05-01 23:20:00
+2025-05-01 22:36:11,626 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 23:30:00
+2025-05-01 22:36:11,638 [simulate_environment.py | 167] INFO: Get 3 unallocated order items, 0 ongoing order items, 84 completed order items
+2025-05-01 22:36:13,087 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 3.4800000000000004
+Iteration 2: Best Fitness = 3.4800000000000004
+Iteration 3: Best Fitness = 3.4800000000000004
+Iteration 4: Best Fitness = 3.4800000000000004
+Iteration 5: Best Fitness = 3.4800000000000004
+Iteration 6: Best Fitness = 3.4800000000000004
+Iteration 7: Best Fitness = 3.4800000000000004
+Iteration 8: Best Fitness = 3.4800000000000004
+Iteration 9: Best Fitness = 3.4800000000000004
+Iteration 10: Best Fitness = 3.4800000000000004
+Iteration 11: Best Fitness = 3.4800000000000004
+Stopping early due to stagnation.
+
+V_1:[p1_2211300045-1 p1_2223290047-1 p1_2324550048-1 d1_2324550048-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[p1_2211300045-1 p1_2223290047-1 p1_2324550048-1 d1_2324550048-1 d1_2223290047-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 3.4800000000000004 , after EA 3.4800000000000004
+SUCCESS
+
+2025-05-01 22:36:13,104 [simulate_environment.py | 254] INFO: 2025-05-01 23:30:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:13,104 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:13,104 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 23:40:00, pre time: 2025-05-01 23:30:00
+2025-05-01 22:36:13,105 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 23:40:00
+2025-05-01 22:36:13,107 [simulate_environment.py | 167] INFO: Get 26 unallocated order items, 0 ongoing order items, 84 completed order items
+2025-05-01 22:36:15,496 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 10.139999999999999
+Iteration 2: Best Fitness = 10.139999999999999
+Iteration 3: Best Fitness = 10.080000000000002
+Iteration 4: Best Fitness = 10.080000000000002
+Iteration 5: Best Fitness = 10.080000000000002
+Iteration 6: Best Fitness = 10.080000000000002
+Iteration 7: Best Fitness = 10.080000000000002
+Iteration 8: Best Fitness = 10.080000000000002
+Iteration 9: Best Fitness = 10.080000000000002
+Iteration 10: Best Fitness = 10.080000000000002
+Iteration 11: Best Fitness = 10.080000000000002
+Iteration 12: Best Fitness = 9.7
+Iteration 13: Best Fitness = 9.7
+Iteration 14: Best Fitness = 9.7
+Iteration 15: Best Fitness = 9.7
+Iteration 16: Best Fitness = 9.7
+Iteration 17: Best Fitness = 9.7
+Iteration 18: Best Fitness = 9.7
+Iteration 19: Best Fitness = 9.7
+Iteration 20: Best Fitness = 9.7
+Iteration 21: Best Fitness = 9.7
+Iteration 22: Best Fitness = 9.7
+Stopping early due to stagnation.
+
+V_1:[p1_2211300045-1 p1_2223290047-1 p1_2324550048-1 d1_2324550048-1 d1_2223290047-1 d1_2211300045-1] V_2:[p6_2333590050-17 d6_2333590050-22] V_3:[] V_4:[] V_5:[p1_2330440049-1 d1_2330440049-1 p16_2333590050-1 d16_2333590050-16]
+V_1:[p1_2211300045-1 p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[p1_2223290047-1 p1_2324550048-1 p6_2333590050-17 d6_2333590050-22 d1_2324550048-1 d1_2223290047-1 p16_2333590050-1 d16_2333590050-16]
+The fitness score before EA 10.34 , after EA 9.459999999999999
+SUCCESS
+
+2025-05-01 22:36:15,515 [simulate_environment.py | 254] INFO: 2025-05-01 23:40:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:15,516 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:15,516 [simulate_environment.py | 103] INFO: cur time: 2025-05-01 23:50:00, pre time: 2025-05-01 23:40:00
+2025-05-01 22:36:15,516 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-01 23:50:00
+2025-05-01 22:36:15,528 [simulate_environment.py | 167] INFO: Get 26 unallocated order items, 0 ongoing order items, 84 completed order items
+2025-05-01 22:36:17,466 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 1487.697777777778
+Iteration 2: Best Fitness = 6.7
+Iteration 3: Best Fitness = 6.7
+Iteration 4: Best Fitness = 6.7
+Iteration 5: Best Fitness = 6.7
+Iteration 6: Best Fitness = 6.7
+Iteration 7: Best Fitness = 6.7
+Iteration 8: Best Fitness = 6.7
+Iteration 9: Best Fitness = 6.7
+Iteration 10: Best Fitness = 6.7
+Iteration 11: Best Fitness = 6.7
+Iteration 12: Best Fitness = 6.7
+Stopping early due to stagnation.
+
+V_1:[p1_2211300045-1 p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[p1_2223290047-1 p1_2324550048-1 p6_2333590050-17 d6_2333590050-22 d1_2324550048-1 d1_2223290047-1 p16_2333590050-1 d16_2333590050-16]
+V_1:[p1_2211300045-1 p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[p1_2223290047-1 p1_2324550048-1 p6_2333590050-17 d6_2333590050-22 d1_2324550048-1 d1_2223290047-1 p16_2333590050-1 d16_2333590050-16]
+The fitness score before EA 6.459999999999999 , after EA 6.459999999999999
+SUCCESS
+
+2025-05-01 22:36:17,480 [simulate_environment.py | 254] INFO: 2025-05-01 23:50:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:17,481 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:17,481 [simulate_environment.py | 103] INFO: cur time: 2025-05-02 00:00:00, pre time: 2025-05-01 23:50:00
+2025-05-01 22:36:17,481 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-02 00:00:00
+2025-05-01 22:36:17,482 [simulate_environment.py | 167] INFO: Get 26 unallocated order items, 0 ongoing order items, 84 completed order items
+2025-05-01 22:36:19,299 [simulate_environment.py | 232] INFO: 
+Iteration 1: Best Fitness = 7.1
+Iteration 2: Best Fitness = 7.1
+Iteration 3: Best Fitness = 6.7
+Iteration 4: Best Fitness = 6.7
+Iteration 5: Best Fitness = 6.7
+Iteration 6: Best Fitness = 6.7
+Iteration 7: Best Fitness = 6.7
+Iteration 8: Best Fitness = 6.7
+Iteration 9: Best Fitness = 6.7
+Iteration 10: Best Fitness = 6.7
+Iteration 11: Best Fitness = 6.7
+Iteration 12: Best Fitness = 6.7
+Iteration 13: Best Fitness = 6.7
+Stopping early due to stagnation.
+
+V_1:[p1_2211300045-1 p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[p1_2223290047-1 p1_2324550048-1 p6_2333590050-17 d6_2333590050-22 d1_2324550048-1 d1_2223290047-1 p16_2333590050-1 d16_2333590050-16]
+V_1:[p1_2211300045-1 p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[] V_3:[] V_4:[] V_5:[p1_2223290047-1 p1_2324550048-1 p6_2333590050-17 d6_2333590050-22 d1_2324550048-1 d1_2223290047-1 p16_2333590050-1 d16_2333590050-16]
+The fitness score before EA 6.459999999999999 , after EA 6.459999999999999
+SUCCESS
+
+2025-05-01 22:36:19,302 [simulate_environment.py | 254] INFO: 2025-05-02 00:00:00, Item 2211300045-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:19,302 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:19,302 [simulate_environment.py | 103] INFO: cur time: 2025-05-02 00:10:00, pre time: 2025-05-02 00:00:00
+2025-05-01 22:36:19,302 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-02 00:10:00
+2025-05-01 22:36:19,310 [simulate_environment.py | 167] INFO: Get 17 unallocated order items, 9 ongoing order items, 84 completed order items
+2025-05-01 22:36:20,610 [simulate_environment.py | 232] INFO: 
+After 24h,redispatch valid.originCost:6984.237777777777 newCost:6.699999999999998improve value: 6977.537777777778
+
+V_1:[p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[p16_2333590050-1 d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+V_1:[p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[p16_2333590050-1 d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+The fitness score before EA 6.699999999999998 , after EA 6.699999999999998
+SUCCESS
+
+2025-05-01 22:36:20,625 [simulate_environment.py | 254] INFO: 2025-05-02 00:10:00, Item 2330440049-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:20,626 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:20,626 [simulate_environment.py | 103] INFO: cur time: 2025-05-02 00:20:00, pre time: 2025-05-02 00:10:00
+2025-05-01 22:36:20,626 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-02 00:20:00
+2025-05-01 22:36:20,638 [simulate_environment.py | 167] INFO: Get 17 unallocated order items, 9 ongoing order items, 84 completed order items
+2025-05-01 22:36:21,921 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[p16_2333590050-1 d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+V_1:[p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[p16_2333590050-1 d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+The fitness score before EA 4.94 , after EA 4.94
+SUCCESS
+
+2025-05-01 22:36:21,935 [simulate_environment.py | 254] INFO: 2025-05-02 00:20:00, Item 2330440049-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:21,935 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:21,936 [simulate_environment.py | 103] INFO: cur time: 2025-05-02 00:30:00, pre time: 2025-05-02 00:20:00
+2025-05-01 22:36:21,936 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-02 00:30:00
+2025-05-01 22:36:21,950 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 25 ongoing order items, 84 completed order items
+2025-05-01 22:36:23,215 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+V_1:[p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+The fitness score before EA 4.94 , after EA 4.94
+SUCCESS
+
+2025-05-01 22:36:23,233 [simulate_environment.py | 254] INFO: 2025-05-02 00:30:00, Item 2330440049-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:23,233 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:23,234 [simulate_environment.py | 103] INFO: cur time: 2025-05-02 00:40:00, pre time: 2025-05-02 00:30:00
+2025-05-01 22:36:23,234 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-02 00:40:00
+2025-05-01 22:36:23,247 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 25 ongoing order items, 84 completed order items
+2025-05-01 22:36:24,533 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+V_1:[p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+The fitness score before EA 3.3600000000000003 , after EA 3.3600000000000003
+SUCCESS
+
+2025-05-01 22:36:24,536 [simulate_environment.py | 254] INFO: 2025-05-02 00:40:00, Item 2330440049-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:24,538 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:24,538 [simulate_environment.py | 103] INFO: cur time: 2025-05-02 00:50:00, pre time: 2025-05-02 00:40:00
+2025-05-01 22:36:24,538 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-02 00:50:00
+2025-05-01 22:36:24,544 [simulate_environment.py | 167] INFO: Get 1 unallocated order items, 25 ongoing order items, 84 completed order items
+2025-05-01 22:36:25,772 [simulate_environment.py | 232] INFO: 
+
+V_1:[p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+V_1:[p1_2330440049-1 d1_2330440049-1 d1_2211300045-1] V_2:[d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+The fitness score before EA 1.8800000000000003 , after EA 1.8800000000000003
+SUCCESS
+
+2025-05-01 22:36:25,776 [simulate_environment.py | 254] INFO: 2025-05-02 00:50:00, Item 2330440049-1: state = 1 < 2, we can not finish the simulation
+2025-05-01 22:36:25,777 [simulate_environment.py | 99] INFO: **************************************************
+2025-05-01 22:36:25,777 [simulate_environment.py | 103] INFO: cur time: 2025-05-02 01:00:00, pre time: 2025-05-02 00:50:00
+2025-05-01 22:36:25,777 [simulate_environment.py | 140] INFO: Start to update the input of 2025-05-02 01:00:00
+2025-05-01 22:36:25,779 [simulate_environment.py | 167] INFO: Get 0 unallocated order items, 26 ongoing order items, 84 completed order items
+2025-05-01 22:36:27,052 [simulate_environment.py | 232] INFO: 
+
+V_1:[d1_2330440049-1 d1_2211300045-1] V_2:[d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+V_1:[d1_2330440049-1 d1_2211300045-1] V_2:[d16_2333590050-16] V_3:[] V_4:[] V_5:[d6_2333590050-22 d1_2324550048-1 d1_2223290047-1]
+The fitness score before EA 1.8800000000000003 , after EA 1.8800000000000003
+SUCCESS
+
+2025-05-01 22:36:27,074 [simulate_environment.py | 257] INFO: 2025-05-02 01:00:00, the status of all items is greater than 1, we could finish the simulation
+2025-05-01 22:36:27,075 [evaluator.py    | 52] INFO: Traveling Distance of Vehicle V_1 is  179.000, visited node list: 54
+2025-05-01 22:36:27,075 [evaluator.py    | 52] INFO: Traveling Distance of Vehicle V_2 is  56.900, visited node list: 110
+2025-05-01 22:36:27,075 [evaluator.py    | 52] INFO: Traveling Distance of Vehicle V_3 is  117.600, visited node list: 94
+2025-05-01 22:36:27,075 [evaluator.py    | 52] INFO: Traveling Distance of Vehicle V_4 is  0.000, visited node list: 152
+2025-05-01 22:36:27,076 [evaluator.py    | 52] INFO: Traveling Distance of Vehicle V_5 is  81.100, visited node list: 89
+2025-05-01 22:36:27,076 [evaluator.py    | 33] INFO: Total distance:  434.600
+2025-05-01 22:36:27,076 [evaluator.py    | 35] INFO: Sum over time:  0.000
+2025-05-01 22:36:27,076 [evaluator.py    | 37] INFO: Total score:  86.920
+2025-05-01 22:36:27,082 [main.py         | 33] INFO: Score of instance_2: 86.92
