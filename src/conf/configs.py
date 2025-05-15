@@ -38,6 +38,8 @@ class Configs(object):
 
     route_info_file = "route_info.csv"
     factory_info_file = "factory_info.csv"
+    customed_route_info_file = "route_info_customed.csv"
+    customed_factory_info_file = "factory_info_customed.csv"
     route_info_file_path = os.path.join(benchmark_folder_path, route_info_file)
     factory_info_file_path = os.path.join(benchmark_folder_path, factory_info_file)
 
@@ -79,5 +81,10 @@ class Configs(object):
     A_DAY_TIME_SECONDS = 24 * 60 * 60
 
     # 数据集选项，列表为空则选择所有数据集，如[]，[1], [1, 2, 3], [64]
-    selected_instances = [1 , 2 , 3 , 4 , 5, 6, 7 , 8 ,9 , 10]
-    all_test_instances = range(1, 65)
+    selected_instances = [1]
+    """ selected_instances = [65 , 66 , 67 , 68 , 69 ,70 , 71, 72, 73, 74, 75, 76, 77, 78, 79, 80,
+                          65 , 66 , 67 , 68 , 69 ,70 , 71, 72, 73, 74, 75, 76, 77, 78, 79, 80] """
+    all_test_instances = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11 , 12 , 13 , 14 , 15 , 16,
+                            65 ,66 ,67 ,68 ,69 ,70 ,71,72 , 73 , 74 , 75 , 76 , 77 ,78 ,79 ,80]
+    
+    all_algorithms = ["GA","GA1LS","GA5LS","ACO","ACO5LS"]

@@ -1,0 +1,15 @@
+2025-05-12 10:50:41,485 [wapper.py       | 52] INFO: Starting simulation for instance_65
+2025-05-12 10:50:41,485 [wapper.py       | 53] INFO: Using algorithm: GA5LS
+2025-05-12 10:50:41,489 [wapper.py       | 84] ERROR: Simulation failed: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "C:\PHUC\Học Tập\Project2\Project2---GA-for-DPDP\src\wapper.py", line 57, in run_simulation
+    if instance_id <= 64:
+       ^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'str' and 'int'
+
+Simulation failed: '<=' not supported between instances of 'str' and 'int'
+Traceback (most recent call last):
+  File "C:\PHUC\Học Tập\Project2\Project2---GA-for-DPDP\src\wapper.py", line 57, in run_simulation
+    if instance_id <= 64:
+       ^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'str' and 'int'

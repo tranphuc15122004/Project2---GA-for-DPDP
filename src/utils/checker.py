@@ -1,5 +1,4 @@
 import copy
-
 from src.utils.logging_engine import logger
 from src.utils.tools import get_item_list_of_vehicles
 

@@ -19,9 +19,9 @@ class Chromosome:
         self.fitness = total_cost(self.id_to_vehicle , self.route_map , self.solution)
         return self.fitness
 
-    def mutate(self  ,is_limited = False):
-        mutate_solution(self , is_limited )
-        self.fitness = self.evaluate_fitness()        
+    def mutate(self  ,is_limited = False , is_1LS : bool = False):
+        mutate_solution(self , is_limited  , is_1LS)
+        self.fitness = self.evaluate_fitness()
 
     def mutate_for_ACO(self  ,is_limited = False):
         mutation_for_ACO(self , is_limited )
@@ -34,35 +34,50 @@ class Chromosome:
     def __repr__(self):
         return f'Chromosome(Fitness: {self.fitness}, Solution: {get_route_after(self.solution , {})})'
 
-def mutate_solution(indivisual : Chromosome , is_limited = False):
-    n1 , n2 , n3 , n4, n5 = 0 ,0 ,0 ,0 ,0
-    begin_time = time.time()
-    i  = 1
-    while i < LS_MAX:
-        is_improved = False
-        if inter_couple_exchange(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
-            n1 +=1
-            is_improved = True
-        if block_exchange(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
-            n2 +=1
-            is_improved = True
+def mutate_solution(indivisual : Chromosome , is_limited = False , is_1LS : bool = False):
+    if is_1LS:
+        n1 = 0
+        begin_time = time.time()
+        i  = 1
+        while i < LS_MAX:
+            is_improved = False
+            if inter_couple_exchange(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
+                n1 +=1
+                is_improved = True
+            if is_improved:
+                i += 1
+            else:
+                break
+            print(f"PDPairExchange:{n1}; cost:{total_cost(indivisual.id_to_vehicle , indivisual.route_map , indivisual.solution ):.2f}" , file= sys.stderr  )
+    else:
+        n1 , n2 , n3 , n4, n5 = 0 ,0 ,0 ,0 ,0
+        begin_time = time.time()
+        i  = 1
+        while i < LS_MAX:
+            is_improved = False
+            if inter_couple_exchange(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
+                n1 +=1
+                is_improved = True
+            if block_exchange(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
+                n2 +=1
+                is_improved = True
+                
+            if block_relocate(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
+                is_improved = True
+                n3 +=1
+            if multi_pd_group_relocate(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
+                n4 +=1
+                is_improved = True
             
-        if block_relocate(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
-            is_improved = True
-            n3 +=1
-        if multi_pd_group_relocate(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , is_limited):
-            n4 +=1
-            is_improved = True
-        
-        if improve_ci_path_by_2_opt(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , begin_time , is_limited):
-            n5 +=1
-            is_improved = True
-        
-        if is_improved:
-            i += 1
-        else:
-            break
-    print(f"PDPairExchange:{n1}; BlockExchange:{n2}; BlockRelocate:{n3}; mPDG:{n4}; 2opt:{n5}; cost:{total_cost(indivisual.id_to_vehicle , indivisual.route_map , indivisual.solution ):.2f}" , file= sys.stderr  )
+            if improve_ci_path_by_2_opt(indivisual.solution , indivisual.id_to_vehicle , indivisual.route_map , begin_time , is_limited):
+                n5 +=1
+                is_improved = True
+            
+            if is_improved:
+                i += 1
+            else:
+                break
+        print(f"PDPairExchange:{n1}; BlockExchange:{n2}; BlockRelocate:{n3}; mPDG:{n4}; 2opt:{n5}; cost:{total_cost(indivisual.id_to_vehicle , indivisual.route_map , indivisual.solution ):.2f}" , file= sys.stderr  )
 
 def mutation_for_ACO(indivisual : Chromosome , is_limited = False):
     n1 , n2 , n3 , n4, n5 = 0 ,0 ,0 ,0 ,0

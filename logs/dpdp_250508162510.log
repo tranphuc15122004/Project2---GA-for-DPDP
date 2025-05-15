@@ -1,0 +1,462 @@
+Starting simulation for instance_1
+Start time of the simulator: 2025-05-08 00:00:00, time interval:  600.00
+Get 154 factories
+Get 23562 routes
+Get 5 vehicles
+Get 50 orders
+Initial position of V_1 is e2d5093fbe36431f8986ddb0e1c586be
+Initial position of V_2 is 7fe14b93f0f04ee7a994ef5b2c1fdb72
+Initial position of V_3 is fa366fc87a124d32926daa5bb093129f
+Initial position of V_4 is e47399648fa842b2b8f80094343d8091
+Initial position of V_5 is becb4f85393540b287e7329758b8d832
+**************************************************
+cur time: 2025-05-08 00:10:00, pre time: 2025-05-08 00:00:00
+Start to update the input of 2025-05-08 00:10:00
+Get 1 unallocated order items, 0 ongoing order items, 0 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0003480001-1 d1_0003480001-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0003480001-1 d1_0003480001-1]
+The fitness score before EA 3.08 , after EA 3.08
+SUCCESS
+
+2025-05-08 00:10:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 00:20:00, pre time: 2025-05-08 00:10:00
+Start to update the input of 2025-05-08 00:20:00
+Get 3 unallocated order items, 0 ongoing order items, 0 completed order items
+
+Iteration 1: Best Fitness = 1.8
+Iteration 2: Best Fitness = 1.8
+Iteration 3: Best Fitness = 1.8
+Iteration 4: Best Fitness = 1.8
+Iteration 5: Best Fitness = 1.8
+Iteration 6: Best Fitness = 1.8
+Iteration 7: Best Fitness = 1.8
+Iteration 8: Best Fitness = 1.8
+Iteration 9: Best Fitness = 1.8
+Iteration 10: Best Fitness = 1.8
+Iteration 11: Best Fitness = 1.8
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0003480001-1 p1_0012230002-1 d1_0012230002-1 d1_0003480001-1 p1_0013570003-1 d1_0013570003-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0003480001-1 p1_0012230002-1 d1_0012230002-1 d1_0003480001-1 p1_0013570003-1 d1_0013570003-1]
+The fitness score before EA 1.8 , after EA 1.8
+SUCCESS
+
+2025-05-08 00:20:00, Item 0003480001-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 00:30:00, pre time: 2025-05-08 00:20:00
+Start to update the input of 2025-05-08 00:30:00
+Get 1 unallocated order items, 2 ongoing order items, 0 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0012230002-1 d1_0003480001-1 p1_0013570003-1 d1_0013570003-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0012230002-1 d1_0003480001-1 p1_0013570003-1 d1_0013570003-1]
+The fitness score before EA 1.8 , after EA 1.8
+SUCCESS
+
+2025-05-08 00:30:00, Item 0013570003-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 00:40:00, pre time: 2025-05-08 00:30:00
+Start to update the input of 2025-05-08 00:40:00
+Get 7 unallocated order items, 2 ongoing order items, 0 completed order items
+
+Iteration 1: Best Fitness = 8.580000000000002
+Iteration 2: Best Fitness = 8.28
+Iteration 3: Best Fitness = 8.180000000000001
+Iteration 4: Best Fitness = 8.120000000000001
+Iteration 5: Best Fitness = 8.120000000000001
+Iteration 6: Best Fitness = 8.120000000000001
+Iteration 7: Best Fitness = 8.120000000000001
+Iteration 8: Best Fitness = 8.120000000000001
+Iteration 9: Best Fitness = 8.120000000000001
+Iteration 10: Best Fitness = 8.120000000000001
+Iteration 11: Best Fitness = 8.120000000000001
+Iteration 12: Best Fitness = 8.120000000000001
+Iteration 13: Best Fitness = 8.120000000000001
+Iteration 14: Best Fitness = 8.120000000000001
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[d1_0012230002-1 p3_0033520004-1 d3_0033520004-3 d1_0003480001-1 p1_0013570003-1 d1_0013570003-1]
+V_1:[] V_2:[] V_3:[p1_0013570003-1 d1_0013570003-1 p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[d1_0012230002-1 p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+The fitness score before EA 8.120000000000001 , after EA 7.980000000000001
+SUCCESS
+
+2025-05-08 00:40:00, Item 0013570003-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 00:50:00, pre time: 2025-05-08 00:40:00
+Start to update the input of 2025-05-08 00:50:00
+Get 6 unallocated order items, 3 ongoing order items, 0 completed order items
+
+Iteration 1: Best Fitness = 7.7
+Iteration 2: Best Fitness = 7.7
+Iteration 3: Best Fitness = 7.7
+Iteration 4: Best Fitness = 7.7
+Iteration 5: Best Fitness = 7.7
+Iteration 6: Best Fitness = 7.7
+Iteration 7: Best Fitness = 7.7
+Iteration 8: Best Fitness = 7.7
+Iteration 9: Best Fitness = 7.7
+Iteration 10: Best Fitness = 7.7
+Iteration 11: Best Fitness = 7.7
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[d1_0013570003-1 p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[d1_0012230002-1 p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+V_1:[] V_2:[] V_3:[d1_0013570003-1 p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[d1_0012230002-1 p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+The fitness score before EA 7.7 , after EA 7.7
+SUCCESS
+
+2025-05-08 00:50:00, Item 0033520004-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 01:00:00, pre time: 2025-05-08 00:50:00
+Start to update the input of 2025-05-08 01:00:00
+Get 6 unallocated order items, 3 ongoing order items, 0 completed order items
+
+Iteration 1: Best Fitness = 7.7
+Iteration 2: Best Fitness = 7.7
+Iteration 3: Best Fitness = 7.7
+Iteration 4: Best Fitness = 7.7
+Iteration 5: Best Fitness = 7.7
+Iteration 6: Best Fitness = 7.7
+Iteration 7: Best Fitness = 7.7
+Iteration 8: Best Fitness = 7.7
+Iteration 9: Best Fitness = 7.7
+Iteration 10: Best Fitness = 7.7
+Iteration 11: Best Fitness = 7.7
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[d1_0013570003-1 p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[d1_0012230002-1 p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+V_1:[] V_2:[] V_3:[d1_0013570003-1 p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[d1_0012230002-1 p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+The fitness score before EA 7.7 , after EA 7.7
+SUCCESS
+
+2025-05-08 01:00:00, Item 0033520004-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 01:10:00, pre time: 2025-05-08 01:00:00
+Start to update the input of 2025-05-08 01:10:00
+Get 6 unallocated order items, 3 ongoing order items, 0 completed order items
+
+Iteration 1: Best Fitness = 6.22
+Iteration 2: Best Fitness = 6.22
+Iteration 3: Best Fitness = 6.22
+Iteration 4: Best Fitness = 6.22
+Iteration 5: Best Fitness = 6.22
+Iteration 6: Best Fitness = 6.22
+Iteration 7: Best Fitness = 6.22
+Iteration 8: Best Fitness = 6.22
+Iteration 9: Best Fitness = 6.22
+Iteration 10: Best Fitness = 6.22
+Iteration 11: Best Fitness = 6.22
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[d1_0013570003-1 p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[d1_0012230002-1 p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+V_1:[] V_2:[] V_3:[d1_0013570003-1 p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[d1_0012230002-1 p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+The fitness score before EA 6.22 , after EA 6.22
+SUCCESS
+
+2025-05-08 01:10:00, Item 0033520004-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 01:20:00, pre time: 2025-05-08 01:10:00
+Start to update the input of 2025-05-08 01:20:00
+Get 6 unallocated order items, 1 ongoing order items, 2 completed order items
+
+
+V_1:[] V_2:[] V_3:[p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+V_1:[] V_2:[] V_3:[p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+The fitness score before EA 6.1 , after EA 6.1
+SUCCESS
+
+2025-05-08 01:20:00, Item 0033520004-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 01:30:00, pre time: 2025-05-08 01:20:00
+Start to update the input of 2025-05-08 01:30:00
+Get 6 unallocated order items, 1 ongoing order items, 2 completed order items
+
+
+V_1:[] V_2:[] V_3:[p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+V_1:[] V_2:[] V_3:[p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+The fitness score before EA 6.1 , after EA 6.1
+SUCCESS
+
+2025-05-08 01:30:00, Item 0033520004-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 01:40:00, pre time: 2025-05-08 01:30:00
+Start to update the input of 2025-05-08 01:40:00
+Get 6 unallocated order items, 1 ongoing order items, 2 completed order items
+
+
+V_1:[] V_2:[] V_3:[p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+V_1:[] V_2:[] V_3:[p3_0038220005-1 d3_0038220005-3] V_4:[] V_5:[p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+The fitness score before EA 6.1 , after EA 6.1
+SUCCESS
+
+2025-05-08 01:40:00, Item 0033520004-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 01:50:00, pre time: 2025-05-08 01:40:00
+Start to update the input of 2025-05-08 01:50:00
+Get 3 unallocated order items, 4 ongoing order items, 2 completed order items
+
+
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+The fitness score before EA 6.04 , after EA 6.04
+SUCCESS
+
+2025-05-08 01:50:00, Item 0033520004-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 02:00:00, pre time: 2025-05-08 01:50:00
+Start to update the input of 2025-05-08 02:00:00
+Get 3 unallocated order items, 4 ongoing order items, 2 completed order items
+
+
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[p3_0033520004-1 d3_0033520004-3 d1_0003480001-1]
+The fitness score before EA 4.5600000000000005 , after EA 4.5600000000000005
+SUCCESS
+
+2025-05-08 02:00:00, Item 0033520004-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 02:10:00, pre time: 2025-05-08 02:00:00
+Start to update the input of 2025-05-08 02:10:00
+Get 1 unallocated order items, 7 ongoing order items, 2 completed order items
+
+
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[d3_0033520004-3 d1_0003480001-1 p1_0209340006-1 d1_0209340006-1]
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[d3_0033520004-3 d1_0003480001-1 p1_0209340006-1 d1_0209340006-1]
+The fitness score before EA 7.58 , after EA 7.58
+SUCCESS
+
+2025-05-08 02:10:00, Item 0209340006-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 02:20:00, pre time: 2025-05-08 02:10:00
+Start to update the input of 2025-05-08 02:20:00
+Get 1 unallocated order items, 7 ongoing order items, 2 completed order items
+
+
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[d3_0033520004-3 d1_0003480001-1 p1_0209340006-1 d1_0209340006-1]
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[d3_0033520004-3 d1_0003480001-1 p1_0209340006-1 d1_0209340006-1]
+The fitness score before EA 4.5600000000000005 , after EA 4.5600000000000005
+SUCCESS
+
+2025-05-08 02:20:00, Item 0209340006-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 02:30:00, pre time: 2025-05-08 02:20:00
+Start to update the input of 2025-05-08 02:30:00
+Get 1 unallocated order items, 7 ongoing order items, 2 completed order items
+
+
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[d3_0033520004-3 d1_0003480001-1 p1_0209340006-1 d1_0209340006-1]
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[d3_0033520004-3 d1_0003480001-1 p1_0209340006-1 d1_0209340006-1]
+The fitness score before EA 4.5600000000000005 , after EA 4.5600000000000005
+SUCCESS
+
+2025-05-08 02:30:00, Item 0209340006-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 02:40:00, pre time: 2025-05-08 02:30:00
+Start to update the input of 2025-05-08 02:40:00
+Get 2 unallocated order items, 7 ongoing order items, 2 completed order items
+
+Iteration 1: Best Fitness = 4.5600000000000005
+Iteration 2: Best Fitness = 4.5600000000000005
+Iteration 3: Best Fitness = 4.5600000000000005
+Iteration 4: Best Fitness = 4.5600000000000005
+Iteration 5: Best Fitness = 4.5600000000000005
+Iteration 6: Best Fitness = 4.5600000000000005
+Iteration 7: Best Fitness = 4.5600000000000005
+Iteration 8: Best Fitness = 4.5600000000000005
+Iteration 9: Best Fitness = 4.5600000000000005
+Iteration 10: Best Fitness = 4.5600000000000005
+Iteration 11: Best Fitness = 4.5600000000000005
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[d3_0033520004-3 d1_0003480001-1 p1_0209340006-1 p1_0236480007-1 d1_0236480007-1 d1_0209340006-1]
+V_1:[] V_2:[] V_3:[d3_0038220005-3] V_4:[] V_5:[d3_0033520004-3 d1_0003480001-1 p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 4.5600000000000005 , after EA 4.5600000000000005
+SUCCESS
+
+2025-05-08 02:40:00, Item 0209340006-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 02:50:00, pre time: 2025-05-08 02:40:00
+Start to update the input of 2025-05-08 02:50:00
+Get 2 unallocated order items, 4 ongoing order items, 5 completed order items
+
+Iteration 1: Best Fitness = 3.0200000000000005
+Iteration 2: Best Fitness = 3.0200000000000005
+Iteration 3: Best Fitness = 3.0200000000000005
+Iteration 4: Best Fitness = 3.0200000000000005
+Iteration 5: Best Fitness = 3.0200000000000005
+Iteration 6: Best Fitness = 3.0200000000000005
+Iteration 7: Best Fitness = 3.0200000000000005
+Iteration 8: Best Fitness = 3.0200000000000005
+Iteration 9: Best Fitness = 3.0200000000000005
+Iteration 10: Best Fitness = 3.0200000000000005
+Iteration 11: Best Fitness = 3.0200000000000005
+Stopping early due to stagnation.
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d3_0033520004-3 d1_0003480001-1 p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d3_0033520004-3 d1_0003480001-1 p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 3.0200000000000005 , after EA 3.0200000000000005
+SUCCESS
+
+2025-05-08 02:50:00, Item 0209340006-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 03:00:00, pre time: 2025-05-08 02:50:00
+Start to update the input of 2025-05-08 03:00:00
+Get 2 unallocated order items, 0 ongoing order items, 9 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 3.0200000000000005 , after EA 3.0200000000000005
+SUCCESS
+
+2025-05-08 03:00:00, Item 0209340006-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 03:10:00, pre time: 2025-05-08 03:00:00
+Start to update the input of 2025-05-08 03:10:00
+Get 2 unallocated order items, 0 ongoing order items, 9 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 3.0200000000000005 , after EA 3.0200000000000005
+SUCCESS
+
+2025-05-08 03:10:00, Item 0209340006-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 03:20:00, pre time: 2025-05-08 03:10:00
+Start to update the input of 2025-05-08 03:20:00
+Get 2 unallocated order items, 0 ongoing order items, 9 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 3.0200000000000005 , after EA 3.0200000000000005
+SUCCESS
+
+2025-05-08 03:20:00, Item 0209340006-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 03:30:00, pre time: 2025-05-08 03:20:00
+Start to update the input of 2025-05-08 03:30:00
+Get 2 unallocated order items, 0 ongoing order items, 9 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 3.0200000000000005 , after EA 3.0200000000000005
+SUCCESS
+
+2025-05-08 03:30:00, Item 0209340006-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 03:40:00, pre time: 2025-05-08 03:30:00
+Start to update the input of 2025-05-08 03:40:00
+Get 2 unallocated order items, 0 ongoing order items, 9 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[p1_0236480007-1 p1_0209340006-1 d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 1.48 , after EA 1.48
+SUCCESS
+
+2025-05-08 03:40:00, Item 0209340006-1: state = 1 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 03:50:00, pre time: 2025-05-08 03:40:00
+Start to update the input of 2025-05-08 03:50:00
+Get 0 unallocated order items, 2 ongoing order items, 9 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 1.48 , after EA 1.48
+SUCCESS
+
+2025-05-08 03:50:00, Item 0517240008-1: state = 0 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 04:00:00, pre time: 2025-05-08 03:50:00
+Start to update the input of 2025-05-08 04:00:00
+Get 0 unallocated order items, 2 ongoing order items, 9 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 1.48 , after EA 1.48
+SUCCESS
+
+2025-05-08 04:00:00, Item 0517240008-1: state = 0 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 04:10:00, pre time: 2025-05-08 04:00:00
+Start to update the input of 2025-05-08 04:10:00
+Get 0 unallocated order items, 2 ongoing order items, 9 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 1.48 , after EA 1.48
+SUCCESS
+
+2025-05-08 04:10:00, Item 0517240008-1: state = 0 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 04:20:00, pre time: 2025-05-08 04:10:00
+Start to update the input of 2025-05-08 04:20:00
+Get 0 unallocated order items, 2 ongoing order items, 9 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 1.48 , after EA 1.48
+SUCCESS
+
+2025-05-08 04:20:00, Item 0517240008-1: state = 0 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 04:30:00, pre time: 2025-05-08 04:20:00
+Start to update the input of 2025-05-08 04:30:00
+Get 0 unallocated order items, 2 ongoing order items, 9 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0209340006-1 d1_0236480007-1]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[d1_0209340006-1 d1_0236480007-1]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-08 04:30:00, Item 0517240008-1: state = 0 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 04:40:00, pre time: 2025-05-08 04:30:00
+Start to update the input of 2025-05-08 04:40:00
+Get 0 unallocated order items, 0 ongoing order items, 11 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-08 04:40:00, Item 0517240008-1: state = 0 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 04:50:00, pre time: 2025-05-08 04:40:00
+Start to update the input of 2025-05-08 04:50:00
+Get 0 unallocated order items, 0 ongoing order items, 11 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-08 04:50:00, Item 0517240008-1: state = 0 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 05:00:00, pre time: 2025-05-08 04:50:00
+Start to update the input of 2025-05-08 05:00:00
+Get 0 unallocated order items, 0 ongoing order items, 11 completed order items
+
+
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+V_1:[] V_2:[] V_3:[] V_4:[] V_5:[]
+The fitness score before EA 0.0 , after EA 0.0
+SUCCESS
+
+2025-05-08 05:00:00, Item 0517240008-1: state = 0 < 2, we can not finish the simulation
+**************************************************
+cur time: 2025-05-08 05:10:00, pre time: 2025-05-08 05:00:00
+Start to update the input of 2025-05-08 05:10:00
+Get 0 unallocated order items, 0 ongoing order items, 11 completed order items

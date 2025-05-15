@@ -29,15 +29,16 @@ def import_common_class(class_name):
 """ Schedule the algorithm"""
 
 
-def get_algorithm_calling_command():
+def get_algorithm_calling_command(algorithm_name):
     files = os.listdir(Configs.root_folder_path)
     for file in files:
-        # 调度算法的入口文件必须以main_algorithm开头
         if file.startswith(Configs.ALGORITHM_ENTRY_FILE_NAME):
             end_name = file.split('.')[-1]
             algorithm_language = Configs.ALGORITHM_LANGUAGE_MAP.get(end_name)
             if algorithm_language == 'python':
-                return 'python {}'.format(file)
+                res = 'python {}'.format(file)
+                res = res + ' --algorithm {}'.format(algorithm_name)
+                return res
             elif algorithm_language == 'java':
                 return 'java {}'.format(file.split('.')[0])
             # c和c++调用方式一样，但系统不同调用方式有异

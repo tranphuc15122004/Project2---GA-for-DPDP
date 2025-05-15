@@ -4,40 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DPDP Simulator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <div class="app-container">
+        <header class="app-header">
             <h1>Dynamic PDP Simulator</h1>
         </header>
         
-        <div class="control-panel">
-            <div class="instance-selector">
-                <h3>Select Instance</h3>
-                <select id="instance-select">
-                    <option value="">-- Select Instance --</option>
-                    <!-- Options will be added by JavaScript -->
-                </select>
-                <button id="start-btn">Start Simulation</button>
-            </div>
-            
-            <div class="simulation-controls">
-                <h3>Controls</h3>
-                <button id="pause-btn" disabled>Pause</button>
-                <div class="speed-control">
+        <aside class="app-sidebar">
+            <div class="control-panel">
+                <div class="instance-selector">
+                    <h3>Select Instance</h3>
+                    <select id="instance-select">
+                        <option value="">-- Select Instance --</option>
+                        <!-- Options will be added by JavaScript -->
+                    </select>
+
+                    <button id="start-btn"><i class="fas fa-play"></i> Start Simulation</button>
+                </div>
+                
+                <div class="simulation-controls">
+                    <!-- <h3>Controls</h3> -->
+                    <button id="pause-btn"  style="display: none;" disabled><i class="fas fa-pause"></i> Pause</button>
+                    <div class="speed-control">
+                    <h3>Select Algorithm</h3>
+                    <select id="algorithm-select">
+                        <option value="">-- Select Algorithm --</option>
+                    </select>
+                    
                 </div>
             </div>
-        </div>
+        </aside>
         
-        <div class="main-content">
-            <div class="output-panel">
+        <main class="app-main">
+            <section class="output-panel">
                 <h3>Simulation Output</h3>
                 <div id="output-console"></div>
-            </div>
+            </section>
             
-            <div class="status-panel">
+            <aside class="status-panel">
                 <h3>Current Status</h3>
                 <div class="status-grid">
                     <div class="status-item">
@@ -60,8 +68,8 @@
                 
                 <h3>Results</h3>
                 <div id="results-container"></div>
-            </div>
-        </div>
+            </aside>
+        </main>
     </div>
 
     <script src="script.js"></script>

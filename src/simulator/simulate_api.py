@@ -87,9 +87,9 @@ def __initial_position_of_vehicles(id_to_factory: dict, id_to_vehicle: dict, ini
         logger.info(f"Initial position of {vehicle_id} is {factory_id}")
 
 
-def simulate(factory_info_file: str, route_info_file: str, instance: str):
+def simulate(factory_info_file: str, route_info_file: str, instance: str , algorithm_name : str = 'GA'):
     simulate_env = __initialize(factory_info_file, route_info_file, instance)
     if simulate_env is not None:
         # 模拟器仿真过程
-        simulate_env.run()
+        simulate_env.run(algorithm_name)
     return simulate_env.total_score

@@ -92,7 +92,7 @@ class SimulateEnvironment(object):
         return history
 
     # 模拟器仿真环节
-    def run(self):
+    def run(self , algorithm_name: str = 'GA5LS'):
         used_seconds = 0
         # 迭代
         while True:
@@ -107,7 +107,7 @@ class SimulateEnvironment(object):
             updated_input_info = self.update_input()
 
             # 派单环节, 设计与算法交互
-            used_seconds, dispatch_result = self.dispatch(updated_input_info)
+            used_seconds, dispatch_result = self.dispatch(updated_input_info , algorithm_name)
             self.time_to_dispatch_result[self.cur_time] = dispatch_result
 
             # 校验, 车辆目的地不能改变
@@ -220,13 +220,13 @@ class SimulateEnvironment(object):
             vehicle.planned_route = []
 
     # 派单环节
-    def dispatch(self, input_info):
+    def dispatch(self, input_info , algorithm_name: str):
         # 1. Prepare the input json of the algorithm
         convert_input_info_to_json_files(input_info)
 
         # 2. Run the algorithm
         if not self.algorithm_calling_command:
-            self.algorithm_calling_command = get_algorithm_calling_command()
+            self.algorithm_calling_command = get_algorithm_calling_command(algorithm_name)
         time_start_algorithm = time.time()
         used_seconds, message  = subprocess_function(self.algorithm_calling_command)
         logger.info(message)

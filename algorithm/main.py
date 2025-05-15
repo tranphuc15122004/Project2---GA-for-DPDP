@@ -4,14 +4,14 @@ from typing import Dict , List
 from algorithm.In_and_Out import *
 from algorithm.Object import *
 from algorithm.engine import *
-from algorithm.GA import GA
+from algorithm.GA import GA ,  GA1LS , GA5LS
 from algorithm.ACO import ACO
 
 
 
 input_directory = r'algorithm\data_interaction'
 
-def main():
+def main(algorithm_name: str = 'GA5LS'):
     begin_time = time.time()
     id_to_factory , route_map ,  id_to_vehicle , id_to_unlocated_items ,  id_to_ongoing_items , id_to_allorder = Input()
     deal_old_solution_file(id_to_vehicle)
@@ -24,6 +24,7 @@ def main():
 
     new_order_itemIDs = [item for item in new_order_itemIDs if item]
 
+    
     #Thuat toan
     print()
     
@@ -38,10 +39,27 @@ def main():
     if best_chromosome is None:
         best_chromosome = Chromosome(vehicleid_to_plan , route_map , id_to_vehicle) """
     
-    best_chromosome : Chromosome =  ACO(vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
-    if best_chromosome is None or best_chromosome.fitness > total_cost(id_to_vehicle , route_map , vehicleid_to_plan):
-        best_chromosome = Chromosome(vehicleid_to_plan , route_map , id_to_vehicle)
-    best_chromosome.mutate_for_ACO()
+    if algorithm_name == 'GA':
+        best_chromosome : Chromosome =  GA(vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
+        if best_chromosome is None or best_chromosome.fitness > total_cost(id_to_vehicle , route_map , vehicleid_to_plan):
+            best_chromosome = Chromosome(vehicleid_to_plan , route_map , id_to_vehicle)
+    elif algorithm_name == 'GA1LS':
+        best_chromosome : Chromosome =  GA1LS(vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
+        if best_chromosome is None or best_chromosome.fitness > total_cost(id_to_vehicle , route_map , vehicleid_to_plan):
+            best_chromosome = Chromosome(vehicleid_to_plan , route_map , id_to_vehicle)
+    elif algorithm_name == 'GA5LS':        
+        best_chromosome : Chromosome =  GA5LS(vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
+        if best_chromosome is None or best_chromosome.fitness > total_cost(id_to_vehicle , route_map , vehicleid_to_plan):
+            best_chromosome = Chromosome(vehicleid_to_plan , route_map , id_to_vehicle)
+    elif algorithm_name == 'ACO5LS':
+        best_chromosome : Chromosome =  ACO(vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
+        if best_chromosome is None or best_chromosome.fitness > total_cost(id_to_vehicle , route_map , vehicleid_to_plan):
+            best_chromosome = Chromosome(vehicleid_to_plan , route_map , id_to_vehicle)
+        best_chromosome.mutate_for_ACO()
+    elif algorithm_name == 'ACO':
+        best_chromosome : Chromosome =  ACO(vehicleid_to_plan , route_map , id_to_vehicle ,  Unongoing_super_nodes  ,Base_vehicleid_to_plan)
+        if best_chromosome is None or best_chromosome.fitness > total_cost(id_to_vehicle , route_map , vehicleid_to_plan):
+            best_chromosome = Chromosome(vehicleid_to_plan , route_map , id_to_vehicle)
     
     print()
     print(get_route_after(vehicleid_to_plan , {}))

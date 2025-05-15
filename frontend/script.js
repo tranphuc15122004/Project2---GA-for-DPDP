@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentTime = document.getElementById('current-time');
     const simStatus = document.getElementById('sim-status') || document.createElement('span'); // Fallback if not in DOM
     const resultsContainer = document.getElementById('results-container');
-    
+    const algorithmSelect = document.getElementById('algorithm-select');    
     // Order metrics elements
     const completedOrders = document.getElementById('completed-orders');
     const unallocatedOrders = document.getElementById('unallocated-orders');
@@ -89,6 +89,39 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // -------------- Tải danh sách thuật toán --------------
+    // Tải thuật toán qua Socket.IO
+    socket.emit('get_algorithms', {}, function(response) {
+        if (response && response.algorithms) {
+            populateAlgorithmSelect(response.algorithms);
+        } else {
+            // Fallback: Dùng fetch nếu socket không thành công
+            fetchAlgorithms();
+        }
+    });
+
+    function fetchAlgorithms() {
+        fetch('/api/algorithms')
+            .then(response => response.json())
+            .then(data => {
+                const algorithms = data.selected.length > 0 ? data.selected : data.all;
+                populateAlgorithmSelect(algorithms);
+            })
+            .catch(error => {
+                addErrorMessage(`Failed to load algorithms: ${error.message}`);
+            });
+    }
+
+    function populateAlgorithmSelect(algorithms) {
+        algorithmSelect.innerHTML = '<option value="">-- Select Algorithm --</option>';
+        algorithms.forEach(algorithm => {
+            const option = document.createElement('option');
+            option.value = algorithm;
+            option.textContent = algorithm;
+            algorithmSelect.appendChild(option);
+        });
+    }
+
     // -------------- Xử lý các sự kiện từ server --------------
 
     // Cập nhật trạng thái mô phỏng
@@ -130,12 +163,22 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Xử lý cập nhật log
-    socket.on('log_update', function(logEntry) {
-        addLogMessage(logEntry.time, logEntry.message, logEntry.level);
+    socket.on('log_update', function(logs) {
+        if (!Array.isArray(logs)) {
+            console.error('log_update received invalid data:', logs);
+            return;
+        }
+        logs.forEach(logEntry => {
+            if (logEntry && logEntry.time && logEntry.message && logEntry.level) {
+                addLogMessage(logEntry.time, logEntry.message, logEntry.level);
+            } else {
+                console.warn('Invalid log entry:', logEntry);
+            }
+        });
     });
 
     socket.on('simulation_started', function(data) {
-        addSystemMessage(`Simulation started for ${data.instance_id}`);
+        addSystemMessage(`Simulation started for ${data.instance_id} , algorithm: ${data.algorithm}`);
     });
 
     socket.on('simulation_paused', function(data) {
@@ -159,12 +202,17 @@ document.addEventListener('DOMContentLoaded', function() {
             addErrorMessage('Please select an instance first');
             return;
         }
-        
+
+        const algorithm = algorithmSelect.value;
+        if (!algorithm) {
+            addErrorMessage('Please select an algorithm first');
+            return;
+        }
         // Xóa console trước khi bắt đầu mô phỏng mới
         outputConsole.innerHTML = '';
         
         // Sử dụng socket để bắt đầu mô phỏng
-        socket.emit('start_simulation', { instance_id: instanceId }, function(response) {
+        socket.emit('start_simulation', { instance_id: instanceId  , algorithm:algorithm }, function(response) {
             if (response && response.error) {
                 addErrorMessage(`Start failed: ${response.error}`);
             } else {
@@ -173,21 +221,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Xử lý nút Pause
+    /* // Xử lý nút Pause
     pauseBtn.addEventListener('click', function() {
         socket.emit('pause_simulation', {}, function(response) {
             if (response && response.error) {
                 addErrorMessage(`Pause/resume failed: ${response.error}`);
             }
         });
-    });
+    }); */
 
     // -------------- Hàm tiện ích --------------
 
     function addLogMessage(time, message, level = 'info') {
         const div = document.createElement('div');
         div.className = `console-line log-${level}`;
-        div.textContent = `[${time}] ${message}`;
+        div.textContent = `[${time}] ${level.toUpperCase()}: ${message}`;
         outputConsole.appendChild(div);
         scrollToBottom();
     }

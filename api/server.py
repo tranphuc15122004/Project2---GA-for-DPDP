@@ -23,18 +23,21 @@ def get_instances():
     selected = [f"instance_{idx}" for idx in (Configs.selected_instances or [])]
     return jsonify({
         'all': instances,
-        'selected': selected or instances
+        'selected': instances or selected
     })
+
+
 
 @app.route('/api/start', methods=['POST'])
 def start_simulation():
     data = request.json
     instance_id = data.get('instance_id')
+    algorithm_name = data.get('algorithm')
     
     if not sim_wrapper.running:
         thread = threading.Thread(
             target=sim_wrapper.run_simulation,
-            args=(instance_id,),
+            args=(instance_id,algorithm_name, socketio),
             daemon=True
         )
         thread.start()
@@ -50,31 +53,54 @@ def pause_simulation():
 def get_state():
     return jsonify(sim_wrapper.get_state())
 
+
+#----------------- SocketIO Events ----------------
+
 @socketio.on('connect')
 def handle_connect():
     emit('state_update', sim_wrapper.get_state())
 
+
 @socketio.on('get_instances')
 def handle_get_instances(data):
     from src.conf.configs import Configs
-    instances = [f"instance_{idx}" for idx in Configs.all_test_instances]
-    selected = [f"instance_{idx}" for idx in (Configs.selected_instances or [])]
+    instances = []
+    for idx in Configs.all_test_instances:
+        if idx <= 64:
+            instances.append(f"instance_{idx}")
+        else:
+            instances.append(f"customed_instance_{idx-64}")
+    selected = [f"instance_{idx}" for idx in (Configs.selected_instances or [])] 
     return {
-        'instances': selected or instances
+        'instances': instances or selected
+    }
+
+
+@socketio.on('get_algorithms')
+def handle_get_algorithms(data):
+    from src.conf.configs import Configs
+    algorithms = Configs.all_algorithms  # Danh sách thuật toán từ Configs
+    return {
+        'algorithms': algorithms
     }
 
 @socketio.on('start_simulation')
 def handle_start_simulation(data):
     instance_id = data.get('instance_id')
+    algorithm_name = data.get('algorithm')
     
+
     if not instance_id:
         return {'error': 'No instance ID provided'}
+
+    if not algorithm_name:
+        return {'error': 'No algorithm name provided'}
     
     if not sim_wrapper.running:
         try:
             thread = threading.Thread(
                 target=sim_wrapper.run_simulation,
-                args=(instance_id, socketio),
+                args=(instance_id, algorithm_name,  socketio),
                 daemon=True
             )
             thread.start()
@@ -82,6 +108,7 @@ def handle_start_simulation(data):
             # Emit event to all clients
             socketio.emit('simulation_started', {
                 'instance_id': instance_id,
+                'algorithm_name': algorithm_name,
                 'timestamp': time.time()
             })
             
@@ -92,7 +119,7 @@ def handle_start_simulation(data):
     else:
         return {'error': 'Simulation already running'}
 
-@socketio.on('pause_simulation')
+""" @socketio.on('pause_simulation')
 def handle_pause_simulation(data):
     try:
         # Toggle pause state
@@ -107,7 +134,7 @@ def handle_pause_simulation(data):
         return {'status': 'paused' if sim_wrapper.paused else 'resumed'}
     except Exception as e:
         print(f"Error pausing simulation: {e}")
-        return {'error': str(e)}
+        return {'error': str(e)} """
 
 
 def background_updater():
@@ -116,6 +143,13 @@ def background_updater():
         time.sleep(0.5)
 
 threading.Thread(target=background_updater, daemon=True).start()
+
+# -------------- Error Handlers --------------
+
+@app.errorhandler(Exception)
+def handle_error(e):
+    print(f"Server error: {e}")
+    return jsonify(error=str(e)), 500
 
 if __name__ == '__main__':
     socketio.run(app, debug=True, port=5000)
