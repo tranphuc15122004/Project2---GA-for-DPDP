@@ -15,9 +15,9 @@ def GA(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tuple
         print('Cant initialize the population')
         return None
     
-    print()
+    """ print()
     print(len(PDG_map))
-    print(get_route_after(Base_vehicleid_to_plan , {}))
+    print(get_route_after(Base_vehicleid_to_plan , {})) """
 
     best_solution : Chromosome = None
     stagnant_generations = 0  # Biến đếm số thế hệ không cải thiện
@@ -67,7 +67,8 @@ def GA(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tuple
         
         for c in population:
             print(get_route_after(c.solution , {})  , file= sys.stderr)
-        print(f'Generation {gen+1}: Best Fitness = {best_solution.fitness}')
+        print(f'Generation {gen+1}: Best fittness = {best_solution.fitness} , Worst fittness = {population[-1].fitness} , Average = {sum([c.fitness for c in population]) / len(population)}')
+            
     return best_solution      
 
 def GA1LS(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tuple, Tuple], id_to_vehicle: Dict[str, Vehicle] ,Unongoing_super_nodes : Dict[int , Dict[str, Node]] , Base_vehicleid_to_plan : Dict[str , List[Node]]) -> Chromosome:
@@ -80,9 +81,9 @@ def GA1LS(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tu
         print('Cant initialize the population')
         return None
     
-    print()
+    """ print()
     print(len(PDG_map))
-    print(get_route_after(Base_vehicleid_to_plan , {}))
+    print(get_route_after(Base_vehicleid_to_plan , {})) """
 
     best_solution : Chromosome = None
     stagnant_generations = 0  # Biến đếm số thế hệ không cải thiện
@@ -132,7 +133,9 @@ def GA1LS(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tu
         
         for c in population:
             print(get_route_after(c.solution , {})  , file= sys.stderr)
-        print(f'Generation {gen+1}: Best Fitness = {best_solution.fitness}')
+        #print(f'Generation {gen+1}: Best Fitness = {best_solution.fitness}')
+        print(f'Generation {gen+1}: Best fittness = {best_solution.fitness} , Worst fittness = {population[-1].fitness} , Average = {sum([c.fitness for c in population]) / len(population)}')
+        
     return best_solution
 
 
@@ -146,9 +149,9 @@ def GA5LS(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tu
         print('Cant initialize the population')
         return None
     
-    print()
+    """ print()
     print(len(PDG_map))
-    print(get_route_after(Base_vehicleid_to_plan , {}))
+    print(get_route_after(Base_vehicleid_to_plan , {})) """
 
     best_solution : Chromosome = None
     stagnant_generations = 0  # Biến đếm số thế hệ không cải thiện
@@ -198,7 +201,8 @@ def GA5LS(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tu
         
         for c in population:
             print(get_route_after(c.solution , {})  , file= sys.stderr)
-        print(f'Generation {gen+1}: Best Fitness = {best_solution.fitness}')
+        #print(f'Generation {gen+1}: Best Fitness = {best_solution.fitness}')
+        print(f'Generation {gen+1}: Best fittness = {best_solution.fitness} , Worst fittness = {population[-1].fitness} , Average = {sum([c.fitness for c in population]) / len(population)}')
     return best_solution
 
 # Chọn lọc cha mẹ bằng phương pháp tournament selection

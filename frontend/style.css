@@ -242,3 +242,41 @@ button:disabled {
 .console-line:first-child {
     animation: fadeIn 0.3s ease-out;
 }
+
+.hidden {
+        display: none;
+    }
+    
+    #results-container {
+        margin-top: 20px;
+    }
+    
+    #results-container > div {
+        margin-bottom: 20px;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    #results-container h4 {
+        margin-top: 0;
+        color: #0056b3;
+        border-bottom: 1px solid #dee2e6;
+        padding-bottom: 8px;
+    }
+    
+    .vehicle-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .vehicle-table th, .vehicle-table td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #dee2e6;
+    }
+    
+    .vehicle-table th {
+        background-color: #e9ecef;
+    }

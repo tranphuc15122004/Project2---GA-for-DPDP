@@ -5,7 +5,7 @@ import argparse
 
 # Khởi tạo ArgumentParser
 parser = argparse.ArgumentParser(description='DPDP Simulator')
-parser.add_argument('--algorithm', type=str, default='default', help='Tên thuật toán sử dụng')
+parser.add_argument('--algorithm', type=str, default='GA5LS', help='Tên thuật toán sử dụng')
 
 # Phân tích các tham số dòng lệnh
 args = parser.parse_args()

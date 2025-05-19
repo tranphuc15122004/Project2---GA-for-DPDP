@@ -58,7 +58,10 @@ def get_state():
 
 @socketio.on('connect')
 def handle_connect():
+    #emit('state_update', sim_wrapper.get_state())
+    # Gửi trạng thái hiện tại khi client kết nối
     emit('state_update', sim_wrapper.get_state())
+    return {'status': 'connected'}
 
 
 @socketio.on('get_instances')
@@ -119,30 +122,36 @@ def handle_start_simulation(data):
     else:
         return {'error': 'Simulation already running'}
 
-""" @socketio.on('pause_simulation')
-def handle_pause_simulation(data):
-    try:
-        # Toggle pause state
-        sim_wrapper.paused = not sim_wrapper.paused
-        
-        # Emit event to all clients
-        socketio.emit('simulation_paused', {
-            'paused': sim_wrapper.paused,
-            'timestamp': time.time()
-        })
-        
-        return {'status': 'paused' if sim_wrapper.paused else 'resumed'}
-    except Exception as e:
-        print(f"Error pausing simulation: {e}")
-        return {'error': str(e)} """
-
-
-def background_updater():
+""" def background_updater():
     while True:
         socketio.emit('state_update', sim_wrapper.get_state())
         time.sleep(0.5)
 
-threading.Thread(target=background_updater, daemon=True).start()
+threading.Thread(target=background_updater, daemon=True).start() """
+
+
+""" @socketio.on('simulation_completed')
+def handle_simulation_completed(data):
+    try:
+        # Gửi thông báo cuối cùng đến tất cả clients
+        socketio.emit('simulation_completed', {
+            'instance_id': data.get('instance_id'),
+            'algorithm': data.get('algorithm'),
+            'completed_orders': data.get('completed_orders', 0),
+            'ongoing_orders': data.get('ongoing_orders', 0),
+            'unallocated_orders': data.get('unallocated_orders', 0),
+            'timestamp': time.time(),
+            'status': 'completed'
+        })
+        
+        # Gửi state update cuối cùng
+        socketio.emit('state_update', sim_wrapper.get_state())
+        
+        print(f"Simulation completed for {data.get('instance_id')} with algorithm {data.get('algorithm')}")
+        return {'status': 'completed'}
+    except Exception as e:
+        print(f"Error handling simulation completed: {e}")
+        return {'error': str(e)} """
 
 # -------------- Error Handlers --------------
 

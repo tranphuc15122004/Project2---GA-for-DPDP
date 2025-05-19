@@ -10,7 +10,7 @@ def ACO(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tupl
     super_node_map : List[List[Node]] = Build_supernodes_map(Unongoing_super_nodes)
     if not super_node_map: 
         return None
-
+    
     pheromone_map: Dict[Tuple[str, str], float] = initialize_pheromone(super_node_map , Base_vehicleid_to_plan , id_to_vehicle)
 
     heuristic_map: Dict[Tuple[str, str], float] = calculate_heuristic(pheromone_map , route_map )
@@ -48,7 +48,7 @@ def ACO(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tupl
         for a in ants:
             print(get_route_after(a.solution, {}), file=sys.stderr)
 
-        print(f'Iteration {iteration + 1}: Best Fitness = {best_fitness}')
+        print(f'Iteration {iteration + 1}: Best fittness = {best_fitness} , Worst fittness = {ants[-1].fitness} , Average = {sum(a.fitness for a in ants) / len(ants)}')
 
         # --- Điều kiện dừng ---
         if stagnant_generations >= 10:
@@ -283,7 +283,7 @@ def construct_solution(Base_vehicleid_to_plan: Dict[str, List[Node]], super_node
                     id_to_vehicle: Dict[str, Vehicle]) -> Chromosome:    
     # Tạo bản sao của kế hoạch cơ sở để tránh thay đổi bản gốc
     solution : Dict[str ,List[Node]] = {}
-    
+    is_fesible_solution = True
     # Lưu trữ các node có thể đổi chỗ trong base soluion
     # Mỗi phần mảng được coi như là một Stack các node nhận háng với node ở trên đầu là node cần được chèn vào để đảm bảo tính FILO
     fixed_nodes_in_vehicle :Dict[str , List[Node]] = {}
@@ -355,8 +355,8 @@ def construct_solution(Base_vehicleid_to_plan: Dict[str, List[Node]], super_node
         
         # Nếu không có ứng viên nào khả thi
         if not all_candidates or total_attraction <= 0:
-            print('error 1' , file= sys.stderr)
-            return None
+            #print('error 1' , file= sys.stderr)
+            is_fesible_solution = False
         
         # Tính xác suất chọn cho mỗi ứng viên
         probabilities = [attr / total_attraction for _, _, attr in all_candidates]
@@ -407,28 +407,171 @@ def construct_solution(Base_vehicleid_to_plan: Dict[str, List[Node]], super_node
                     unassigned_pairs.pop(i)
                     break
     
-    # Tạo chromosome từ lời giải
-    #print(get_route_after(Base_vehicleid_to_plan , {}))
     
-    #print(get_route_after(solution , {}))
     for vehicleID ,  plan in solution.items():
         vehicle = id_to_vehicle[vehicleID]
         carrying_items = vehicle.carrying_items if vehicle.des else []
         if not isFeasible(plan ,carrying_items , vehicle.board_capacity):
-            print('error 2' , file= sys.stderr)
+            #print('error 2' , file= sys.stderr)
+            is_fesible_solution = False
+            
+    if is_fesible_solution is False:
+        solution = repair_solution(solution , Base_vehicleid_to_plan , id_to_vehicle , route_map)
+        if solution is None:
+            #print('error 3' , file= sys.stderr)
             return None
     chromosome = Chromosome(solution, route_map , id_to_vehicle)
     return chromosome
 
+def repair_solution(solution: Dict[str, List[Node]], Base_vehicleid_to_plan: Dict[str, List[Node]], 
+                    id_to_vehicle: Dict[str, Vehicle], route_map: Dict[Tuple, Tuple]) -> Dict[str, List[Node]]:
+    """Sửa chữa các lời giải không khả thi bằng cách làm việc với cặp pickup-delivery."""
+    
+    # Phát hiện các xe có tuyến đường không khả thi
+    error_vehicles = []
+    for vehicleID, plan in solution.items():
+        vehicle = id_to_vehicle[vehicleID]
+        carrying_items = vehicle.carrying_items.copy() if vehicle.des else []
+
+        if not isFeasible(plan, carrying_items, vehicle.board_capacity):
+            error_vehicles.append(vehicleID)
+
+    if not error_vehicles:
+        return solution  # Lời giải đã khả thi
+
+    # Step 1: Xây dựng dictionary ánh xạ vehicleID -> các số đánh dấu các cặp trong tuyến đường
+    pair_idx_in_vehicle = {vID: [] for vID in id_to_vehicle.keys()} 
+
+    for vehicleID in error_vehicles:
+        plan = solution[vehicleID]
+        vehicle = id_to_vehicle[vehicleID]
+        
+        pair_idx_in_vehicle[vehicleID] = [0] * len(plan)
+        start_idx = 1 if vehicle.des else 0
+        count = 1
+        st = []
+        for i in range(start_idx, len(plan)):
+            if plan[i].pickup_item_list:
+                pair_idx_in_vehicle[vehicleID][i] = count
+                st.append((plan[i].pickup_item_list[0].id , count))
+                count += 1
+            else:
+                if st:
+                    item_id, idx = st.pop()
+                    if item_id == plan[i].delivery_item_list[-1].id:
+                        pair_idx_in_vehicle[vehicleID][i] = idx
+                else:
+                    pair_idx_in_vehicle[vehicleID][i] = 0
+                    
+
+    # Step 2: Tạo danh sách các cặp node từ xe có tuyến đường không khả thi
+    problematic_pairs : List[List[Node]] = []  
+    
+    repaired_solution = {vehicleID: [] for vehicleID in solution.keys()}
+    for vehicleID in solution.keys():
+        repaired_solution[vehicleID] = []
+        repaired_solution[vehicleID].extend(solution[vehicleID])
+    
+    for vehicleID in error_vehicles:
+        plan : List[Node] = []
+        for node in solution[vehicleID]: plan.append(node)
+        vehicle = id_to_vehicle[vehicleID]
+        carrying_items = vehicle.carrying_items.copy() if vehicle.des else []
+        
+        pair_num = []
+        for i in pair_idx_in_vehicle[vehicleID]:
+            if i not in pair_num:
+                pair_num.append(i)
+        pair_num.remove(0)
+        if not pair_num:
+            continue
+        
+        # Tạo danh sách các cặp node có vấn đề
+        while True:
+            if not pair_num: break
+            
+            chosen_pair = random.choice(pair_num)
+            pair_num.remove(chosen_pair)
+            pickup_node = None
+            delivery_node = None
+            
+            delete_idx = []
+            for i in range(len(plan)):
+                if pair_idx_in_vehicle[vehicleID][i] == chosen_pair:
+                    if plan[i].pickup_item_list:
+                        pickup_node = plan[i]
+                        delete_idx.append(i)
+                    elif plan[i].delivery_item_list:
+                        delivery_node = plan[i]
+                        delete_idx.append(i)
+                    if pickup_node and delivery_node:
+                        break
+            
+            
+            plan = [node for i , node in enumerate(plan) if i not in delete_idx]
+            pair_idx_in_vehicle[vehicleID] = [i for i in pair_idx_in_vehicle[vehicleID] if i != chosen_pair]
+            problematic_pairs.append([pickup_node , delivery_node])
+            
+            if isFeasible(plan , carrying_items , vehicle.board_capacity):
+                repaired_solution[vehicleID] = plan
+                break
+    
+    # Step 3: Xáo trộn các cặp node có vấn đề
+    random.shuffle(problematic_pairs)
+    # Step 4: Gán lại các cặp node vào các xe
+    # Chen ngau nhien cac super node vao cac lo trinh cua cac xe 
+    for DPG in problematic_pairs:
+        # Khai bao cac bien lien quan
+        # chen theo cách tốt nhất
+        isExhausive = False
+        route_node_list : List[Node] = []
+        selected_vehicleID = random.choice(list(Base_vehicleid_to_plan.keys()))
+        if DPG:
+            isExhausive , bestInsertVehicleID, bestInsertPosI, bestInsertPosJ , bestNodeList = dispatch_nodePair(DPG , id_to_vehicle , repaired_solution , route_map , selected_vehicleID)
+        
+        route_node_list = repaired_solution.get(bestInsertVehicleID , [])
+
+        if isExhausive:
+            route_node_list = bestNodeList[:]
+        else:
+            if route_node_list is None:
+                route_node_list = []
+            
+            new_order_pickup_node = DPG[0]
+            new_order_delivery_node = DPG[1]
+            
+            route_node_list.insert(bestInsertPosI, new_order_pickup_node)
+            route_node_list.insert(bestInsertPosJ, new_order_delivery_node)
+        repaired_solution[bestInsertVehicleID] = route_node_list
+
+
+    # Step 5: Kiểm tra cuối cùng
+    all_feasible = True
+    
+    temp1 , tmep2 = 0 , 0
+    for vehicleID, plan in repaired_solution.items():
+        temp1 += len(plan)
+    for vehicleID, plan in solution.items():
+        tmep2 += len(plan)
+    if temp1 != tmep2:
+        all_feasible = False
+    
+    for vehicleID, plan in repaired_solution.items():
+        vehicle = id_to_vehicle[vehicleID]
+        carrying_items = vehicle.carrying_items.copy() if vehicle.des else []
+        if not isFeasible(plan, carrying_items, vehicle.board_capacity):
+            all_feasible = False
+            break
+    return repaired_solution if all_feasible else None
 
 def calculate_node_attraction(route: List[Node], node: Node, pheromone_map: Dict[Tuple[str, str], float],heuristic_map: Dict[Tuple[str, str], float],vehicle: Vehicle) -> float:
     """
     Tính điểm hấp dẫn của việc thêm một node vào cuối tuyến đường.
     """
     
-    temp_route = []
-    for node in route: temp_route.append(node)
-    last_node = temp_route[-1] if temp_route else vehicle.cur_factory_id
+    temp_route :List[Node]= []
+    temp_route.extend(route)
+    last_node = temp_route[-1].id if temp_route else vehicle.cur_factory_id
     
     # Tính pheromone và heuristic từ node cuối cùng đến node mới
     key = (str(last_node), str(node.id))

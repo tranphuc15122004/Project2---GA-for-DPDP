@@ -14,7 +14,7 @@ LS_MAX = 5
 
 """ ACO configuration """
 ALPHA = 1.0          # Mức độ ảnh hưởng của pheromone
-BETA = 2.0           # Mức độ ảnh hưởng của heuristic
+BETA = 0.5           # Mức độ ảnh hưởng của heuristic
 RHO = 0.1            # Tốc độ bốc hơi pheromone
 Q = 100              # Hằng số dùng trong cập nhật pheromone
 BASE_PHEROMONE = 0.1         # Giá trị pheromone cơ bản\

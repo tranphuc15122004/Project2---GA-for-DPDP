@@ -746,7 +746,8 @@ def random_dispatch_nodePair(node_list: list[Node]  , id_to_vehicle: Dict[str , 
                     vehicleid_to_plan[selected_vehicleID].insert(insert_posI , pickup_node)
                     vehicleid_to_plan[selected_vehicleID].insert(insert_posJ , delivery_node)
                     
-                    if (isFeasible(vehicleid_to_plan[selected_vehicleID] , selected_vehicle.carrying_items ,  selected_vehicle.board_capacity)):
+                    carrying_items = selected_vehicle.carrying_items if selected_vehicle.des else []
+                    if (isFeasible(vehicleid_to_plan[selected_vehicleID] , carrying_items ,  selected_vehicle.board_capacity)):
                         check_end  = True
                         break
                     
@@ -796,12 +797,14 @@ def isFeasible(route_node_list : List[Node] , carrying_items : List[OrderItem] ,
             for order_item in delivery_items:
                 left_capacity += order_item.demand
                 if left_capacity > capacity:
+                    #print("Violate capacity" , file= sys.stderr)
                     return False
 
         if pickup_items:
             for order_item in pickup_items:
                 left_capacity -= order_item.demand
                 if left_capacity < 0:
+                    #print("Violate capacity" , file= sys.stderr)
                     return False
 
     return (not unload_item_list)

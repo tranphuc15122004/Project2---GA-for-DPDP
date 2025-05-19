@@ -67,7 +67,31 @@
                 </div>
                 
                 <h3>Results</h3>
-                <div id="results-container"></div>
+                <div id="results-container">
+                <!-- Cấu trúc HTML sẽ được hiển thị khi có kết quả -->
+                <div class="result-basic-info hidden">
+                    <h4>Basic Information</h4>
+                    <p><strong>Instance:</strong> <span id="result-instance">-</span></p>
+                    <p><strong>Algorithm:</strong> <span id="result-algorithm">-</span></p>
+                    <p><strong>Final Score:</strong> <span id="result-score">-</span></p>
+                </div>
+                
+                <div class="result-order-info hidden">
+                    <h4>Order Summary</h4>
+                    <p><strong>Completed Orders:</strong> <span id="result-completed">-</span></p>
+                </div>
+                
+                <div class="result-summary-info hidden">
+                    <h4>Performance Summary</h4>
+                    <p><strong>Total Distance:</strong> <span id="result-distance">-</span></p>
+                    <p><strong>Sum Over Time:</strong> <span id="result-time">-</span></p>
+                </div>
+                
+                <div class="result-vehicle-info hidden">
+                    <h4>Vehicle Details</h4>
+                    <div id="vehicle-table-container"></div>
+                </div>
+            </div>
             </aside>
         </main>
     </div>
