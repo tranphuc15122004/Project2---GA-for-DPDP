@@ -21,12 +21,12 @@ def ACO(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tupl
     time_of_1_iter = 0
     begintime = time.time()
 
-    for iteration in range(NUMBER_OF_GENERATION):  # Tương tự số thế hệ trong GA
+    for iteration in range(NUMBER_OF_GENERATION_ACO):  # Tương tự số thế hệ trong GA
         ants: List[Chromosome] = []
 
         # --- Mỗi "ant" tạo một lời giải ---
         #for _ in range(POPULATION_SIZE):
-        while len(ants) < POPULATION_SIZE:
+        while len(ants) < POPULATION_SIZE_ACO:
             solution = construct_solution(Base_vehicleid_to_plan , super_node_map , pheromone_map , heuristic_map , route_map , id_to_vehicle)
             if solution:
                 ants.append(solution)
@@ -51,7 +51,7 @@ def ACO(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tupl
         print(f'Iteration {iteration + 1}: Best fittness = {best_fitness} , Worst fittness = {ants[-1].fitness} , Average = {sum(a.fitness for a in ants) / len(ants)}')
 
         # --- Điều kiện dừng ---
-        if stagnant_generations >= 10:
+        if stagnant_generations >= 200:
             print("Stopping early due to stagnation.")
             break
 
@@ -206,13 +206,6 @@ def calculate_heuristic(pheromone_map: Dict[Tuple[str, str], float] , route_map:
     return heuristic_map
 
 def update_pheromone(pheromone_map: Dict[Tuple[str, str], float], ants: List[Chromosome] , id_to_vehicle: Dict[str, Vehicle]):
-    """
-    Cập nhật ma trận pheromone dựa trên các lời giải của kiến.
-    
-    Args:
-        pheromone_map: Ma trận pheromone cần cập nhật
-        ants: Danh sách các lời giải (kiến)
-    """
     if not ants:
         return
     
@@ -482,7 +475,8 @@ def repair_solution(solution: Dict[str, List[Node]], Base_vehicleid_to_plan: Dic
         for i in pair_idx_in_vehicle[vehicleID]:
             if i not in pair_num:
                 pair_num.append(i)
-        pair_num.remove(0)
+        if 0 in pair_num:
+            pair_num.remove(0)
         if not pair_num:
             continue
         
