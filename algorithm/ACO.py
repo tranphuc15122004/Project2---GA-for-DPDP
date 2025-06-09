@@ -169,7 +169,7 @@ def calculate_heuristic(pheromone_map: Dict[Tuple[str, str], float] , route_map:
             # Tính giá trị heuristic (tỷ lệ nghịch với khoảng cách và thời gian)
             distance_heuristic = 1.0 / distance
             time_heuristic = 1.0 / (time / 3600)
-            value = (distance_heuristic + 3*  time_heuristic) / 4
+            value = (distance_heuristic +  time_heuristic) 
             if not check:
                 valid_values.append(value)
             heuristic_raw[key] = value

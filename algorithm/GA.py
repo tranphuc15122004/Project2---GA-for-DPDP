@@ -53,7 +53,7 @@ def GA(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tuple
             stagnant_generations += 1
 
         # Điều kiện dừng sớm nếu không có cải thiện
-        if stagnant_generations >= 5:
+        if stagnant_generations >= 10:
             print("Stopping early due to lack of improvement.")
             break
 
@@ -119,7 +119,7 @@ def GA1LS(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tu
             stagnant_generations += 1
 
         # Điều kiện dừng sớm nếu không có cải thiện
-        if stagnant_generations >= 5:
+        if stagnant_generations >= 10:
             print("Stopping early due to lack of improvement.")
             break
 
@@ -187,7 +187,7 @@ def GA5LS(initial_vehicleid_to_plan : Dict[str , List[Node]] ,route_map: Dict[Tu
             stagnant_generations += 1
 
         # Điều kiện dừng sớm nếu không có cải thiện
-        if stagnant_generations >= 5:
+        if stagnant_generations >= 10:
             print("Stopping early due to lack of improvement.")
             break
 
